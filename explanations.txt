@@ -1,0 +1,57 @@
+explanation to pop
+
+void pop(Node** top) {
+    if (*top == NULL) {
+        printf("Error: stack underflow\n");
+        return;
+    }
+    Node* temp = *top;
+    *top = (*top)->next;
+    free(temp);
+}
+
+This pop function is designed to remove the top element from a stack.
+ Here’s a breakdown of what each line does:
+
+if (*top == NULL): This line checks if the stack is empty.
+ If top is NULL, it means there are no elements in the stack to pop.
+printf("Error: stack underflow\n"); return;: If the stack is empty,
+ the function prints an error message and returns without doing
+  anything else.
+Node* temp = *top;: This line creates a temporary pointer temp that
+ points to the top node of the stack.
+ This is done because 
+we’re about to lose our reference to the top node,
+ but we need to free its memory later.
+*top = (*top)->next;: This line updates top to point to the second node in the stack.
+ This effectively removes the first node from the stack.
+free(temp);: This line frees the memory that was allocated for the first
+ node of the stack. Since temp points to this node and we’re done with it, we can safely free it now.
+So, in summary, this pop function removes the top element from the stack and frees the memory that
+ was allocated for it. If the stack is already empty,
+ it simply prints an error message and returns.
+
+
+
+explanation to push
+
+void push(Node** top, int data) {
+    Node* node = newNode(data);
+    node->next = *top;
+    *top = node;
+}
+
+A new node is created with the given data. This is done by the newNode(data) function. Let’s call this new node node.
+The next pointer of the new node is set to the current top of the stack. This is done by the line node->next = *top;. This means that the new node is now pointing to the node that was previously at the top of the stack.
+The top of the stack is updated to be the new node. This is done by the line *top = node;. Now, the top of the stack points to the new node.
+Here’s a textual representation of the process:
+
+Before the push operation:
+
+top -> Node3 -> Node2 -> Node1
+
+After the push(&top, data) operation:
+
+top -> Node4(data) -> Node3 -> Node2 -> Node1
+
+In this diagram, Node4 is the new node created by the push operation. As you can see, Node4 is now at the top of the stack, and it points to what was previously the top of the stack (Node3).
