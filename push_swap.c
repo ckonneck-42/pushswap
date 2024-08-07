@@ -6,7 +6,7 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 12:14:24 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/07/26 09:25:20 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/07 16:19:36 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ Node* newNode(int data)
     return node;
 }
 
-void append(Node** headRef, int data) {
+void append(Node **headRef, int data) {
     // 1. Allocate new node
     Node* new1Node = newNode(data);
 
@@ -56,13 +56,13 @@ void swapb(Node** list)
         second->next = first;
         *list = second;
 
-        ft_printf("sb ");
+        ft_printf("sb\n");
     }
     else
         ft_printf("not enough values to swap in list B\n");
 }
 
-void swapa(Node** list)
+void swapa(Node **list)
 {
     if (*list != NULL && (*list)->next != NULL)
     {
@@ -73,13 +73,13 @@ void swapa(Node** list)
         second->next = first;
         *list = second;
 
-        ft_printf("sa ");
+        ft_printf("sa\n");
     }
     else
         ft_printf("not enough values to swap in list A\n");
 }
 
-void ss(Node** lista, Node** listb)
+void ss(Node **lista, Node **listb)
 {
     if ((*lista != NULL && (*lista)->next != NULL) &&
     (*listb != NULL && (*listb)->next != NULL) )
@@ -88,11 +88,11 @@ void ss(Node** lista, Node** listb)
         swapb(listb);
         ft_printf("(ss)");
     }
-    else
+    else    
         ft_printf("not enough values to swap in list A or B\n");
 }
 
-void pushtob(Node** sourceRef, Node** destRef) {
+void pushtob(Node **sourceRef, Node **destRef) {
     // Get the first node from the source list
     Node* newtopofb = *sourceRef;
     if (newtopofb != NULL) {
@@ -108,7 +108,7 @@ void pushtob(Node** sourceRef, Node** destRef) {
         ft_printf("list B is empty\n");
 }
 
-void pushtoa(Node** sourceRef, Node** destRef) {
+void pushtoa(Node **sourceRef, Node **destRef) {
     // Get the first node from the source list
     Node* newtopofa = *sourceRef;
     if (newtopofa != NULL) {
@@ -118,7 +118,7 @@ void pushtoa(Node** sourceRef, Node** destRef) {
         // Push the node onto the destination list
         newtopofa->next = *destRef;
         *destRef = newtopofa;
-        ft_printf("pa ");
+        ft_printf("pa\n");
     }
     else
         ft_printf("list A is empty\n");
@@ -137,7 +137,7 @@ void rotatea(Node** lista)
         while(last->next != NULL)
             last = last->next;
         last->next = newbottom;
-        ft_printf("ra ");
+        ft_printf("ra\n");
     }
     else
         ft_printf("list A empty\n");
@@ -156,7 +156,7 @@ void rotateb(Node** listb)
         while(last->next != NULL)
             last = last->next;
         last->next = newbottom;
-        ft_printf("rb ");
+        ft_printf("rb\n");
     }
     else
         ft_printf("list B empty\n");
@@ -178,7 +178,7 @@ void rr(Node** lista, Node** listb)
 void reverserotatea(Node** lista)
 {
     Node* newtop = *lista;
-    if(*lista != NULL || (*lista)->next != NULL)
+    if(*lista != NULL ||(*lista)->next != NULL)
     {
         while(newtop->next->next != NULL)
             newtop = newtop->next;
@@ -228,26 +228,85 @@ void printList(Node *node) {
     }
 }
 
+int	ft_isnumeric(char *str)
+{
+	int i = 0;
+    if (str[i] == '-')
+		i++;
+	while (str[i])
+	{
+		if (!ft_isdigit(str[i]))
+			return (0);
+		i++;
+	}
+	return (1);
+}
+
+
+void printArray(Element arr[], int size) {
+    for (int i = 0; i < size; i++) {
+        ft_printf("Value: %d, Position: %d\n", arr[i].value, arr[i].position);
+    }
+}
+
+
+
+
 int main(int argc, char *argv[]) {
     int i;
     Node* tops[NUM_LISTS] = {NULL};  // Initialize all lists as empty
-
+    int *numbers = malloc((argc - 1) * sizeof(int));
     // Convert each command-line argument to an integer and push it onto the stack
     for (i = 1; i < argc; i++) {
-        int arg = atoi(argv[i]);
+        if(ft_isnumeric(argv[i]) != 1)
+        {
+            ft_printf("can't parse non numeric data");
+            exit (-1);
+        }
+        int arg = ft_atoi(argv[i]);
        append(&tops[0], arg);
     }
-    ft_printf("list a before op \n");
-    printList(tops[0]);
+
+        for (i = 1; i < argc; i++) {
+        if(ft_isnumeric(argv[i]) != 1)
+        {
+            ft_printf("can't parse non numeric data");
+            exit (-1);
+        }
+        numbers[i - 1] = ft_atoi(argv[i]);
+    }
+    
+    
+    bubblesort(numbers, argc -1);
+
+    
+    Element arr[argc-1];
+    // Assuming the array is already sorted and filled with values
+    for (int i = 0; i < argc-1; i++) {
+        arr[i].position = i;
+        arr[i].value = numbers[i];
+    }
+
+    printArray(arr, argc-1);
+
+    int median = numbers[(argc-1) / 2];
+    int smallest = numbers[0];
+    int biggest = numbers[argc -2];
+    ft_printf("smallest = %d\n", smallest);
+    ft_printf("median = %d\n", median);
+    ft_printf("biggest = %d\n", biggest);
+    // ft_printf("list a before op \n");
+    // printList(tops[0]);
     // Print the stack
-    rotatea(&tops[0]);
-    pushtob(&tops[0], &tops[1]);
-    pushtob(&tops[0], &tops[1]);
-    ft_printf("list a \n");
-    printList(tops[0]);
-    ft_printf("list b \n");
-    printList(tops[1]);
-    rrr(&tops[0], &tops[1]);
+    //  halfit(&tops[0], &tops[1], argc);
+    // sendit(&tops[0], &tops[1]);
+    Chunk myarr[argc];
+    sorthalf(&tops[0], &tops[1], arr, myarr);
+    
+    
+    // midpointrecursion(&tops[0], &tops[1], arr, argc);
+    // stalinsort(&tops[0], &tops[1], arr, argc);
+    // algorithm(&tops[0], &tops[1], arr, argc);
     ft_printf("list a \n");
     printList(tops[0]);
     ft_printf("list b \n");

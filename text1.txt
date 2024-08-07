@@ -1,0 +1,1510 @@
+Value: -1, Position: 0
+Value: 0, Position: 1
+Value: 1, Position: 2
+Value: 2, Position: 3
+Value: 3, Position: 4
+Value: 4, Position: 5
+Value: 5, Position: 6
+Value: 6, Position: 7
+Value: 7, Position: 8
+Value: 8, Position: 9
+Value: 9, Position: 10
+Value: 10, Position: 11
+Value: 11, Position: 12
+Value: 12, Position: 13
+Value: 13, Position: 14
+Value: 14, Position: 15
+Value: 15, Position: 16
+Value: 16, Position: 17
+Value: 17, Position: 18
+Value: 18, Position: 19
+Value: 19, Position: 20
+Value: 20, Position: 21
+Value: 21, Position: 22
+Value: 22, Position: 23
+Value: 23, Position: 24
+Value: 24, Position: 25
+Value: 25, Position: 26
+Value: 26, Position: 27
+Value: 27, Position: 28
+Value: 28, Position: 29
+Value: 29, Position: 30
+Value: 30, Position: 31
+Value: 31, Position: 32
+Value: 32, Position: 33
+Value: 33, Position: 34
+Value: 34, Position: 35
+Value: 35, Position: 36
+Value: 36, Position: 37
+Value: 37, Position: 38
+Value: 38, Position: 39
+Value: 39, Position: 40
+Value: 40, Position: 41
+Value: 41, Position: 42
+Value: 42, Position: 43
+Value: 43, Position: 44
+Value: 44, Position: 45
+Value: 45, Position: 46
+Value: 46, Position: 47
+Value: 47, Position: 48
+Value: 48, Position: 49
+Value: 49, Position: 50
+Value: 50, Position: 51
+Value: 51, Position: 52
+Value: 52, Position: 53
+Value: 53, Position: 54
+Value: 54, Position: 55
+Value: 55, Position: 56
+Value: 56, Position: 57
+Value: 57, Position: 58
+Value: 58, Position: 59
+Value: 59, Position: 60
+Value: 60, Position: 61
+Value: 61, Position: 62
+Value: 62, Position: 63
+Value: 63, Position: 64
+Value: 64, Position: 65
+Value: 65, Position: 66
+Value: 66, Position: 67
+Value: 67, Position: 68
+Value: 68, Position: 69
+Value: 69, Position: 70
+Value: 70, Position: 71
+Value: 71, Position: 72
+Value: 72, Position: 73
+Value: 73, Position: 74
+Value: 74, Position: 75
+Value: 75, Position: 76
+Value: 76, Position: 77
+Value: 77, Position: 78
+Value: 78, Position: 79
+Value: 79, Position: 80
+Value: 80, Position: 81
+Value: 81, Position: 82
+Value: 82, Position: 83
+Value: 83, Position: 84
+Value: 84, Position: 85
+Value: 85, Position: 86
+Value: 86, Position: 87
+Value: 87, Position: 88
+Value: 88, Position: 89
+Value: 89, Position: 90
+Value: 90, Position: 91
+Value: 91, Position: 92
+Value: 92, Position: 93
+Value: 93, Position: 94
+Value: 94, Position: 95
+Value: 95, Position: 96
+Value: 96, Position: 97
+Value: 97, Position: 98
+Value: 98, Position: 99
+Value: 99, Position: 100
+Value: 100, Position: 101
+Value: 101, Position: 102
+Value: 102, Position: 103
+Value: 103, Position: 104
+Value: 104, Position: 105
+Value: 105, Position: 106
+Value: 106, Position: 107
+Value: 107, Position: 108
+Value: 108, Position: 109
+Value: 109, Position: 110
+Value: 110, Position: 111
+Value: 111, Position: 112
+Value: 112, Position: 113
+Value: 113, Position: 114
+Value: 114, Position: 115
+Value: 115, Position: 116
+Value: 116, Position: 117
+Value: 117, Position: 118
+Value: 118, Position: 119
+Value: 119, Position: 120
+Value: 120, Position: 121
+Value: 121, Position: 122
+Value: 122, Position: 123
+Value: 123, Position: 124
+Value: 124, Position: 125
+Value: 125, Position: 126
+Value: 126, Position: 127
+Value: 127, Position: 128
+Value: 128, Position: 129
+Value: 129, Position: 130
+Value: 130, Position: 131
+Value: 131, Position: 132
+Value: 132, Position: 133
+Value: 133, Position: 134
+Value: 134, Position: 135
+Value: 135, Position: 136
+Value: 136, Position: 137
+Value: 137, Position: 138
+Value: 138, Position: 139
+Value: 139, Position: 140
+Value: 140, Position: 141
+Value: 141, Position: 142
+Value: 142, Position: 143
+Value: 143, Position: 144
+Value: 144, Position: 145
+Value: 145, Position: 146
+Value: 146, Position: 147
+Value: 148, Position: 148
+Value: 149, Position: 149
+Value: 150, Position: 150
+Value: 151, Position: 151
+Value: 152, Position: 152
+Value: 153, Position: 153
+Value: 154, Position: 154
+Value: 155, Position: 155
+Value: 156, Position: 156
+Value: 157, Position: 157
+Value: 158, Position: 158
+Value: 159, Position: 159
+Value: 160, Position: 160
+Value: 161, Position: 161
+Value: 162, Position: 162
+Value: 163, Position: 163
+Value: 164, Position: 164
+Value: 165, Position: 165
+Value: 166, Position: 166
+Value: 167, Position: 167
+Value: 168, Position: 168
+Value: 169, Position: 169
+Value: 170, Position: 170
+Value: 171, Position: 171
+Value: 172, Position: 172
+Value: 173, Position: 173
+Value: 174, Position: 174
+Value: 175, Position: 175
+Value: 176, Position: 176
+Value: 177, Position: 177
+Value: 178, Position: 178
+Value: 179, Position: 179
+Value: 180, Position: 180
+Value: 181, Position: 181
+Value: 182, Position: 182
+Value: 183, Position: 183
+Value: 184, Position: 184
+Value: 185, Position: 185
+Value: 186, Position: 186
+Value: 187, Position: 187
+Value: 188, Position: 188
+Value: 189, Position: 189
+Value: 190, Position: 190
+Value: 191, Position: 191
+Value: 192, Position: 192
+Value: 193, Position: 193
+Value: 194, Position: 194
+Value: 195, Position: 195
+Value: 196, Position: 196
+Value: 197, Position: 197
+Value: 198, Position: 198
+Value: 199, Position: 199
+Value: 200, Position: 200
+Value: 201, Position: 201
+Value: 202, Position: 202
+Value: 203, Position: 203
+Value: 204, Position: 204
+Value: 205, Position: 205
+Value: 206, Position: 206
+Value: 207, Position: 207
+Value: 208, Position: 208
+Value: 209, Position: 209
+Value: 210, Position: 210
+Value: 211, Position: 211
+Value: 212, Position: 212
+Value: 213, Position: 213
+Value: 214, Position: 214
+Value: 215, Position: 215
+Value: 216, Position: 216
+Value: 217, Position: 217
+Value: 218, Position: 218
+Value: 219, Position: 219
+Value: 220, Position: 220
+Value: 221, Position: 221
+Value: 222, Position: 222
+Value: 223, Position: 223
+Value: 224, Position: 224
+Value: 225, Position: 225
+Value: 226, Position: 226
+Value: 227, Position: 227
+Value: 228, Position: 228
+Value: 229, Position: 229
+Value: 230, Position: 230
+Value: 231, Position: 231
+Value: 232, Position: 232
+Value: 233, Position: 233
+Value: 234, Position: 234
+Value: 235, Position: 235
+Value: 236, Position: 236
+Value: 237, Position: 237
+Value: 238, Position: 238
+Value: 239, Position: 239
+Value: 240, Position: 240
+Value: 241, Position: 241
+Value: 242, Position: 242
+Value: 243, Position: 243
+Value: 244, Position: 244
+Value: 245, Position: 245
+Value: 246, Position: 246
+Value: 247, Position: 247
+Value: 248, Position: 248
+Value: 249, Position: 249
+Value: 250, Position: 250
+Value: 251, Position: 251
+Value: 252, Position: 252
+Value: 253, Position: 253
+Value: 254, Position: 254
+Value: 255, Position: 255
+Value: 256, Position: 256
+Value: 257, Position: 257
+Value: 258, Position: 258
+Value: 259, Position: 259
+Value: 260, Position: 260
+Value: 261, Position: 261
+Value: 262, Position: 262
+Value: 263, Position: 263
+Value: 264, Position: 264
+Value: 265, Position: 265
+Value: 266, Position: 266
+Value: 267, Position: 267
+Value: 268, Position: 268
+Value: 269, Position: 269
+Value: 270, Position: 270
+Value: 271, Position: 271
+Value: 272, Position: 272
+Value: 273, Position: 273
+Value: 274, Position: 274
+Value: 275, Position: 275
+Value: 276, Position: 276
+Value: 277, Position: 277
+Value: 278, Position: 278
+Value: 279, Position: 279
+Value: 280, Position: 280
+Value: 281, Position: 281
+Value: 282, Position: 282
+Value: 283, Position: 283
+Value: 284, Position: 284
+Value: 285, Position: 285
+Value: 286, Position: 286
+Value: 287, Position: 287
+Value: 288, Position: 288
+Value: 289, Position: 289
+Value: 290, Position: 290
+Value: 291, Position: 291
+Value: 292, Position: 292
+Value: 293, Position: 293
+Value: 294, Position: 294
+Value: 295, Position: 295
+Value: 296, Position: 296
+Value: 297, Position: 297
+Value: 298, Position: 298
+Value: 299, Position: 299
+Value: 300, Position: 300
+Value: 301, Position: 301
+Value: 302, Position: 302
+Value: 303, Position: 303
+Value: 304, Position: 304
+Value: 305, Position: 305
+Value: 306, Position: 306
+Value: 307, Position: 307
+Value: 308, Position: 308
+Value: 309, Position: 309
+Value: 310, Position: 310
+Value: 311, Position: 311
+Value: 312, Position: 312
+Value: 313, Position: 313
+Value: 314, Position: 314
+Value: 315, Position: 315
+Value: 316, Position: 316
+Value: 317, Position: 317
+Value: 318, Position: 318
+Value: 319, Position: 319
+Value: 320, Position: 320
+Value: 321, Position: 321
+Value: 322, Position: 322
+Value: 323, Position: 323
+Value: 324, Position: 324
+Value: 325, Position: 325
+Value: 326, Position: 326
+Value: 327, Position: 327
+Value: 328, Position: 328
+Value: 329, Position: 329
+Value: 330, Position: 330
+Value: 331, Position: 331
+Value: 332, Position: 332
+Value: 333, Position: 333
+Value: 334, Position: 334
+Value: 335, Position: 335
+Value: 336, Position: 336
+Value: 337, Position: 337
+Value: 338, Position: 338
+Value: 339, Position: 339
+Value: 340, Position: 340
+Value: 341, Position: 341
+Value: 342, Position: 342
+Value: 343, Position: 343
+Value: 344, Position: 344
+Value: 345, Position: 345
+Value: 346, Position: 346
+Value: 347, Position: 347
+Value: 348, Position: 348
+Value: 349, Position: 349
+Value: 350, Position: 350
+Value: 351, Position: 351
+Value: 352, Position: 352
+Value: 353, Position: 353
+Value: 354, Position: 354
+Value: 355, Position: 355
+Value: 356, Position: 356
+Value: 357, Position: 357
+Value: 358, Position: 358
+Value: 359, Position: 359
+Value: 360, Position: 360
+Value: 361, Position: 361
+Value: 362, Position: 362
+Value: 363, Position: 363
+Value: 364, Position: 364
+Value: 365, Position: 365
+Value: 366, Position: 366
+Value: 367, Position: 367
+Value: 368, Position: 368
+Value: 369, Position: 369
+Value: 370, Position: 370
+Value: 371, Position: 371
+Value: 372, Position: 372
+Value: 373, Position: 373
+Value: 374, Position: 374
+Value: 375, Position: 375
+Value: 376, Position: 376
+Value: 377, Position: 377
+Value: 378, Position: 378
+Value: 379, Position: 379
+Value: 380, Position: 380
+Value: 381, Position: 381
+Value: 382, Position: 382
+Value: 383, Position: 383
+Value: 384, Position: 384
+Value: 385, Position: 385
+Value: 386, Position: 386
+Value: 387, Position: 387
+Value: 388, Position: 388
+Value: 389, Position: 389
+Value: 390, Position: 390
+Value: 391, Position: 391
+Value: 392, Position: 392
+Value: 393, Position: 393
+Value: 394, Position: 394
+Value: 395, Position: 395
+Value: 396, Position: 396
+Value: 397, Position: 397
+Value: 398, Position: 398
+Value: 399, Position: 399
+Value: 400, Position: 400
+Value: 401, Position: 401
+Value: 402, Position: 402
+Value: 403, Position: 403
+Value: 404, Position: 404
+Value: 405, Position: 405
+Value: 406, Position: 406
+Value: 407, Position: 407
+Value: 408, Position: 408
+Value: 409, Position: 409
+Value: 410, Position: 410
+Value: 411, Position: 411
+Value: 412, Position: 412
+Value: 413, Position: 413
+Value: 414, Position: 414
+Value: 415, Position: 415
+Value: 416, Position: 416
+Value: 417, Position: 417
+Value: 418, Position: 418
+Value: 419, Position: 419
+Value: 420, Position: 420
+Value: 421, Position: 421
+Value: 422, Position: 422
+Value: 423, Position: 423
+Value: 424, Position: 424
+Value: 425, Position: 425
+Value: 426, Position: 426
+Value: 427, Position: 427
+Value: 428, Position: 428
+Value: 429, Position: 429
+Value: 430, Position: 430
+Value: 431, Position: 431
+Value: 432, Position: 432
+Value: 433, Position: 433
+Value: 434, Position: 434
+Value: 435, Position: 435
+Value: 436, Position: 436
+Value: 437, Position: 437
+Value: 438, Position: 438
+Value: 439, Position: 439
+Value: 440, Position: 440
+Value: 441, Position: 441
+Value: 442, Position: 442
+Value: 443, Position: 443
+Value: 444, Position: 444
+Value: 445, Position: 445
+Value: 446, Position: 446
+Value: 447, Position: 447
+Value: 448, Position: 448
+Value: 449, Position: 449
+Value: 450, Position: 450
+Value: 451, Position: 451
+Value: 452, Position: 452
+Value: 453, Position: 453
+Value: 454, Position: 454
+Value: 455, Position: 455
+Value: 456, Position: 456
+Value: 457, Position: 457
+Value: 458, Position: 458
+Value: 459, Position: 459
+Value: 460, Position: 460
+Value: 461, Position: 461
+Value: 462, Position: 462
+Value: 463, Position: 463
+Value: 464, Position: 464
+Value: 465, Position: 465
+Value: 466, Position: 466
+Value: 467, Position: 467
+Value: 468, Position: 468
+Value: 469, Position: 469
+Value: 470, Position: 470
+Value: 471, Position: 471
+Value: 472, Position: 472
+Value: 473, Position: 473
+Value: 474, Position: 474
+Value: 475, Position: 475
+Value: 476, Position: 476
+Value: 477, Position: 477
+Value: 478, Position: 478
+Value: 479, Position: 479
+Value: 480, Position: 480
+Value: 481, Position: 481
+Value: 482, Position: 482
+Value: 483, Position: 483
+Value: 484, Position: 484
+Value: 485, Position: 485
+Value: 486, Position: 486
+Value: 487, Position: 487
+Value: 488, Position: 488
+Value: 489, Position: 489
+Value: 490, Position: 490
+Value: 491, Position: 491
+Value: 492, Position: 492
+Value: 493, Position: 493
+Value: 494, Position: 494
+Value: 495, Position: 495
+Value: 496, Position: 496
+Value: 497, Position: 497
+Value: 498, Position: 498
+Value: 499, Position: 499
+Value: 500, Position: 500
+smallest = -1
+median = 250
+biggest = 500
+Element -1 is = to -1 
+ra
+entered if tempdata != arr[i].value, compared 194 with 0
+pb entered if tempdata != arr[i].value, compared 136 with 0
+pb entered if tempdata != arr[i].value, compared 108 with 0
+pb entered if tempdata != arr[i].value, compared 439 with 0
+pb entered if tempdata != arr[i].value, compared 146 with 0
+pb entered if tempdata != arr[i].value, compared 102 with 0
+pb entered if tempdata != arr[i].value, compared 250 with 0
+pb entered if tempdata != arr[i].value, compared 464 with 0
+pb entered if tempdata != arr[i].value, compared 300 with 0
+pb entered if tempdata != arr[i].value, compared 427 with 0
+pb entered if tempdata != arr[i].value, compared 237 with 0
+pb entered if tempdata != arr[i].value, compared 135 with 0
+pb entered if tempdata != arr[i].value, compared 105 with 0
+pb entered if tempdata != arr[i].value, compared 1 with 0
+pb entered if tempdata != arr[i].value, compared 50 with 0
+pb entered if tempdata != arr[i].value, compared 193 with 0
+pb entered if tempdata != arr[i].value, compared 387 with 0
+pb entered if tempdata != arr[i].value, compared 57 with 0
+pb entered if tempdata != arr[i].value, compared 192 with 0
+pb entered if tempdata != arr[i].value, compared 346 with 0
+pb entered if tempdata != arr[i].value, compared 472 with 0
+pb entered if tempdata != arr[i].value, compared 12 with 0
+pb entered if tempdata != arr[i].value, compared 156 with 0
+pb entered if tempdata != arr[i].value, compared 27 with 0
+pb entered if tempdata != arr[i].value, compared 277 with 0
+pb entered if tempdata != arr[i].value, compared 341 with 0
+pb entered if tempdata != arr[i].value, compared 151 with 0
+pb entered if tempdata != arr[i].value, compared 426 with 0
+pb entered if tempdata != arr[i].value, compared 432 with 0
+pb entered if tempdata != arr[i].value, compared 138 with 0
+pb entered if tempdata != arr[i].value, compared 409 with 0
+pb entered if tempdata != arr[i].value, compared 485 with 0
+pb entered if tempdata != arr[i].value, compared 264 with 0
+pb entered if tempdata != arr[i].value, compared 421 with 0
+pb entered if tempdata != arr[i].value, compared 212 with 0
+pb entered if tempdata != arr[i].value, compared 247 with 0
+pb entered if tempdata != arr[i].value, compared 124 with 0
+pb entered if tempdata != arr[i].value, compared 490 with 0
+pb entered if tempdata != arr[i].value, compared 118 with 0
+pb entered if tempdata != arr[i].value, compared 491 with 0
+pb entered if tempdata != arr[i].value, compared 185 with 0
+pb entered if tempdata != arr[i].value, compared 425 with 0
+pb entered if tempdata != arr[i].value, compared 255 with 0
+pb entered if tempdata != arr[i].value, compared 26 with 0
+pb entered if tempdata != arr[i].value, compared 171 with 0
+pb entered if tempdata != arr[i].value, compared 60 with 0
+pb entered if tempdata != arr[i].value, compared 298 with 0
+pb entered if tempdata != arr[i].value, compared 123 with 0
+pb entered if tempdata != arr[i].value, compared 95 with 0
+pb entered if tempdata != arr[i].value, compared 41 with 0
+pb entered if tempdata != arr[i].value, compared 356 with 0
+pb entered if tempdata != arr[i].value, compared 155 with 0
+pb entered if tempdata != arr[i].value, compared 392 with 0
+pb entered if tempdata != arr[i].value, compared 461 with 0
+pb entered if tempdata != arr[i].value, compared 103 with 0
+pb entered if tempdata != arr[i].value, compared 161 with 0
+pb entered if tempdata != arr[i].value, compared 94 with 0
+pb entered if tempdata != arr[i].value, compared 471 with 0
+pb entered if tempdata != arr[i].value, compared 443 with 0
+pb entered if tempdata != arr[i].value, compared 333 with 0
+pb entered if tempdata != arr[i].value, compared 402 with 0
+pb entered if tempdata != arr[i].value, compared 367 with 0
+pb entered if tempdata != arr[i].value, compared 73 with 0
+pb entered if tempdata != arr[i].value, compared 500 with 0
+pb entered if tempdata != arr[i].value, compared 269 with 0
+pb entered if tempdata != arr[i].value, compared 125 with 0
+pb entered if tempdata != arr[i].value, compared 121 with 0
+pb entered if tempdata != arr[i].value, compared 13 with 0
+pb entered if tempdata != arr[i].value, compared 170 with 0
+pb entered if tempdata != arr[i].value, compared 222 with 0
+pb entered if tempdata != arr[i].value, compared 475 with 0
+pb entered if tempdata != arr[i].value, compared 65 with 0
+pb entered if tempdata != arr[i].value, compared 17 with 0
+pb entered if tempdata != arr[i].value, compared 328 with 0
+pb entered if tempdata != arr[i].value, compared 128 with 0
+pb entered if tempdata != arr[i].value, compared 75 with 0
+pb entered if tempdata != arr[i].value, compared 129 with 0
+pb entered if tempdata != arr[i].value, compared 137 with 0
+pb entered if tempdata != arr[i].value, compared 446 with 0
+pb entered if tempdata != arr[i].value, compared 182 with 0
+pb entered if tempdata != arr[i].value, compared 64 with 0
+pb entered if tempdata != arr[i].value, compared 420 with 0
+pb entered if tempdata != arr[i].value, compared 52 with 0
+pb entered if tempdata != arr[i].value, compared 280 with 0
+pb entered if tempdata != arr[i].value, compared 266 with 0
+pb entered if tempdata != arr[i].value, compared 148 with 0
+pb entered if tempdata != arr[i].value, compared 139 with 0
+pb entered if tempdata != arr[i].value, compared 39 with 0
+pb entered if tempdata != arr[i].value, compared 51 with 0
+pb entered if tempdata != arr[i].value, compared 418 with 0
+pb entered if tempdata != arr[i].value, compared 158 with 0
+pb entered if tempdata != arr[i].value, compared 478 with 0
+pb entered if tempdata != arr[i].value, compared 394 with 0
+pb entered if tempdata != arr[i].value, compared 66 with 0
+pb entered if tempdata != arr[i].value, compared 199 with 0
+pb entered if tempdata != arr[i].value, compared 167 with 0
+pb entered if tempdata != arr[i].value, compared 195 with 0
+pb entered if tempdata != arr[i].value, compared 232 with 0
+pb entered if tempdata != arr[i].value, compared 476 with 0
+pb entered if tempdata != arr[i].value, compared 98 with 0
+pb entered if tempdata != arr[i].value, compared 352 with 0
+pb entered if tempdata != arr[i].value, compared 87 with 0
+pb entered if tempdata != arr[i].value, compared 450 with 0
+pb entered if tempdata != arr[i].value, compared 36 with 0
+pb entered if tempdata != arr[i].value, compared 493 with 0
+pb entered if tempdata != arr[i].value, compared 110 with 0
+pb entered if tempdata != arr[i].value, compared 159 with 0
+pb entered if tempdata != arr[i].value, compared 221 with 0
+pb entered if tempdata != arr[i].value, compared 342 with 0
+pb entered if tempdata != arr[i].value, compared 468 with 0
+pb entered if tempdata != arr[i].value, compared 165 with 0
+pb entered if tempdata != arr[i].value, compared 453 with 0
+pb entered if tempdata != arr[i].value, compared 326 with 0
+pb entered if tempdata != arr[i].value, compared 224 with 0
+pb entered if tempdata != arr[i].value, compared 320 with 0
+pb entered if tempdata != arr[i].value, compared 226 with 0
+pb entered if tempdata != arr[i].value, compared 293 with 0
+pb entered if tempdata != arr[i].value, compared 68 with 0
+pb entered if tempdata != arr[i].value, compared 48 with 0
+pb entered if tempdata != arr[i].value, compared 324 with 0
+pb entered if tempdata != arr[i].value, compared 153 with 0
+pb entered if tempdata != arr[i].value, compared 311 with 0
+pb entered if tempdata != arr[i].value, compared 44 with 0
+pb entered if tempdata != arr[i].value, compared 273 with 0
+pb entered if tempdata != arr[i].value, compared 305 with 0
+pb entered if tempdata != arr[i].value, compared 486 with 0
+pb entered if tempdata != arr[i].value, compared 5 with 0
+pb entered if tempdata != arr[i].value, compared 357 with 0
+pb entered if tempdata != arr[i].value, compared 361 with 0
+pb entered if tempdata != arr[i].value, compared 203 with 0
+pb entered if tempdata != arr[i].value, compared 43 with 0
+pb entered if tempdata != arr[i].value, compared 157 with 0
+pb entered if tempdata != arr[i].value, compared 295 with 0
+pb entered if tempdata != arr[i].value, compared 166 with 0
+pb entered if tempdata != arr[i].value, compared 449 with 0
+pb entered if tempdata != arr[i].value, compared 20 with 0
+pb entered if tempdata != arr[i].value, compared 239 with 0
+pb entered if tempdata != arr[i].value, compared 183 with 0
+pb entered if tempdata != arr[i].value, compared 93 with 0
+pb entered if tempdata != arr[i].value, compared 204 with 0
+pb entered if tempdata != arr[i].value, compared 25 with 0
+pb entered if tempdata != arr[i].value, compared 81 with 0
+pb entered if tempdata != arr[i].value, compared 433 with 0
+pb entered if tempdata != arr[i].value, compared 314 with 0
+pb entered if tempdata != arr[i].value, compared 77 with 0
+pb entered if tempdata != arr[i].value, compared 71 with 0
+pb entered if tempdata != arr[i].value, compared 82 with 0
+pb entered if tempdata != arr[i].value, compared 353 with 0
+pb entered if tempdata != arr[i].value, compared 11 with 0
+pb entered if tempdata != arr[i].value, compared 176 with 0
+pb entered if tempdata != arr[i].value, compared 336 with 0
+pb entered if tempdata != arr[i].value, compared 303 with 0
+pb entered if tempdata != arr[i].value, compared 206 with 0
+pb entered if tempdata != arr[i].value, compared 401 with 0
+pb entered if tempdata != arr[i].value, compared 190 with 0
+pb entered if tempdata != arr[i].value, compared 233 with 0
+pb entered if tempdata != arr[i].value, compared 469 with 0
+pb entered if tempdata != arr[i].value, compared 294 with 0
+pb entered if tempdata != arr[i].value, compared 248 with 0
+pb entered if tempdata != arr[i].value, compared 229 with 0
+pb entered if tempdata != arr[i].value, compared 99 with 0
+pb entered if tempdata != arr[i].value, compared 496 with 0
+pb entered if tempdata != arr[i].value, compared 466 with 0
+pb entered if tempdata != arr[i].value, compared 106 with 0
+pb entered if tempdata != arr[i].value, compared 112 with 0
+pb entered if tempdata != arr[i].value, compared 375 with 0
+pb entered if tempdata != arr[i].value, compared 306 with 0
+pb entered if tempdata != arr[i].value, compared 340 with 0
+pb entered if tempdata != arr[i].value, compared 438 with 0
+pb entered if tempdata != arr[i].value, compared 141 with 0
+pb entered if tempdata != arr[i].value, compared 19 with 0
+pb entered if tempdata != arr[i].value, compared 149 with 0
+pb entered if tempdata != arr[i].value, compared 444 with 0
+pb entered if tempdata != arr[i].value, compared 132 with 0
+pb entered if tempdata != arr[i].value, compared 238 with 0
+pb entered if tempdata != arr[i].value, compared 275 with 0
+pb entered if tempdata != arr[i].value, compared 354 with 0
+pb entered if tempdata != arr[i].value, compared 251 with 0
+pb entered if tempdata != arr[i].value, compared 96 with 0
+pb entered if tempdata != arr[i].value, compared 46 with 0
+pb entered if tempdata != arr[i].value, compared 363 with 0
+pb entered if tempdata != arr[i].value, compared 442 with 0
+pb entered if tempdata != arr[i].value, compared 405 with 0
+pb entered if tempdata != arr[i].value, compared 458 with 0
+pb entered if tempdata != arr[i].value, compared 7 with 0
+pb entered if tempdata != arr[i].value, compared 178 with 0
+pb entered if tempdata != arr[i].value, compared 31 with 0
+pb entered if tempdata != arr[i].value, compared 23 with 0
+pb entered if tempdata != arr[i].value, compared 91 with 0
+pb entered if tempdata != arr[i].value, compared 463 with 0
+pb entered if tempdata != arr[i].value, compared 184 with 0
+pb entered if tempdata != arr[i].value, compared 225 with 0
+pb entered if tempdata != arr[i].value, compared 209 with 0
+pb entered if tempdata != arr[i].value, compared 344 with 0
+pb entered if tempdata != arr[i].value, compared 374 with 0
+pb entered if tempdata != arr[i].value, compared 268 with 0
+pb entered if tempdata != arr[i].value, compared 260 with 0
+pb entered if tempdata != arr[i].value, compared 242 with 0
+pb entered if tempdata != arr[i].value, compared 54 with 0
+pb entered if tempdata != arr[i].value, compared 435 with 0
+pb entered if tempdata != arr[i].value, compared 62 with 0
+pb entered if tempdata != arr[i].value, compared 230 with 0
+pb entered if tempdata != arr[i].value, compared 400 with 0
+pb entered if tempdata != arr[i].value, compared 348 with 0
+pb entered if tempdata != arr[i].value, compared 315 with 0
+pb entered if tempdata != arr[i].value, compared 371 with 0
+pb entered if tempdata != arr[i].value, compared 325 with 0
+pb entered if tempdata != arr[i].value, compared 382 with 0
+pb entered if tempdata != arr[i].value, compared 309 with 0
+pb entered if tempdata != arr[i].value, compared 126 with 0
+pb entered if tempdata != arr[i].value, compared 173 with 0
+pb entered if tempdata != arr[i].value, compared 419 with 0
+pb entered if tempdata != arr[i].value, compared 319 with 0
+pb entered if tempdata != arr[i].value, compared 207 with 0
+pb entered if tempdata != arr[i].value, compared 288 with 0
+pb entered if tempdata != arr[i].value, compared 481 with 0
+pb entered if tempdata != arr[i].value, compared 228 with 0
+pb entered if tempdata != arr[i].value, compared 289 with 0
+pb entered if tempdata != arr[i].value, compared 423 with 0
+pb entered if tempdata != arr[i].value, compared 119 with 0
+pb entered if tempdata != arr[i].value, compared 447 with 0
+pb entered if tempdata != arr[i].value, compared 329 with 0
+pb entered if tempdata != arr[i].value, compared 263 with 0
+pb entered if tempdata != arr[i].value, compared 304 with 0
+pb entered if tempdata != arr[i].value, compared 24 with 0
+pb entered if tempdata != arr[i].value, compared 498 with 0
+pb entered if tempdata != arr[i].value, compared 470 with 0
+pb entered if tempdata != arr[i].value, compared 120 with 0
+pb entered if tempdata != arr[i].value, compared 172 with 0
+pb entered if tempdata != arr[i].value, compared 390 with 0
+pb entered if tempdata != arr[i].value, compared 301 with 0
+pb entered if tempdata != arr[i].value, compared 330 with 0
+pb entered if tempdata != arr[i].value, compared 430 with 0
+pb entered if tempdata != arr[i].value, compared 381 with 0
+pb entered if tempdata != arr[i].value, compared 332 with 0
+pb entered if tempdata != arr[i].value, compared 312 with 0
+pb entered if tempdata != arr[i].value, compared 494 with 0
+pb entered if tempdata != arr[i].value, compared 366 with 0
+pb entered if tempdata != arr[i].value, compared 18 with 0
+pb entered if tempdata != arr[i].value, compared 396 with 0
+pb entered if tempdata != arr[i].value, compared 404 with 0
+pb entered if tempdata != arr[i].value, compared 497 with 0
+pb entered if tempdata != arr[i].value, compared 164 with 0
+pb entered if tempdata != arr[i].value, compared 261 with 0
+pb entered if tempdata != arr[i].value, compared 287 with 0
+pb entered if tempdata != arr[i].value, compared 111 with 0
+pb entered if tempdata != arr[i].value, compared 265 with 0
+pb entered if tempdata != arr[i].value, compared 34 with 0
+pb entered if tempdata != arr[i].value, compared 441 with 0
+pb entered if tempdata != arr[i].value, compared 422 with 0
+pb entered if tempdata != arr[i].value, compared 35 with 0
+pb entered if tempdata != arr[i].value, compared 276 with 0
+pb entered if tempdata != arr[i].value, compared 88 with 0
+pb entered if tempdata != arr[i].value, compared 488 with 0
+pb entered if tempdata != arr[i].value, compared 175 with 0
+pb entered if tempdata != arr[i].value, compared 286 with 0
+pb entered if tempdata != arr[i].value, compared 355 with 0
+pb entered if tempdata != arr[i].value, compared 28 with 0
+pb entered if tempdata != arr[i].value, compared 350 with 0
+pb entered if tempdata != arr[i].value, compared 8 with 0
+pb entered if tempdata != arr[i].value, compared 410 with 0
+pb entered if tempdata != arr[i].value, compared 310 with 0
+pb entered if tempdata != arr[i].value, compared 84 with 0
+pb entered if tempdata != arr[i].value, compared 198 with 0
+pb entered if tempdata != arr[i].value, compared 85 with 0
+pb entered if tempdata != arr[i].value, compared 429 with 0
+pb entered if tempdata != arr[i].value, compared 10 with 0
+pb entered if tempdata != arr[i].value, compared 223 with 0
+pb entered if tempdata != arr[i].value, compared 337 with 0
+pb entered if tempdata != arr[i].value, compared 33 with 0
+pb entered if tempdata != arr[i].value, compared 323 with 0
+pb entered if tempdata != arr[i].value, compared 181 with 0
+pb entered if tempdata != arr[i].value, compared 188 with 0
+pb entered if tempdata != arr[i].value, compared 343 with 0
+pb entered if tempdata != arr[i].value, compared 365 with 0
+pb entered if tempdata != arr[i].value, compared 92 with 0
+pb entered if tempdata != arr[i].value, compared 208 with 0
+pb entered if tempdata != arr[i].value, compared 318 with 0
+pb entered if tempdata != arr[i].value, compared 415 with 0
+pb entered if tempdata != arr[i].value, compared 16 with 0
+pb entered if tempdata != arr[i].value, compared 236 with 0
+pb entered if tempdata != arr[i].value, compared 259 with 0
+pb entered if tempdata != arr[i].value, compared 484 with 0
+pb entered if tempdata != arr[i].value, compared 313 with 0
+pb entered if tempdata != arr[i].value, compared 116 with 0
+pb entered if tempdata != arr[i].value, compared 227 with 0
+pb entered if tempdata != arr[i].value, compared 316 with 0
+pb entered if tempdata != arr[i].value, compared 436 with 0
+pb entered if tempdata != arr[i].value, compared 338 with 0
+pb entered if tempdata != arr[i].value, compared 180 with 0
+pb entered if tempdata != arr[i].value, compared 399 with 0
+pb entered if tempdata != arr[i].value, compared 408 with 0
+pb entered if tempdata != arr[i].value, compared 47 with 0
+pb entered if tempdata != arr[i].value, compared 67 with 0
+pb entered if tempdata != arr[i].value, compared 150 with 0
+pb entered if tempdata != arr[i].value, compared 262 with 0
+pb entered if tempdata != arr[i].value, compared 335 with 0
+pb entered if tempdata != arr[i].value, compared 154 with 0
+pb entered if tempdata != arr[i].value, compared 130 with 0
+pb entered if tempdata != arr[i].value, compared 322 with 0
+pb entered if tempdata != arr[i].value, compared 76 with 0
+pb entered if tempdata != arr[i].value, compared 372 with 0
+pb entered if tempdata != arr[i].value, compared 210 with 0
+pb entered if tempdata != arr[i].value, compared 395 with 0
+pb entered if tempdata != arr[i].value, compared 487 with 0
+pb entered if tempdata != arr[i].value, compared 282 with 0
+pb entered if tempdata != arr[i].value, compared 283 with 0
+pb entered if tempdata != arr[i].value, compared 143 with 0
+pb entered if tempdata != arr[i].value, compared 9 with 0
+pb entered if tempdata != arr[i].value, compared 284 with 0
+pb entered if tempdata != arr[i].value, compared 127 with 0
+pb entered if tempdata != arr[i].value, compared 79 with 0
+pb entered if tempdata != arr[i].value, compared 465 with 0
+pb entered if tempdata != arr[i].value, compared 160 with 0
+pb entered if tempdata != arr[i].value, compared 258 with 0
+pb entered if tempdata != arr[i].value, compared 219 with 0
+pb entered if tempdata != arr[i].value, compared 434 with 0
+pb entered if tempdata != arr[i].value, compared 380 with 0
+pb entered if tempdata != arr[i].value, compared 162 with 0
+pb entered if tempdata != arr[i].value, compared 142 with 0
+pb entered if tempdata != arr[i].value, compared 345 with 0
+pb entered if tempdata != arr[i].value, compared 200 with 0
+pb entered if tempdata != arr[i].value, compared 480 with 0
+pb entered if tempdata != arr[i].value, compared 63 with 0
+pb entered if tempdata != arr[i].value, compared 114 with 0
+pb entered if tempdata != arr[i].value, compared 327 with 0
+pb entered if tempdata != arr[i].value, compared 30 with 0
+pb entered if tempdata != arr[i].value, compared 462 with 0
+pb entered if tempdata != arr[i].value, compared 80 with 0
+pb entered if tempdata != arr[i].value, compared 274 with 0
+pb entered if tempdata != arr[i].value, compared 376 with 0
+pb entered if tempdata != arr[i].value, compared 201 with 0
+pb entered if tempdata != arr[i].value, compared 174 with 0
+pb entered if tempdata != arr[i].value, compared 117 with 0
+pb entered if tempdata != arr[i].value, compared 495 with 0
+pb entered if tempdata != arr[i].value, compared 431 with 0
+pb entered if tempdata != arr[i].value, compared 40 with 0
+pb entered if tempdata != arr[i].value, compared 14 with 0
+pb entered if tempdata != arr[i].value, compared 308 with 0
+pb entered if tempdata != arr[i].value, compared 424 with 0
+pb entered if tempdata != arr[i].value, compared 246 with 0
+pb entered if tempdata != arr[i].value, compared 69 with 0
+pb entered if tempdata != arr[i].value, compared 70 with 0
+pb entered if tempdata != arr[i].value, compared 90 with 0
+pb Element 0 is = to 0 
+ra
+entered if tempdata != arr[i].value, compared 378 with 1
+pb entered if tempdata != arr[i].value, compared 454 with 1
+pb entered if tempdata != arr[i].value, compared 267 with 1
+pb entered if tempdata != arr[i].value, compared 386 with 1
+pb entered if tempdata != arr[i].value, compared 179 with 1
+pb entered if tempdata != arr[i].value, compared 331 with 1
+pb entered if tempdata != arr[i].value, compared 362 with 1
+pb entered if tempdata != arr[i].value, compared 384 with 1
+pb entered if tempdata != arr[i].value, compared 115 with 1
+pb entered if tempdata != arr[i].value, compared 4 with 1
+pb entered if tempdata != arr[i].value, compared 281 with 1
+pb entered if tempdata != arr[i].value, compared 437 with 1
+pb entered if tempdata != arr[i].value, compared 339 with 1
+pb entered if tempdata != arr[i].value, compared 279 with 1
+pb entered if tempdata != arr[i].value, compared 296 with 1
+pb entered if tempdata != arr[i].value, compared 388 with 1
+pb entered if tempdata != arr[i].value, compared 456 with 1
+pb entered if tempdata != arr[i].value, compared 113 with 1
+pb entered if tempdata != arr[i].value, compared 134 with 1
+pb entered if tempdata != arr[i].value, compared 271 with 1
+pb entered if tempdata != arr[i].value, compared 351 with 1
+pb entered if tempdata != arr[i].value, compared 243 with 1
+pb entered if tempdata != arr[i].value, compared 244 with 1
+pb entered if tempdata != arr[i].value, compared 270 with 1
+pb entered if tempdata != arr[i].value, compared 3 with 1
+pb entered if tempdata != arr[i].value, compared 53 with 1
+pb entered if tempdata != arr[i].value, compared 445 with 1
+pb entered if tempdata != arr[i].value, compared 86 with 1
+pb entered if tempdata != arr[i].value, compared 216 with 1
+pb entered if tempdata != arr[i].value, compared 140 with 1
+pb entered if tempdata != arr[i].value, compared 285 with 1
+pb entered if tempdata != arr[i].value, compared 428 with 1
+pb entered if tempdata != arr[i].value, compared 211 with 1
+pb entered if tempdata != arr[i].value, compared 413 with 1
+pb entered if tempdata != arr[i].value, compared 412 with 1
+pb entered if tempdata != arr[i].value, compared 56 with 1
+pb entered if tempdata != arr[i].value, compared 59 with 1
+pb entered if tempdata != arr[i].value, compared 448 with 1
+pb entered if tempdata != arr[i].value, compared 459 with 1
+pb entered if tempdata != arr[i].value, compared 205 with 1
+pb entered if tempdata != arr[i].value, compared 299 with 1
+pb entered if tempdata != arr[i].value, compared 231 with 1
+pb entered if tempdata != arr[i].value, compared 177 with 1
+pb entered if tempdata != arr[i].value, compared 492 with 1
+pb entered if tempdata != arr[i].value, compared 215 with 1
+pb entered if tempdata != arr[i].value, compared 196 with 1
+pb entered if tempdata != arr[i].value, compared 217 with 1
+pb entered if tempdata != arr[i].value, compared 252 with 1
+pb entered if tempdata != arr[i].value, compared 234 with 1
+pb entered if tempdata != arr[i].value, compared 317 with 1
+pb entered if tempdata != arr[i].value, compared 397 with 1
+pb entered if tempdata != arr[i].value, compared 256 with 1
+pb entered if tempdata != arr[i].value, compared 2 with 1
+pb entered if tempdata != arr[i].value, compared 163 with 1
+pb entered if tempdata != arr[i].value, compared 364 with 1
+pb entered if tempdata != arr[i].value, compared 55 with 1
+pb entered if tempdata != arr[i].value, compared 235 with 1
+pb entered if tempdata != arr[i].value, compared 197 with 1
+pb entered if tempdata != arr[i].value, compared 278 with 1
+pb entered if tempdata != arr[i].value, compared 144 with 1
+pb entered if tempdata != arr[i].value, compared 473 with 1
+pb entered if tempdata != arr[i].value, compared 358 with 1
+pb entered if tempdata != arr[i].value, compared 370 with 1
+pb entered if tempdata != arr[i].value, compared 393 with 1
+pb entered if tempdata != arr[i].value, compared 302 with 1
+pb entered if tempdata != arr[i].value, compared 482 with 1
+pb entered if tempdata != arr[i].value, compared 297 with 1
+pb entered if tempdata != arr[i].value, compared 218 with 1
+pb entered if tempdata != arr[i].value, compared 58 with 1
+pb entered if tempdata != arr[i].value, compared 407 with 1
+pb entered if tempdata != arr[i].value, compared 483 with 1
+pb entered if tempdata != arr[i].value, compared 369 with 1
+pb entered if tempdata != arr[i].value, compared 417 with 1
+pb entered if tempdata != arr[i].value, compared 455 with 1
+pb entered if tempdata != arr[i].value, compared 377 with 1
+pb entered if tempdata != arr[i].value, compared 349 with 1
+pb entered if tempdata != arr[i].value, compared 145 with 1
+pb entered if tempdata != arr[i].value, compared 100 with 1
+pb entered if tempdata != arr[i].value, compared 38 with 1
+pb entered if tempdata != arr[i].value, compared 403 with 1
+pb entered if tempdata != arr[i].value, compared 6 with 1
+pb entered if tempdata != arr[i].value, compared 21 with 1
+pb entered if tempdata != arr[i].value, compared 406 with 1
+pb entered if tempdata != arr[i].value, compared 272 with 1
+pb entered if tempdata != arr[i].value, compared 97 with 1
+pb entered if tempdata != arr[i].value, compared 37 with 1
+pb entered if tempdata != arr[i].value, compared 186 with 1
+pb entered if tempdata != arr[i].value, compared 257 with 1
+pb entered if tempdata != arr[i].value, compared 290 with 1
+pb entered if tempdata != arr[i].value, compared 61 with 1
+pb entered if tempdata != arr[i].value, compared 474 with 1
+pb entered if tempdata != arr[i].value, compared 391 with 1
+pb entered if tempdata != arr[i].value, compared 213 with 1
+pb entered if tempdata != arr[i].value, compared 359 with 1
+pb entered if tempdata != arr[i].value, compared 398 with 1
+pb entered if tempdata != arr[i].value, compared 187 with 1
+pb entered if tempdata != arr[i].value, compared 411 with 1
+pb entered if tempdata != arr[i].value, compared 72 with 1
+pb entered if tempdata != arr[i].value, compared 479 with 1
+pb entered if tempdata != arr[i].value, compared 15 with 1
+pb entered if tempdata != arr[i].value, compared 169 with 1
+pb entered if tempdata != arr[i].value, compared 245 with 1
+pb entered if tempdata != arr[i].value, compared 460 with 1
+pb entered if tempdata != arr[i].value, compared 42 with 1
+pb entered if tempdata != arr[i].value, compared 385 with 1
+pb entered if tempdata != arr[i].value, compared 254 with 1
+pb entered if tempdata != arr[i].value, compared 109 with 1
+pb entered if tempdata != arr[i].value, compared 292 with 1
+pb entered if tempdata != arr[i].value, compared 29 with 1
+pb entered if tempdata != arr[i].value, compared 78 with 1
+pb entered if tempdata != arr[i].value, compared 477 with 1
+pb entered if tempdata != arr[i].value, compared 241 with 1
+pb entered if tempdata != arr[i].value, compared 291 with 1
+pb entered if tempdata != arr[i].value, compared 49 with 1
+pb entered if tempdata != arr[i].value, compared 191 with 1
+pb entered if tempdata != arr[i].value, compared 131 with 1
+pb entered if tempdata != arr[i].value, compared 83 with 1
+pb entered if tempdata != arr[i].value, compared 440 with 1
+pb entered if tempdata != arr[i].value, compared 457 with 1
+pb entered if tempdata != arr[i].value, compared 107 with 1
+pb entered if tempdata != arr[i].value, compared 101 with 1
+pb entered if tempdata != arr[i].value, compared 379 with 1
+pb entered if tempdata != arr[i].value, compared 368 with 1
+pb entered if tempdata != arr[i].value, compared 32 with 1
+pb entered if tempdata != arr[i].value, compared 416 with 1
+pb entered if tempdata != arr[i].value, compared 22 with 1
+pb entered if tempdata != arr[i].value, compared 334 with 1
+pb entered if tempdata != arr[i].value, compared 347 with 1
+pb entered if tempdata != arr[i].value, compared 451 with 1
+pb entered if tempdata != arr[i].value, compared 383 with 1
+pb entered if tempdata != arr[i].value, compared 249 with 1
+pb entered if tempdata != arr[i].value, compared 89 with 1
+pb entered if tempdata != arr[i].value, compared 74 with 1
+pb entered if tempdata != arr[i].value, compared 202 with 1
+pb entered if tempdata != arr[i].value, compared 253 with 1
+pb entered if tempdata != arr[i].value, compared 189 with 1
+pb entered if tempdata != arr[i].value, compared 499 with 1
+pb entered if tempdata != arr[i].value, compared 452 with 1
+pb entered if tempdata != arr[i].value, compared 307 with 1
+pb entered if tempdata != arr[i].value, compared 321 with 1
+pb entered if tempdata != arr[i].value, compared 122 with 1
+pb entered if tempdata != arr[i].value, compared 152 with 1
+pb entered if tempdata != arr[i].value, compared 104 with 1
+pb entered if tempdata != arr[i].value, compared 45 with 1
+pb entered if tempdata != arr[i].value, compared 373 with 1
+pb entered if tempdata != arr[i].value, compared 240 with 1
+pb entered if tempdata != arr[i].value, compared 214 with 1
+pb entered if tempdata != arr[i].value, compared 489 with 1
+pb entered if tempdata != arr[i].value, compared 220 with 1
+pb entered if tempdata != arr[i].value, compared 360 with 1
+pb entered if tempdata != arr[i].value, compared 467 with 1
+pb entered if tempdata != arr[i].value, compared 133 with 1
+pb entered if tempdata != arr[i].value, compared 414 with 1
+pb entered if tempdata != arr[i].value, compared 168 with 1
+pb entered if tempdata != arr[i].value, compared 389 with 1
+pb list a 
+Data: -1, Address: 0xeafa80
+Data: 0, Address: 0xeb25a0
+list b 
+Data: 389, Address: 0xeb3900
+Data: 168, Address: 0xeb38e0
+Data: 414, Address: 0xeb38c0
+Data: 133, Address: 0xeb38a0
+Data: 467, Address: 0xeb3880
+Data: 360, Address: 0xeb3860
+Data: 220, Address: 0xeb3840
+Data: 489, Address: 0xeb3820
+Data: 214, Address: 0xeb3800
+Data: 240, Address: 0xeb37e0
+Data: 373, Address: 0xeb37c0
+Data: 45, Address: 0xeb37a0
+Data: 104, Address: 0xeb3780
+Data: 152, Address: 0xeb3760
+Data: 122, Address: 0xeb3740
+Data: 321, Address: 0xeb3720
+Data: 307, Address: 0xeb3700
+Data: 452, Address: 0xeb36e0
+Data: 499, Address: 0xeb36c0
+Data: 189, Address: 0xeb36a0
+Data: 253, Address: 0xeb3680
+Data: 202, Address: 0xeb3660
+Data: 74, Address: 0xeb3640
+Data: 89, Address: 0xeb3620
+Data: 249, Address: 0xeb3600
+Data: 383, Address: 0xeb35e0
+Data: 451, Address: 0xeb35c0
+Data: 347, Address: 0xeb35a0
+Data: 334, Address: 0xeb3580
+Data: 22, Address: 0xeb3560
+Data: 416, Address: 0xeb3540
+Data: 32, Address: 0xeb3520
+Data: 368, Address: 0xeb3500
+Data: 379, Address: 0xeb34e0
+Data: 101, Address: 0xeb34c0
+Data: 107, Address: 0xeb34a0
+Data: 457, Address: 0xeb3480
+Data: 440, Address: 0xeb3460
+Data: 83, Address: 0xeb3440
+Data: 131, Address: 0xeb3420
+Data: 191, Address: 0xeb3400
+Data: 49, Address: 0xeb33e0
+Data: 291, Address: 0xeb33c0
+Data: 241, Address: 0xeb33a0
+Data: 477, Address: 0xeb3380
+Data: 78, Address: 0xeb3360
+Data: 29, Address: 0xeb3340
+Data: 292, Address: 0xeb3320
+Data: 109, Address: 0xeb3300
+Data: 254, Address: 0xeb32e0
+Data: 385, Address: 0xeb32c0
+Data: 42, Address: 0xeb32a0
+Data: 460, Address: 0xeb3280
+Data: 245, Address: 0xeb3260
+Data: 169, Address: 0xeb3240
+Data: 15, Address: 0xeb3220
+Data: 479, Address: 0xeb3200
+Data: 72, Address: 0xeb31e0
+Data: 411, Address: 0xeb31c0
+Data: 187, Address: 0xeb31a0
+Data: 398, Address: 0xeb3180
+Data: 359, Address: 0xeb3160
+Data: 213, Address: 0xeb3140
+Data: 391, Address: 0xeb3120
+Data: 474, Address: 0xeb3100
+Data: 61, Address: 0xeb30e0
+Data: 290, Address: 0xeb30c0
+Data: 257, Address: 0xeb30a0
+Data: 186, Address: 0xeb3080
+Data: 37, Address: 0xeb3060
+Data: 97, Address: 0xeb3040
+Data: 272, Address: 0xeb3020
+Data: 406, Address: 0xeb3000
+Data: 21, Address: 0xeb2fe0
+Data: 6, Address: 0xeb2fc0
+Data: 403, Address: 0xeb2fa0
+Data: 38, Address: 0xeb2f80
+Data: 100, Address: 0xeb2f60
+Data: 145, Address: 0xeb2f40
+Data: 349, Address: 0xeb2f20
+Data: 377, Address: 0xeb2f00
+Data: 455, Address: 0xeb2ee0
+Data: 417, Address: 0xeb2ec0
+Data: 369, Address: 0xeb2ea0
+Data: 483, Address: 0xeb2e80
+Data: 407, Address: 0xeb2e60
+Data: 58, Address: 0xeb2e40
+Data: 218, Address: 0xeb2e20
+Data: 297, Address: 0xeb2e00
+Data: 482, Address: 0xeb2de0
+Data: 302, Address: 0xeb2dc0
+Data: 393, Address: 0xeb2da0
+Data: 370, Address: 0xeb2d80
+Data: 358, Address: 0xeb2d60
+Data: 473, Address: 0xeb2d40
+Data: 144, Address: 0xeb2d20
+Data: 278, Address: 0xeb2d00
+Data: 197, Address: 0xeb2ce0
+Data: 235, Address: 0xeb2cc0
+Data: 55, Address: 0xeb2ca0
+Data: 364, Address: 0xeb2c80
+Data: 163, Address: 0xeb2c60
+Data: 2, Address: 0xeb2c40
+Data: 256, Address: 0xeb2c20
+Data: 397, Address: 0xeb2c00
+Data: 317, Address: 0xeb2be0
+Data: 234, Address: 0xeb2bc0
+Data: 252, Address: 0xeb2ba0
+Data: 217, Address: 0xeb2b80
+Data: 196, Address: 0xeb2b60
+Data: 215, Address: 0xeb2b40
+Data: 492, Address: 0xeb2b20
+Data: 177, Address: 0xeb2b00
+Data: 231, Address: 0xeb2ae0
+Data: 299, Address: 0xeb2ac0
+Data: 205, Address: 0xeb2aa0
+Data: 459, Address: 0xeb2a80
+Data: 448, Address: 0xeb2a60
+Data: 59, Address: 0xeb2a40
+Data: 56, Address: 0xeb2a20
+Data: 412, Address: 0xeb2a00
+Data: 413, Address: 0xeb29e0
+Data: 211, Address: 0xeb29c0
+Data: 428, Address: 0xeb29a0
+Data: 285, Address: 0xeb2980
+Data: 140, Address: 0xeb2960
+Data: 216, Address: 0xeb2940
+Data: 86, Address: 0xeb2920
+Data: 445, Address: 0xeb2900
+Data: 53, Address: 0xeb28e0
+Data: 3, Address: 0xeb28c0
+Data: 270, Address: 0xeb28a0
+Data: 244, Address: 0xeb2880
+Data: 243, Address: 0xeb2860
+Data: 351, Address: 0xeb2840
+Data: 271, Address: 0xeb2820
+Data: 134, Address: 0xeb2800
+Data: 113, Address: 0xeb27e0
+Data: 456, Address: 0xeb27c0
+Data: 388, Address: 0xeb27a0
+Data: 296, Address: 0xeb2780
+Data: 279, Address: 0xeb2760
+Data: 339, Address: 0xeb2740
+Data: 437, Address: 0xeb2720
+Data: 281, Address: 0xeb2700
+Data: 4, Address: 0xeb26e0
+Data: 115, Address: 0xeb26c0
+Data: 384, Address: 0xeb26a0
+Data: 362, Address: 0xeb2680
+Data: 331, Address: 0xeb2660
+Data: 179, Address: 0xeb2640
+Data: 386, Address: 0xeb2620
+Data: 267, Address: 0xeb2600
+Data: 454, Address: 0xeb25e0
+Data: 378, Address: 0xeb25c0
+Data: 90, Address: 0xeb2580
+Data: 70, Address: 0xeb2560
+Data: 69, Address: 0xeb2540
+Data: 246, Address: 0xeb2520
+Data: 424, Address: 0xeb2500
+Data: 308, Address: 0xeb24e0
+Data: 14, Address: 0xeb24c0
+Data: 40, Address: 0xeb24a0
+Data: 431, Address: 0xeb2480
+Data: 495, Address: 0xeb2460
+Data: 117, Address: 0xeb2440
+Data: 174, Address: 0xeb2420
+Data: 201, Address: 0xeb2400
+Data: 376, Address: 0xeb23e0
+Data: 274, Address: 0xeb23c0
+Data: 80, Address: 0xeb23a0
+Data: 462, Address: 0xeb2380
+Data: 30, Address: 0xeb2360
+Data: 327, Address: 0xeb2340
+Data: 114, Address: 0xeb2320
+Data: 63, Address: 0xeb2300
+Data: 480, Address: 0xeb22e0
+Data: 200, Address: 0xeb22c0
+Data: 345, Address: 0xeb22a0
+Data: 142, Address: 0xeb2280
+Data: 162, Address: 0xeb2260
+Data: 380, Address: 0xeb2240
+Data: 434, Address: 0xeb2220
+Data: 219, Address: 0xeb2200
+Data: 258, Address: 0xeb21e0
+Data: 160, Address: 0xeb21c0
+Data: 465, Address: 0xeb21a0
+Data: 79, Address: 0xeb2180
+Data: 127, Address: 0xeb2160
+Data: 284, Address: 0xeb2140
+Data: 9, Address: 0xeb2120
+Data: 143, Address: 0xeb2100
+Data: 283, Address: 0xeb20e0
+Data: 282, Address: 0xeb20c0
+Data: 487, Address: 0xeb20a0
+Data: 395, Address: 0xeb2080
+Data: 210, Address: 0xeb2060
+Data: 372, Address: 0xeb2040
+Data: 76, Address: 0xeb2020
+Data: 322, Address: 0xeb2000
+Data: 130, Address: 0xeb1fe0
+Data: 154, Address: 0xeb1fc0
+Data: 335, Address: 0xeb1fa0
+Data: 262, Address: 0xeb1f80
+Data: 150, Address: 0xeb1f60
+Data: 67, Address: 0xeb1f40
+Data: 47, Address: 0xeb1f20
+Data: 408, Address: 0xeb1f00
+Data: 399, Address: 0xeb1ee0
+Data: 180, Address: 0xeb1ec0
+Data: 338, Address: 0xeb1ea0
+Data: 436, Address: 0xeb1e80
+Data: 316, Address: 0xeb1e60
+Data: 227, Address: 0xeb1e40
+Data: 116, Address: 0xeb1e20
+Data: 313, Address: 0xeb1e00
+Data: 484, Address: 0xeb1de0
+Data: 259, Address: 0xeb1dc0
+Data: 236, Address: 0xeb1da0
+Data: 16, Address: 0xeb1d80
+Data: 415, Address: 0xeb1d60
+Data: 318, Address: 0xeb1d40
+Data: 208, Address: 0xeb1d20
+Data: 92, Address: 0xeb1d00
+Data: 365, Address: 0xeb1ce0
+Data: 343, Address: 0xeb1cc0
+Data: 188, Address: 0xeb1ca0
+Data: 181, Address: 0xeb1c80
+Data: 323, Address: 0xeb1c60
+Data: 33, Address: 0xeb1c40
+Data: 337, Address: 0xeb1c20
+Data: 223, Address: 0xeb1c00
+Data: 10, Address: 0xeb1be0
+Data: 429, Address: 0xeb1bc0
+Data: 85, Address: 0xeb1ba0
+Data: 198, Address: 0xeb1b80
+Data: 84, Address: 0xeb1b60
+Data: 310, Address: 0xeb1b40
+Data: 410, Address: 0xeb1b20
+Data: 8, Address: 0xeb1b00
+Data: 350, Address: 0xeb1ae0
+Data: 28, Address: 0xeb1ac0
+Data: 355, Address: 0xeb1aa0
+Data: 286, Address: 0xeb1a80
+Data: 175, Address: 0xeb1a60
+Data: 488, Address: 0xeb1a40
+Data: 88, Address: 0xeb1a20
+Data: 276, Address: 0xeb1a00
+Data: 35, Address: 0xeb19e0
+Data: 422, Address: 0xeb19c0
+Data: 441, Address: 0xeb19a0
+Data: 34, Address: 0xeb1980
+Data: 265, Address: 0xeb1960
+Data: 111, Address: 0xeb1940
+Data: 287, Address: 0xeb1920
+Data: 261, Address: 0xeb1900
+Data: 164, Address: 0xeb18e0
+Data: 497, Address: 0xeb18c0
+Data: 404, Address: 0xeb18a0
+Data: 396, Address: 0xeb1880
+Data: 18, Address: 0xeb1860
+Data: 366, Address: 0xeb1840
+Data: 494, Address: 0xeb1820
+Data: 312, Address: 0xeb1800
+Data: 332, Address: 0xeb17e0
+Data: 381, Address: 0xeb17c0
+Data: 430, Address: 0xeb17a0
+Data: 330, Address: 0xeb1780
+Data: 301, Address: 0xeb1760
+Data: 390, Address: 0xeb1740
+Data: 172, Address: 0xeb1720
+Data: 120, Address: 0xeb1700
+Data: 470, Address: 0xeb16e0
+Data: 498, Address: 0xeb16c0
+Data: 24, Address: 0xeb16a0
+Data: 304, Address: 0xeb1680
+Data: 263, Address: 0xeb1660
+Data: 329, Address: 0xeb1640
+Data: 447, Address: 0xeb1620
+Data: 119, Address: 0xeb1600
+Data: 423, Address: 0xeb15e0
+Data: 289, Address: 0xeb15c0
+Data: 228, Address: 0xeb15a0
+Data: 481, Address: 0xeb1580
+Data: 288, Address: 0xeb1560
+Data: 207, Address: 0xeb1540
+Data: 319, Address: 0xeb1520
+Data: 419, Address: 0xeb1500
+Data: 173, Address: 0xeb14e0
+Data: 126, Address: 0xeb14c0
+Data: 309, Address: 0xeb14a0
+Data: 382, Address: 0xeb1480
+Data: 325, Address: 0xeb1460
+Data: 371, Address: 0xeb1440
+Data: 315, Address: 0xeb1420
+Data: 348, Address: 0xeb1400
+Data: 400, Address: 0xeb13e0
+Data: 230, Address: 0xeb13c0
+Data: 62, Address: 0xeb13a0
+Data: 435, Address: 0xeb1380
+Data: 54, Address: 0xeb1360
+Data: 242, Address: 0xeb1340
+Data: 260, Address: 0xeb1320
+Data: 268, Address: 0xeb1300
+Data: 374, Address: 0xeb12e0
+Data: 344, Address: 0xeb12c0
+Data: 209, Address: 0xeb12a0
+Data: 225, Address: 0xeb1280
+Data: 184, Address: 0xeb1260
+Data: 463, Address: 0xeb1240
+Data: 91, Address: 0xeb1220
+Data: 23, Address: 0xeb1200
+Data: 31, Address: 0xeb11e0
+Data: 178, Address: 0xeb11c0
+Data: 7, Address: 0xeb11a0
+Data: 458, Address: 0xeb1180
+Data: 405, Address: 0xeb1160
+Data: 442, Address: 0xeb1140
+Data: 363, Address: 0xeb1120
+Data: 46, Address: 0xeb1100
+Data: 96, Address: 0xeb10e0
+Data: 251, Address: 0xeb10c0
+Data: 354, Address: 0xeb10a0
+Data: 275, Address: 0xeb1080
+Data: 238, Address: 0xeb1060
+Data: 132, Address: 0xeb1040
+Data: 444, Address: 0xeb1020
+Data: 149, Address: 0xeb1000
+Data: 19, Address: 0xeb0fe0
+Data: 141, Address: 0xeb0fc0
+Data: 438, Address: 0xeb0fa0
+Data: 340, Address: 0xeb0f80
+Data: 306, Address: 0xeb0f60
+Data: 375, Address: 0xeb0f40
+Data: 112, Address: 0xeb0f20
+Data: 106, Address: 0xeb0f00
+Data: 466, Address: 0xeb0ee0
+Data: 496, Address: 0xeb0ec0
+Data: 99, Address: 0xeb0ea0
+Data: 229, Address: 0xeb0e80
+Data: 248, Address: 0xeb0e60
+Data: 294, Address: 0xeb0e40
+Data: 469, Address: 0xeb0e20
+Data: 233, Address: 0xeb0e00
+Data: 190, Address: 0xeb0de0
+Data: 401, Address: 0xeb0dc0
+Data: 206, Address: 0xeb0da0
+Data: 303, Address: 0xeb0d80
+Data: 336, Address: 0xeb0d60
+Data: 176, Address: 0xeb0d40
+Data: 11, Address: 0xeb0d20
+Data: 353, Address: 0xeb0d00
+Data: 82, Address: 0xeb0ce0
+Data: 71, Address: 0xeb0cc0
+Data: 77, Address: 0xeb0ca0
+Data: 314, Address: 0xeb0c80
+Data: 433, Address: 0xeb0c60
+Data: 81, Address: 0xeb0c40
+Data: 25, Address: 0xeb0c20
+Data: 204, Address: 0xeb0c00
+Data: 93, Address: 0xeb0be0
+Data: 183, Address: 0xeb0bc0
+Data: 239, Address: 0xeb0ba0
+Data: 20, Address: 0xeb0b80
+Data: 449, Address: 0xeb0b60
+Data: 166, Address: 0xeb0b40
+Data: 295, Address: 0xeb0b20
+Data: 157, Address: 0xeb0b00
+Data: 43, Address: 0xeb0ae0
+Data: 203, Address: 0xeb0ac0
+Data: 361, Address: 0xeb0aa0
+Data: 357, Address: 0xeb0a80
+Data: 5, Address: 0xeb0a60
+Data: 486, Address: 0xeb0a40
+Data: 305, Address: 0xeb0a20
+Data: 273, Address: 0xeb0a00
+Data: 44, Address: 0xeb09e0
+Data: 311, Address: 0xeb09c0
+Data: 153, Address: 0xeb09a0
+Data: 324, Address: 0xeb0980
+Data: 48, Address: 0xeb0960
+Data: 68, Address: 0xeb0940
+Data: 293, Address: 0xeb0920
+Data: 226, Address: 0xeb0900
+Data: 320, Address: 0xeb08e0
+Data: 224, Address: 0xeb08c0
+Data: 326, Address: 0xeb08a0
+Data: 453, Address: 0xeb0880
+Data: 165, Address: 0xeb0860
+Data: 468, Address: 0xeb0840
+Data: 342, Address: 0xeb0820
+Data: 221, Address: 0xeb0800
+Data: 159, Address: 0xeb07e0
+Data: 110, Address: 0xeb07c0
+Data: 493, Address: 0xeb07a0
+Data: 36, Address: 0xeb0780
+Data: 450, Address: 0xeb0760
+Data: 87, Address: 0xeb0740
+Data: 352, Address: 0xeb0720
+Data: 98, Address: 0xeb0700
+Data: 476, Address: 0xeb06e0
+Data: 232, Address: 0xeb06c0
+Data: 195, Address: 0xeb06a0
+Data: 167, Address: 0xeb0680
+Data: 199, Address: 0xeb0660
+Data: 66, Address: 0xeb0640
+Data: 394, Address: 0xeb0620
+Data: 478, Address: 0xeb0600
+Data: 158, Address: 0xeb05e0
+Data: 418, Address: 0xeb05c0
+Data: 51, Address: 0xeb05a0
+Data: 39, Address: 0xeb0580
+Data: 139, Address: 0xeb0560
+Data: 148, Address: 0xeb0540
+Data: 266, Address: 0xeb0520
+Data: 280, Address: 0xeb0500
+Data: 52, Address: 0xeb04e0
+Data: 420, Address: 0xeb04c0
+Data: 64, Address: 0xeb04a0
+Data: 182, Address: 0xeb0480
+Data: 446, Address: 0xeb0460
+Data: 137, Address: 0xeb0440
+Data: 129, Address: 0xeb0420
+Data: 75, Address: 0xeb0400
+Data: 128, Address: 0xeb03e0
+Data: 328, Address: 0xeb03c0
+Data: 17, Address: 0xeb03a0
+Data: 65, Address: 0xeb0380
+Data: 475, Address: 0xeb0360
+Data: 222, Address: 0xeb0340
+Data: 170, Address: 0xeb0320
+Data: 13, Address: 0xeb0300
+Data: 121, Address: 0xeb02e0
+Data: 125, Address: 0xeb02c0
+Data: 269, Address: 0xeb02a0
+Data: 500, Address: 0xeb0280
+Data: 73, Address: 0xeb0260
+Data: 367, Address: 0xeb0240
+Data: 402, Address: 0xeb0220
+Data: 333, Address: 0xeb0200
+Data: 443, Address: 0xeb01e0
+Data: 471, Address: 0xeb01c0
+Data: 94, Address: 0xeb01a0
+Data: 161, Address: 0xeb0180
+Data: 103, Address: 0xeb0160
+Data: 461, Address: 0xeb0140
+Data: 392, Address: 0xeb0120
+Data: 155, Address: 0xeb0100
+Data: 356, Address: 0xeb00e0
+Data: 41, Address: 0xeb00c0
+Data: 95, Address: 0xeb00a0
+Data: 123, Address: 0xeb0080
+Data: 298, Address: 0xeb0060
+Data: 60, Address: 0xeb0040
+Data: 171, Address: 0xeb0020
+Data: 26, Address: 0xeb0000
+Data: 255, Address: 0xeaffe0
+Data: 425, Address: 0xeaffc0
+Data: 185, Address: 0xeaffa0
+Data: 491, Address: 0xeaff80
+Data: 118, Address: 0xeaff60
+Data: 490, Address: 0xeaff40
+Data: 124, Address: 0xeaff20
+Data: 247, Address: 0xeaff00
+Data: 212, Address: 0xeafee0
+Data: 421, Address: 0xeafec0
+Data: 264, Address: 0xeafea0
+Data: 485, Address: 0xeafe80
+Data: 409, Address: 0xeafe60
+Data: 138, Address: 0xeafe40
+Data: 432, Address: 0xeafe20
+Data: 426, Address: 0xeafe00
+Data: 151, Address: 0xeafde0
+Data: 341, Address: 0xeafdc0
+Data: 277, Address: 0xeafda0
+Data: 27, Address: 0xeafd80
+Data: 156, Address: 0xeafd60
+Data: 12, Address: 0xeafd40
+Data: 472, Address: 0xeafd20
+Data: 346, Address: 0xeafd00
+Data: 192, Address: 0xeafce0
+Data: 57, Address: 0xeafcc0
+Data: 387, Address: 0xeafca0
+Data: 193, Address: 0xeafc80
+Data: 50, Address: 0xeafc60
+Data: 1, Address: 0xeafc40
+Data: 105, Address: 0xeafc20
+Data: 135, Address: 0xeafc00
+Data: 237, Address: 0xeafbe0
+Data: 427, Address: 0xeafbc0
+Data: 300, Address: 0xeafba0
+Data: 464, Address: 0xeafb80
+Data: 250, Address: 0xeafb60
+Data: 102, Address: 0xeafb40
+Data: 146, Address: 0xeafb20
+Data: 439, Address: 0xeafb00
+Data: 108, Address: 0xeafae0
+Data: 136, Address: 0xeafac0
+Data: 194, Address: 0xeafaa0

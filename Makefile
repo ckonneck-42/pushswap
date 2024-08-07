@@ -6,13 +6,13 @@
 #    By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/24 12:55:57 by ckonneck          #+#    #+#              #
-#    Updated: 2024/07/25 13:38:01 by ckonneck         ###   ########.fr        #
+#    Updated: 2024/08/05 14:46:24 by ckonneck         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -I$(LIBFT_DIR)
+CFLAGS = -g -Wall -Wextra -Werror -I$(LIBFT_DIR)
 LIBFT_DIR = ./libft
 LIBS = -L$(LIBFT_DIR) -lft
 
