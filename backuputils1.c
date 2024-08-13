@@ -6,7 +6,7 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 11:42:32 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/07 15:08:45 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/13 10:53:08 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -360,3 +360,1036 @@ int initelem(int *numbers, int argc)
 		}argc -=1;
 	}
 }
+
+	if(n <= p/2)
+	{
+		if (hasLowerThanMiddle(lista, middle) == 1)
+		{
+			ft_printf("huston, we can increment\n");
+			i++;
+			middle = find_median(lista);
+			p = p/2;
+		}
+		// else
+		// {
+		// 	rotatea(&lista);
+		// 	head = lista;
+		// 	tempdata = head->data;
+		// }	
+	}
+
+
+
+// this works
+void sorthalf(Node *tops[],Chunk *chunks[], int i)
+{
+	int k = 0;	
+	
+	int middle;
+	
+	// Node *lista = tops[0];
+	// Node *listb = tops[1];
+	middle = find_median(tops[0]);
+	int n = countnodes(tops[0]);
+	int p = countnodes(tops[0]);
+	ft_printf("p = %d\n",p);
+	ft_printf("n = %d\n",n);
+	while(tops[0] && n > 2)
+	{
+		n = countnodes(tops[0]);
+		if(hasLowerThanMiddle(tops[0], middle) == 0)
+		{
+			//condition to search should be here, to get one last check in befire incrementing i
+			ft_printf("huston, we are incrementing\n");
+			i++;
+			middle = find_median(tops[0]);
+			p = p/2;
+		}
+		ft_printf("n = %d\n",n);
+
+		// ft_printf("list a \n");
+    	// printList(lista);
+    	// ft_printf("list b \n");
+    	// printList(listb);
+		if (n <= 3)
+		{
+			ft_printf("list a \n");
+			printList(tops[0]);
+			ft_printf("list b \n");
+			printList(tops[1]);
+			ft_printf("exiting");
+			return ;
+		}
+		
+		Node *head = tops[0];
+		int tempdata;
+		tempdata = head->data;
+
+		ft_printf("middle: %d\n", middle);
+		ft_printf("i: %d\n", i);
+		ft_printf("tempdata: %d\n", tempdata);
+		if(tempdata <= middle)
+		{
+			ft_printf("appending tempdata %d, because middle is %d\n", tempdata, middle);
+			ft_printf("p is currently %d\n", p);
+			pushtob(&tops[0], &tops[1]);
+			appendchunk(&chunks[i], tempdata, k);
+			k++;
+			
+			// ft_printf("list b \n");
+			// printList(listb);
+			head = tops[0];
+			tempdata = head->data;
+		}
+		else
+		{
+			rotatea(&tops[0]);
+			head = tops[0];
+			tempdata = head->data;
+			// int countn = countnodes(lista);
+			// if(countn <= p/2)
+			// {ft_printf("YOU SHOULD NOT BE IN HERE EVER\n");
+			// 	i++;
+			// 	p = p/2;
+			// 	// printDataChunkArray((*chunkarray)[i], n/2);
+			// 	// sorthalf(tops, chunks, i);
+			// }
+		}
+	}
+}
+
+// this one below doesnt
+
+
+
+void sorthalf(Node *tops[],Chunk *chunks[], int i)
+{
+	int k = 0;	
+	
+	int middle;
+	
+	Node *lista = tops[0];
+	Node *listb = tops[1];
+	middle = find_median(lista);
+	int n = countnodes(lista);
+	int p = countnodes(lista);
+	ft_printf("p = %d\n",p);
+	ft_printf("n = %d\n",n);
+	while(lista && n > 2)
+	{
+		n = countnodes(lista);
+		if(hasLowerThanMiddle(lista, middle) == 0)
+		{
+			//condition to search should be here, to get one last check in befire incrementing i
+			ft_printf("huston, we are incrementing\n");
+			i++;
+			middle = find_median(lista);
+			p = p/2;
+		}
+		ft_printf("n = %d\n",n);
+
+		// ft_printf("list a \n");
+    	// printList(lista);
+    	// ft_printf("list b \n");
+    	// printList(listb);
+		if (n <= 3)
+		{
+			ft_printf("list a \n");
+			printList(lista);
+			ft_printf("list b \n");
+			printList(listb);
+			ft_printf("exiting");
+			return ;
+		}
+		
+		Node *head = lista;
+		int tempdata;
+		tempdata = head->data;
+
+		ft_printf("middle: %d\n", middle);
+		ft_printf("i: %d\n", i);
+		ft_printf("tempdata: %d\n", tempdata);
+		if(tempdata <= middle)
+		{
+			ft_printf("appending tempdata %d, because middle is %d\n", tempdata, middle);
+			ft_printf("p is currently %d\n", p);
+			pushtob(&lista, &listb);
+			appendchunk(&chunks[i], tempdata, k);
+			k++;
+			
+			// ft_printf("list b \n");
+			// printList(listb);
+			head = lista;
+			tempdata = head->data;
+		}
+		else
+		{
+			rotatea(&lista);
+			head = lista;
+			tempdata = head->data;
+			// int countn = countnodes(lista);
+			// if(countn <= p/2)
+			// {ft_printf("YOU SHOULD NOT BE IN HERE EVER\n");
+			// 	i++;
+			// 	p = p/2;
+			// 	// printDataChunkArray((*chunkarray)[i], n/2);
+			// 	// sorthalf(tops, chunks, i);
+			// }
+		}
+	}
+}
+
+
+
+int find_medianchunk(Chunk *head) {
+    if (head == NULL) return -1; // Handle empty list
+
+    // Copy and sort the list
+    Chunk *sorted_copy = copy_list(head);
+    bubble_sort(sorted_copy);
+
+    // Traverse to find the median
+    Chunk *slow = sorted_copy;
+    Chunk *fast = sorted_copy;
+
+    while (fast != NULL && fast->next != NULL) {
+        slow = slow->next;
+        fast = fast->next->next;
+    }
+
+    int median = slow->value;
+
+    // Free the copied list
+    while (sorted_copy != NULL) {
+        Chunk *temp = sorted_copy;
+        sorted_copy = sorted_copy->next;
+        free(temp);
+    }
+
+    return median;
+}
+
+
+void midpointsort(Node *tops[],Chunk *chunks[],Chunk *chonks[], int i)
+{
+	int k = 0;
+	int o = 0;
+	if(i > 0) //while 
+	{
+		
+		if (chunks[i] == NULL)// i guess this works if i increment chunks too far
+			i--;				// nowdo the midpoint of chunks 
+							//and start sorting them over the 3 highest at a time
+		ft_printf("i is %d\n", i);
+		
+		int middle = find_medianchunk(chunks[i]);
+		ft_printf("middle is %d\n", middle);
+		if(chunks[i])//while
+		{
+
+			Chunk *head = chunks[i];
+			int tempdata;
+			tempdata = head->value;
+
+			ft_printf("middle: %d\n", middle);
+			ft_printf("i: %d\n", i);
+			ft_printf("tempdata: %d\n", tempdata);
+			if(tempdata > middle && countnodeschunk(chonks[o]) >= 2)
+			{
+				ft_printf("appending tempdata %d, because middle is %d\n", tempdata, middle);
+				addbottomchunk(&chonks[o], tempdata, k);
+				k++;
+				//and insert recursion, simple as that
+				// ft_printf("list b \n");
+				// printList(listb);
+				head = chunks[i];
+				tempdata = head->value;
+			}
+			// Node *listb = tops[1];
+			// ft_printf("Bchunk: %d\n", Bchunk->value);
+			// ft_printf("listB; %d\n", tops[1][0]);
+			// ft_printf("lista:\n");
+			// printList(tops[0]);
+			ft_printf("listb:\n");
+			printList(tops[1]);
+			
+			freechunk(&chunks[i]); // when pushing is done, free
+			// ft_printf("Bchunk: %d\n", chunks[i]->value);
+
+		 //in here needs to push from b to a, and also delete from the chunk each time an 
+		 //element is pushed
+		 // i am getting the median consistently with a copy of the chunks
+		 // in find_medianchunk
+		 //now i should be able to compare, push and delete chunks 
+		 	
+		}
+		if(hasHigherThanMiddle(chunks[i], middle) == 0)//  && data is in top3
+		{
+			middle = find_medianchunk(chunks[i]);
+		}
+		// if(chunks[i] == NULL)
+		// {
+		// 	ft_printf("huston, we are decrementing\n");
+		// 	i--;
+		// }
+	}
+}
+
+void midpointsort(Node *tops[],Chunk *chunks[],Chunk *chonks[], int i)
+{
+	// int k = 0;
+	// int o = 0;
+
+	chonks[1] = 0;
+	while(i > 0) //while 
+	{
+		
+		if (chunks[i] == NULL)// i guess this works if i increment chunks too far
+			{
+				i--;
+				if (i == 0)
+					break ;
+			}				// nowdo the midpoint of chunks 
+							//and start sorting them over the 3 highest at a time
+		// ft_printf("i is %d\n", i);
+		
+		// int middle = find_medianchunk(chunks[i]);
+		// ft_printf("middle is %d\n", middle);
+		while(chunks[i])//while
+		{
+
+			Chunk *head = chunks[i];
+			int tempdata;
+			tempdata = head->value;
+			int highest = find_highest_integer(chunks[i]);
+			// ft_printf("middle: %d\n", middle);
+			// ft_printf("i: %d\n", i);
+			// ft_printf("tempdata: %d\n", tempdata);
+			if(chunks[i])
+			{
+				int rc = 0;
+				int rrc = 0;
+				highest = find_highest_integer(chunks[i]);
+				tempdata = head->value;
+				while(tempdata != highest)
+				{
+					rotatebchunk(&chunks[i]);
+					rc++;
+					tempdata = chunks[i]->value;
+					// ft_printf("highest: %d\n", highest);
+					// ft_printf("tempdata: %d\n", tempdata);
+					// ft_printf("rc in rotatebchunk: %d\n", rc);
+				}
+				tempdata = chunks[i]->value;
+				while(tempdata != highest)
+				{
+					reverserotatebchunk(&chunks[i]);
+					rrc++;
+					tempdata = chunks[i]->value;
+					// ft_printf("highest: %d\n", highest);
+					// ft_printf("tempdata: %d\n", tempdata);
+					// ft_printf("rrc in reverserotatebchunk: %d\n", rrc);
+				}
+				
+				if(rc <= rrc)
+				{
+					tempdata = tops[1]->data;
+				ft_printf("I AM IN RC1\n");
+				ft_printf("highest: %d\n", highest);
+				ft_printf("tempdata: %d\n", tempdata);
+				ft_printf("rrc: %d\n", rrc);
+				ft_printf("rc: %d\n", rc);
+					while(tempdata != highest)
+					{
+						ft_printf("I AM IN RC2\n");
+						rotateb(&tops[1]);
+						tempdata = tops[1]->data;
+						ft_printf("listb:\n");
+						printList(tops[1]);
+						ft_printf("chunk:\n");
+						printchunk(chunks[i]);
+					}	
+				}
+				else if (rc >= rrc)
+				{
+					tempdata = tops[1]->data;
+				ft_printf("I AM IN RRC1\n");
+				ft_printf("highest: %d\n", highest);
+				ft_printf("tempdata: %d\n", tempdata);
+				ft_printf("rrc: %d\n", rrc);
+				ft_printf("rc: %d\n", rc);
+					while(tempdata != highest)
+					{
+						ft_printf("I AM IN RRC2\n");
+						reverserotateb(&tops[1]);
+						tempdata = tops[1]->data;
+						ft_printf("listb:\n");
+						printList(tops[1]);
+						ft_printf("chunk:\n");
+						printchunk(chunks[i]);
+					}
+				}
+				// else
+				// {
+				// 	tempdata = tops[1]->data;
+				// // ft_printf("I AM IN RRC1\n");
+				// // ft_printf("highest: %d\n", highest);
+				// // ft_printf("tempdata: %d\n", tempdata);
+				// // ft_printf("rrc: %d\n", rrc);
+				// // ft_printf("rc: %d\n", rc);
+				// 	while(tempdata != highest)
+				// 	{
+				// 		// ft_printf("I AM IN RRC2\n");
+				// 		reverserotateb(&tops[1]);
+				// 		tempdata = tops[1]->data;
+				// 	}
+				// }
+				// tempdata = tops[1]->data;
+				if(tempdata == highest)
+				{
+					// ft_printf("PUSHING");
+					pushtoa(&tops[1], &tops[0]);
+					freechunk(&chunks[i]);
+				}
+				
+				//and insert recursion, simple as that
+				// ft_printf("list b \n");
+				// printList(listb);
+				// head = chunks[i];
+				// tempdata = head->value;
+			}
+			// Node *listb = tops[1];
+			// ft_printf("Bchunk: %d\n", Bchunk->value);
+			// ft_printf("listB; %d\n", tops[1][0]);
+			// ft_printf("lista:\n");
+			// printList(tops[0]);
+
+			
+			 // when pushing is done, free
+			// ft_printf("Bchunk: %d\n", chunks[i]->value);
+
+		 //in here needs to push from b to a, and also delete from the chunk each time an 
+		 //element is pushed
+		 // i am getting the median consistently with a copy of the chunks
+		 // in find_medianchunk
+		 //now i should be able to compare, push and delete chunks 
+		 	
+		}
+		// if(hasHigherThanMiddle(chunks[i], middle) == 0)//  && data is in top3
+		// {
+		// 	middle = find_medianchunk(chunks[i]);
+		// }
+		// if(chunks[i] == NULL)
+		// {
+		// 	ft_printf("huston, we are decrementing\n");
+		// 	i--;
+		// }
+	}
+			// ft_printf("listb:\n");
+			// printList(tops[1]);
+			// ft_printf("lista:\n");
+			// printList(tops[0]);
+}
+
+// v v is completely bricked
+void midpointsort(Node *tops[],Chunk *chunks[],Chunk *chonks[], int i)
+{
+	// int k = 0;
+	// int o = 0;
+
+	while(i > 0) //while 
+	{
+		
+		if (chunks[i] == NULL)// i guess this works if i increment chunks too far
+			{
+				i--;
+				if (i == 0)
+					break ;
+			}				// nowdo the midpoint of chunks 
+							//and start sorting them over the 3 highest at a time
+		// ft_printf("i is %d\n", i);
+		
+		// int middle = find_medianchunk(chunks[i]);
+		// ft_printf("middle is %d\n", middle);
+		while(chunks[i])//while
+		{
+			
+			chonks[i] = copy_listchunk(chunks[i]);//need 2 more copies because i fuck them
+			Chunk *head = chunks[i];
+			Chunk *headchonk = chonks[i];
+			int tempdata;
+			tempdata = head->value;
+			
+			int highest = find_highest_integer(chunks[i]);
+			// ft_printf("middle: %d\n", middle);
+			// ft_printf("i: %d\n", i);
+			// ft_printf("tempdata: %d\n", tempdata);
+			if(chunks[i])
+			{	ft_printf("listb:\n");
+				printList(tops[1]);
+				printchunk(chunks[i]);
+				printchunk(chonks[i]);
+				int rc = 0;
+				int rrc = 0;
+				highest = find_highest_integer(chunks[i]);
+				tempdata = head->value;
+				while(tempdata != highest)
+				{
+					
+					rotatebchunk(&chunks[i]);
+					rc++;
+					tempdata = chunks[i]->value;
+					// ft_printf("highest: %d\n", highest);
+					// ft_printf("tempdata: %d\n", tempdata);
+					// ft_printf("rc in rotatebchunk: %d\n", rc);
+				}
+				
+				tempdata = headchonk->value;
+				while(tempdata != highest)
+				{//copy the list from chunnks to chonks then do one rotate op with
+				//chonks and one with chunks
+					reverserotatebchunk(&chonks[i]);
+					rrc++;
+					tempdata = chonks[i]->value;
+					// ft_printf("highest: %d\n", highest);
+					// ft_printf("tempdata: %d\n", tempdata);
+					// ft_printf("rrc in reverserotatebchunk: %d\n", rrc);
+				}
+				// ft_printf("rc : %d\n", rc);
+				// ft_printf("rrc : %d\n", rrc);
+				int temprrc = rrc;
+				int temprc = rc;
+				if(rc != 0 || rrc != 0)
+				{
+					// ft_printf("ENTERED");
+					// ft_printf("rc in 1: %d\n", rc);
+					// ft_printf("rrc in 1: %d\n", rrc);
+					if(rc >= rrc)
+					{
+						// ft_printf("rc in rotatebchunk: %d\n", rc);
+						// ft_printf("ENTERED2");
+						// ft_printf("rc in 2: %d\n", rc);
+						// ft_printf("rrc in 2: %d\n", rrc);
+						while(rrc != 0)
+						{
+							// ft_printf("ENTERED3");
+							reverserotateb(&tops[1]);
+							rrc--;
+						}
+						pushtoa(&tops[1], &tops[0]);
+						freechunk(&chonks[i]);
+						
+						while(temprrc -1 != 0)
+						{
+
+							rotateb(&tops[1]);
+							rotatebchunk(&chonks[i]);
+							temprrc--;
+						}
+					}
+					else if(rc <= rrc)
+					{
+						while(rc != 0)
+						{
+							
+							rotateb(&tops[1]);
+							rc--;
+						}
+						pushtoa(&tops[1], &tops[0]);
+						
+						freechunk(&chunks[i]);
+						while(temprc != 0)
+						{
+							reverserotateb(&tops[1]);
+							reverserotatebchunk(&chunks[i]);
+							temprc--;
+						}
+					}
+					
+				}
+				else
+				{
+					printList(tops[1]);
+					printchunk(chunks[i]);
+					printchunk(chonks[i]);
+					pushtoa(&tops[1], &tops[0]);
+						freechunk(&chunks[i]);
+						freechunk(&chonks[i]);
+						
+				}
+				
+				// else
+				// {
+				// 	tempdata = tops[1]->data;
+				// // ft_printf("I AM IN RRC1\n");
+				// // ft_printf("highest: %d\n", highest);
+				// // ft_printf("tempdata: %d\n", tempdata);
+				// // ft_printf("rrc: %d\n", rrc);
+				// // ft_printf("rc: %d\n", rc);
+				// 	while(tempdata != highest)
+				// 	{
+				// 		// ft_printf("I AM IN RRC2\n");
+				// 		reverserotateb(&tops[1]);
+				// 		tempdata = tops[1]->data;
+				// 	}
+				// }
+				// tempdata = tops[1]->data;
+
+					// ft_printf("PUSHING");
+				
+
+				
+				//and insert recursion, simple as that
+				// ft_printf("list b \n");
+				// printList(listb);
+				// head = chunks[i];
+				// tempdata = head->value;
+			}
+			// Node *listb = tops[1];
+			// ft_printf("Bchunk: %d\n", Bchunk->value);
+			// ft_printf("listB; %d\n", tops[1][0]);
+			// ft_printf("lista:\n");
+			// printList(tops[0]);
+
+			
+			 // when pushing is done, free
+			// ft_printf("Bchunk: %d\n", chunks[i]->value);
+
+		 //in here needs to push from b to a, and also delete from the chunk each time an 
+		 //element is pushed
+		 // i am getting the median consistently with a copy of the chunks
+		 // in find_medianchunk
+		 //now i should be able to compare, push and delete chunks 
+		 	
+		}
+		// if(hasHigherThanMiddle(chunks[i], middle) == 0)//  && data is in top3
+		// {
+		// 	middle = find_medianchunk(chunks[i]);
+		// }
+		// if(chunks[i] == NULL)
+		// {
+		// 	ft_printf("huston, we are decrementing\n");
+		// 	i--;
+		// }
+	}
+			// ft_printf("listb:\n");
+			// printList(tops[1]);
+			// ft_printf("lista:\n");
+			// printList(tops[0]);
+}
+
+
+
+// v v v vv vv v v  v i need to
+ //change chunks and chonks against lists, because obv if i try to find the cost and
+ // i'm comparing chunks against the whole list, no wonder i'm never gonna find the cheapest operation
+
+
+void midpointsort(Node *tops[],Chunk *chunks[],Chunk *chonks[], int i)
+{
+	// int k = 0;
+	// int o = 0;
+
+	while(i > 0) //while 
+	{
+		
+		if (chunks[i] == NULL)// i guess this works if i increment chunks too far
+			{
+				ft_printf("HUSTON WE ARE DECREMENTING\n");
+				i--;
+				
+				if (i == 0)
+					break ;
+			}				// nowdo the midpoint of chunks 
+							//and start sorting them over the 3 highest at a time
+		// ft_printf("i is %d\n", i);
+		
+		// int middle = find_medianchunk(chunks[i]);
+		// ft_printf("middle is %d\n", middle);
+		while(chunks[i])//while
+		{
+			
+			chonks[i] = copy_listchunk(chunks[i]);//need 2 more copies because i fuck them
+			Chunk *head = chunks[i];
+			Chunk *headchonk = chonks[i];
+			int tempdata;
+			tempdata = head->value;
+			
+			int highest = find_highest_integer(chunks[i]);
+			// ft_printf("middle: %d\n", middle);
+			// ft_printf("i: %d\n", i);
+			// ft_printf("tempdata: %d\n", tempdata);
+			if(chunks[i])
+			{	ft_printf("listb:\n");
+				printList(tops[1]);
+				ft_printf("lista:\n");
+				printList(tops[0]);
+				ft_printf("chunks:\n");
+				printchunk(chunks[i]);
+				ft_printf("chonks:\n");
+				printchunk(chonks[i]);
+				int rc = 0;
+				int rrc = 0;
+				highest = find_highest_integer(chunks[i]);
+				tempdata = head->value;
+				while(tempdata != highest)
+				{
+					
+					rotatebchunk(&chunks[i]);
+					rc++;
+					tempdata = chunks[i]->value;
+					ft_printf("highest: %d\n", highest);
+					ft_printf("tempdata: %d\n", tempdata);
+					ft_printf("rc in rotatebchunk: %d\n", rc);
+				}
+				
+				tempdata = headchonk->value;
+				while(tempdata != highest)
+				{//copy the list from chunnks to chonks then do one rotate op with
+				//chonks and one with chunks
+					reverserotatebchunk(&chonks[i]);
+					rrc++;
+					tempdata = chonks[i]->value;
+					ft_printf("highest: %d\n", highest);
+					ft_printf("tempdata: %d\n", tempdata);
+					ft_printf("rrc in reverserotatebchunk: %d\n", rrc);
+				}
+				// ft_printf("rc : %d\n", rc);
+				// ft_printf("rrc : %d\n", rrc);
+				int temprrc = rrc;
+				int temprc = rc;
+				if(rc != 0 || rrc != 0)
+				{
+					// ft_printf("ENTERED");
+					// ft_printf("rc in 1: %d\n", rc);
+					// ft_printf("rrc in 1: %d\n", rrc);
+					if(rc >= rrc)
+					{
+						// ft_printf("rc in rotatebchunk: %d\n", rc);
+						// ft_printf("ENTERED2");
+						// ft_printf("rc in 2: %d\n", rc);
+						// ft_printf("rrc in 2: %d\n", rrc);
+						while(rrc != 0)
+						{
+							// ft_printf("ENTERED3");
+							reverserotateb(&tops[1]);
+							
+							rrc--;
+						}
+						ft_printf("pushing %d\n", tops[1]->data);
+						pushtoa(&tops[1], &tops[0]);
+						freechunk(&chonks[i]);//original
+						freechunk(&chunks[i]);
+						while(temprrc -1 != 0)
+						{
+
+							rotateb(&tops[1]);
+							rotatebchunk(&chonks[i]);///////////
+							temprrc--;
+						}
+					}
+					else if(rc <= rrc)
+					{
+						while(rc != 0)
+						{
+							
+							rotateb(&tops[1]);
+							rc--;
+						}
+						ft_printf("pushing %d\n", tops[1]->data);
+						pushtoa(&tops[1], &tops[0]);
+						freechunk(&chonks[i]);
+						freechunk(&chunks[i]);//original
+						while(temprc != 0)
+						{
+							reverserotateb(&tops[1]);
+							reverserotatebchunk(&chunks[i]);
+							temprc--;
+						}
+					}
+					
+				}
+				else
+				{
+					// printList(tops[1]);
+					// printchunk(chunks[i]);
+					// printchunk(chonks[i]);
+					ft_printf("pushing IN ELSE %d\n", tops[1]->data);
+					pushtoa(&tops[1], &tops[0]);
+					freechunk(&chunks[i]);
+					freechunk(&chonks[i]);
+				}
+				
+				// else
+				// {
+				// 	tempdata = tops[1]->data;
+				// // ft_printf("I AM IN RRC1\n");
+				// // ft_printf("highest: %d\n", highest);
+				// // ft_printf("tempdata: %d\n", tempdata);
+				// // ft_printf("rrc: %d\n", rrc);
+				// // ft_printf("rc: %d\n", rc);
+				// 	while(tempdata != highest)
+				// 	{
+				// 		// ft_printf("I AM IN RRC2\n");
+				// 		reverserotateb(&tops[1]);
+				// 		tempdata = tops[1]->data;
+				// 	}
+				// }
+				// tempdata = tops[1]->data;
+
+					// ft_printf("PUSHING");
+				
+
+				
+				//and insert recursion, simple as that
+				// ft_printf("list b \n");
+				// printList(listb);
+				// head = chunks[i];
+				// tempdata = head->value;
+			}
+			// Node *listb = tops[1];
+			// ft_printf("Bchunk: %d\n", Bchunk->value);
+			// ft_printf("listB; %d\n", tops[1][0]);
+			// ft_printf("lista:\n");
+			// printList(tops[0]);
+
+			
+			 // when pushing is done, free
+			// ft_printf("Bchunk: %d\n", chunks[i]->value);
+
+		 //in here needs to push from b to a, and also delete from the chunk each time an 
+		 //element is pushed
+		 // i am getting the median consistently with a copy of the chunks
+		 // in find_medianchunk
+		 //now i should be able to compare, push and delete chunks 
+		 	
+		}
+		// if(hasHigherThanMiddle(chunks[i], middle) == 0)//  && data is in top3
+		// {
+		// 	middle = find_medianchunk(chunks[i]);
+		// }
+		// if(chunks[i] == NULL)
+		// {
+		// 	ft_printf("huston, we are decrementing\n");
+		// 	i--;
+		// }
+	}
+			// ft_printf("listb:\n");
+			// printList(tops[1]);
+			// ft_printf("lista:\n");
+			// printList(tops[0]);
+}
+
+
+// vv v v v v v  vIT WORKS
+
+void midpointsort(Node *tops[],Chunk *chunks[],Chunk *chonks[], int i)
+{
+	// int k = 0;
+	// int o = 0;
+	Chunk *listbcopy1[1] = {NULL};
+	Chunk *listbcopy2[1] = {NULL};
+
+	while(i > 0) //while 
+	{
+		
+		if (chunks[i] == NULL)// i guess this works if i increment chunks too far
+			{
+				// ft_printf("HUSTON WE ARE DECREMENTING\n");
+				i--;
+				
+				if (i == 0)
+					break ;
+			}				// nowdo the midpoint of chunks 
+							//and start sorting them over the 3 highest at a time
+		// ft_printf("i is %d\n", i);
+		
+		// int middle = find_medianchunk(chunks[i]);
+		// ft_printf("middle is %d\n", middle);
+		while(chunks[i])//while
+		{
+			
+			listbcopy1[0] = copyNodeToChunk(tops[1]);
+			listbcopy2[0] = copyNodeToChunk(tops[1]);
+			// ft_printf("listbcopy1\n");
+			// printchunk(listbcopy1[0]);
+			// ft_printf("listbcopy2\n");
+			// printchunk(listbcopy2[0]);
+			chonks[i] = copy_listchunk(chunks[i]);//need 2 more copies because i fuck them
+			Chunk *head = listbcopy1[0];
+			Chunk *headchonk = listbcopy2[0];
+			int tempdata;
+			tempdata = head->value;
+			
+			int highest = find_highest_integer(chunks[i]);
+			// ft_printf("middle: %d\n", middle);
+			// ft_printf("i: %d\n", i);
+			// ft_printf("tempdata: %d\n", tempdata);
+			if(chunks[i])
+			{	
+				// ft_printf("listb:\n");
+				// printList(tops[1]);
+				// ft_printf("lista:\n");
+				// printList(tops[0]);
+				// ft_printf("chunks:\n");
+				// printchunk(chunks[i]);
+				// ft_printf("chonks:\n");
+				// printchunk(chonks[i]);
+				int rc = 0;
+				int rrc = 0;
+				highest = find_highest_integer(listbcopy1[0]);
+				tempdata = head->value;
+				while(tempdata != highest)
+				{
+					
+					rotatebchunk(&listbcopy1[0]);
+					rc++;
+					tempdata = listbcopy1[0]->value;
+					// ft_printf("highest: %d\n", highest);
+					// ft_printf("tempdata: %d\n", tempdata);
+					// ft_printf("rc in rotatebchunk: %d\n", rc);
+				}
+				
+				tempdata = headchonk->value;
+				while(tempdata != highest)
+				{//copy the list from chunnks to chonks then do one rotate op with
+				//chonks and one with chunks
+					reverserotatebchunk(&listbcopy2[0]);
+					rrc++;
+					tempdata = listbcopy2[0]->value;
+					// ft_printf("highest: %d\n", highest);
+					// ft_printf("tempdata: %d\n", tempdata);
+					// ft_printf("rrc in reverserotatebchunk: %d\n", rrc);
+				}
+				// ft_printf("rc : %d\n", rc);
+				// ft_printf("rrc : %d\n", rrc);
+				int temprrc = rrc;
+				int temprc = rc;
+				if(rc != 0 || rrc != 0)
+				{
+					// ft_printf("ENTERED");
+					// ft_printf("rc in 1: %d\n", rc);
+					// ft_printf("rrc in 1: %d\n", rrc);
+					if(rc >= rrc)
+					{
+						// ft_printf("rc in rotatebchunk: %d\n", rc);
+						// ft_printf("ENTERED2");
+						// ft_printf("rc in 2: %d\n", rc);
+						// ft_printf("rrc in 2: %d\n", rrc);
+						while(rrc != 0)
+						{
+							// ft_printf("ENTERED3");
+							reverserotateb(&tops[1]);
+							
+							rrc--;
+						}
+						// ft_printf("pushing in rc > %d\n", tops[1]->data);
+						pushtoa(&tops[1], &tops[0]);
+						freechunk(&chonks[i]);//original
+						freechunk(&chunks[i]);
+						freechunk(&listbcopy1[0]);
+						freechunk(&listbcopy2[0]);
+						while(temprrc -1 != 0)
+						{
+
+							rotateb(&tops[1]);
+							rotatebchunk(&listbcopy2[0]);///////////
+							temprrc--;
+						}
+					}
+					else if(rc <= rrc)
+					{
+						while(rc != 0)
+						{
+							
+							rotateb(&tops[1]);
+							rc--;
+						}
+						// ft_printf("pushing in rc < %d\n", tops[1]->data);
+						pushtoa(&tops[1], &tops[0]); //good
+						freechunk(&chonks[i]);
+						freechunk(&chunks[i]);//original
+						freechunk(&listbcopy1[0]); //good
+						freechunk(&listbcopy2[0]); //good
+						while(temprc != 0)
+						{
+							reverserotateb(&tops[1]);
+							reverserotatebchunk(&listbcopy1[0]);
+							temprc--;
+						}
+					}
+					
+				}
+				else
+				{
+					// printList(tops[1]);
+					// printchunk(chunks[i]);
+					// printchunk(chonks[i]);
+					// ft_printf("pushing IN ELSE %d\n", tops[1]->data);
+					pushtoa(&tops[1], &tops[0]);
+					freechunk(&chunks[i]);
+					freechunk(&chonks[i]);
+					freechunk(&listbcopy1[0]);
+					freechunk(&listbcopy2[0]);
+				}
+				
+				// else
+				// {
+				// 	tempdata = tops[1]->data;
+				// // ft_printf("I AM IN RRC1\n");
+				// // ft_printf("highest: %d\n", highest);
+				// // ft_printf("tempdata: %d\n", tempdata);
+				// // ft_printf("rrc: %d\n", rrc);
+				// // ft_printf("rc: %d\n", rc);
+				// 	while(tempdata != highest)
+				// 	{
+				// 		// ft_printf("I AM IN RRC2\n");
+				// 		reverserotateb(&tops[1]);
+				// 		tempdata = tops[1]->data;
+				// 	}
+				// }
+				// tempdata = tops[1]->data;
+
+					// ft_printf("PUSHING");
+				
+
+				
+				//and insert recursion, simple as that
+				// ft_printf("list b \n");
+				// printList(listb);
+				// head = chunks[i];
+				// tempdata = head->value;
+			}
+			// Node *listb = tops[1];
+			// ft_printf("Bchunk: %d\n", Bchunk->value);
+			// ft_printf("listB; %d\n", tops[1][0]);
+			// ft_printf("lista:\n");
+			// printList(tops[0]);
+
+			
+			 // when pushing is done, free
+			// ft_printf("Bchunk: %d\n", chunks[i]->value);
+
+		 //in here needs to push from b to a, and also delete from the chunk each time an 
+		 //element is pushed
+		 // i am getting the median consistently with a copy of the chunks
+		 // in find_medianchunk
+		 //now i should be able to compare, push and delete chunks 
+		 	
+		}
+		// if(hasHigherThanMiddle(chunks[i], middle) == 0)//  && data is in top3
+		// {
+		// 	middle = find_medianchunk(chunks[i]);
+		// }
+		// if(chunks[i] == NULL)
+		// {
+		// 	ft_printf("huston, we are decrementing\n");
+		// 	i--;
+		// }
+	}
+			// ft_printf("listb:\n");
+			// printList(tops[1]);
+			// ft_printf("lista:\n");
+			// printList(tops[0]);
+}
+

@@ -6,7 +6,7 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 12:14:24 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/07 16:19:36 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/13 11:32:03 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,36 @@ void append(Node **headRef, int data) {
     // 6. Change the next of last node
     last->next = new1Node;
 }
+
+Chunk* newNodechunk(int value, int position)
+{
+    Chunk* chunkster = (Chunk*) malloc(sizeof(Chunk));
+    if(chunkster == NULL) {
+        ft_printf("Error: could not allocate memory\n");
+        exit(0);
+    }
+    chunkster->value = value;
+    chunkster->position = position;
+    chunkster->next = NULL;
+    return chunkster;
+}
+
+void appendchunk(Chunk **headRef, int value, int position) {
+    // 1. Allocate new node
+    Chunk *new1Node = newNodechunk(value, position);
+
+    // 4. If the Linked List is empty, then make the new node as head
+    if (*headRef == NULL) {
+        *headRef = new1Node;
+        return;
+    }
+ // 6. Change the next of new node to the current head
+    new1Node->next = *headRef;
+
+    // 7. Move the head to point to the new node
+    *headRef = new1Node;
+}
+
 
 void swapb(Node** list)
 {
@@ -94,7 +124,7 @@ void ss(Node **lista, Node **listb)
 
 void pushtob(Node **sourceRef, Node **destRef) {
     // Get the first node from the source list
-    Node* newtopofb = *sourceRef;
+    Node *newtopofb = *sourceRef;
     if (newtopofb != NULL) {
         // Move the source pointer to the next node
         *sourceRef = newtopofb->next;
@@ -102,7 +132,7 @@ void pushtob(Node **sourceRef, Node **destRef) {
         // Push the node onto the destination list
         newtopofb->next = *destRef;
         *destRef = newtopofb;
-        ft_printf("pb ");
+        ft_printf("pb\n");
     }
     else
         ft_printf("list B is empty\n");
@@ -162,6 +192,41 @@ void rotateb(Node** listb)
         ft_printf("list B empty\n");
 }
 
+void rotatebchunk(Chunk **listb)
+{
+    Chunk *newbottom = *listb;
+    Chunk *second = newbottom->next;
+   
+    if(newbottom != NULL)
+    {
+        *listb = second;
+        newbottom->next = NULL;
+        Chunk *last = *listb;
+        while(last->next != NULL)
+            last = last->next;
+        last->next = newbottom;
+        // ft_printf("rb\n");
+    }
+    else
+        ft_printf("list B empty\n");
+}
+
+void reverserotatebchunk(Chunk **listb)
+{
+    Chunk *newtop = *listb;
+    if(*listb != NULL || (*listb)->next != NULL)
+    {
+        while(newtop->next->next != NULL)
+            newtop = newtop->next;
+        newtop->next->next = *listb;
+        *listb = newtop->next;
+        newtop->next = NULL;
+        // ft_printf("rrb ");
+    }
+    else
+        ft_printf("list B empty\n");
+}
+
 void rr(Node** lista, Node** listb)
 {
     if ((*lista != NULL && (*lista)->next != NULL) &&
@@ -185,7 +250,7 @@ void reverserotatea(Node** lista)
         newtop->next->next = *lista;
         *lista = newtop->next;
         newtop->next = NULL;
-        ft_printf("rra ");
+        ft_printf("rra\n");
     }
     else
         ft_printf("list A empty\n");
@@ -201,7 +266,7 @@ void reverserotateb(Node** listb)
         newtop->next->next = *listb;
         *listb = newtop->next;
         newtop->next = NULL;
-        ft_printf("rrb ");
+        ft_printf("rrb\n");
     }
     else
         ft_printf("list B empty\n");
@@ -222,9 +287,10 @@ void rrr(Node** lista, Node** listb)
 
 // Function to print the linked list and memory addresses
 void printList(Node *node) {
-    while (node != NULL) {
-        ft_printf("Data: %d, Address: %p\n", node->data, (void *)node);
-        node = node->next;
+    Node *temp = node;
+    while (temp != NULL) {
+        ft_printf("Data: %d, Address: %p\n", temp->data, (void *)temp);
+        temp = temp->next;
     }
 }
 
@@ -243,9 +309,12 @@ int	ft_isnumeric(char *str)
 }
 
 
-void printArray(Element arr[], int size) {
-    for (int i = 0; i < size; i++) {
-        ft_printf("Value: %d, Position: %d\n", arr[i].value, arr[i].position);
+void printchunk(Chunk* head) {
+    ft_printf("PRINTING CHUNK\n");
+    Chunk* current = head;
+    while (current != NULL) {
+        ft_printf("Value: %d, Position: %d\n", current->value, current->position);
+        current = current->next;
     }
 }
 
@@ -255,6 +324,10 @@ void printArray(Element arr[], int size) {
 int main(int argc, char *argv[]) {
     int i;
     Node* tops[NUM_LISTS] = {NULL};  // Initialize all lists as empty
+    Chunk *chunks[200] = {NULL};  // Initialize all lists as empty
+    Chunk *chonks[200] = {NULL};
+    //  Node *lista = tops[0];
+    //  Node *listb = tops[1];
     int *numbers = malloc((argc - 1) * sizeof(int));
     // Convert each command-line argument to an integer and push it onto the stack
     for (i = 1; i < argc; i++) {
@@ -278,39 +351,74 @@ int main(int argc, char *argv[]) {
     
     
     bubblesort(numbers, argc -1);
-
+ 
     
-    Element arr[argc-1];
     // Assuming the array is already sorted and filled with values
     for (int i = 0; i < argc-1; i++) {
-        arr[i].position = i;
-        arr[i].value = numbers[i];
+        appendchunk(&chunks[0], numbers[i], i);
     }
-
-    printArray(arr, argc-1);
-
-    int median = numbers[(argc-1) / 2];
-    int smallest = numbers[0];
-    int biggest = numbers[argc -2];
-    ft_printf("smallest = %d\n", smallest);
-    ft_printf("median = %d\n", median);
-    ft_printf("biggest = %d\n", biggest);
+    // printchunk(chunks[0]);
+    
+    // int median = numbers[(argc-1) / 2];
+    // int smallest = numbers[0];
+    // int biggest = numbers[argc -2];
+    // ft_printf("smallest = %d\n", smallest);
+    // ft_printf("median = %d\n", median);
+    // ft_printf("biggest = %d\n", biggest);
     // ft_printf("list a before op \n");
     // printList(tops[0]);
     // Print the stack
     //  halfit(&tops[0], &tops[1], argc);
     // sendit(&tops[0], &tops[1]);
-    Chunk myarr[argc];
-    sorthalf(&tops[0], &tops[1], arr, myarr);
-    
-    
+    // Chunk *myarr = (Chunk *)malloc(argc * sizeof(Chunk));
+    // if (!myarr)
+    //     return 1;
+    // myarr[0].size = argc - 1;
+    // myarr[0].arr = (Element *)malloc(myarr[0].size * sizeof(Element));
+    // if (!myarr[0].arr) {
+    //     free(myarr);
+    //     return 1;
+    // }
+    // for (int i = 0; i < argc - 1; i++) {
+    //     myarr[0].arr[i] = arr[i];
+    // }
+
+
+    //        ft_printf("list a before \n");
+    // printList(tops[0]);
+    // ft_printf("list b before\n");
+    // printList(tops[1]);
+    // pushtob(&tops[0], &tops[1]);
+    i = sorthalf(tops, chunks, 1);
+    // ft_printf("printing chunk0\n");
+    //  printchunk(chunks[0]);
+    //  ft_printf("printing chunk1\n");
+    //   printchunk(chunks[1]);
+    //   ft_printf("printing chunk2\n");
+    //    printchunk(chunks[2]);
+    //  ft_printf("printing chunk3\n");
+    //    printchunk(chunks[3]);
+    //      ft_printf("printing chunk4\n");
+    //    printchunk(chunks[4]);
+    //         ft_printf("printing chunk5\n");
+    //    printchunk(chunks[5]);
+    //         ft_printf("printing chunk6\n");
+    //    printchunk(chunks[6]);
+    //         ft_printf("printing chunk7\n");
+    //    printchunk(chunks[7]);
+    //       ft_printf("printing chunk8\n");
+    //    printchunk(chunks[8]);
+    //              ft_printf("printing chunk9\n");
+    //    printchunk(chunks[9]);
+        threepointalgo(tops, chunks,chonks, i);
+    // midpointsort(tops, chunks,chonks, i);
     // midpointrecursion(&tops[0], &tops[1], arr, argc);
     // stalinsort(&tops[0], &tops[1], arr, argc);
     // algorithm(&tops[0], &tops[1], arr, argc);
-    ft_printf("list a \n");
-    printList(tops[0]);
-    ft_printf("list b \n");
-    printList(tops[1]);
+    // ft_printf("list a \n");
+    // printList(tops[0]);
+    // ft_printf("list b \n");
+    // printList(tops[1]);
     free(tops[0]);
     free(tops[1]);
     return(0);

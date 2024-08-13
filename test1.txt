@@ -1,0 +1,2290 @@
+pb
+pb
+ra
+ra
+pb
+pb
+pb
+pb
+pb
+ra
+ra
+pb
+pb
+ra
+pb
+pb
+pb
+pb
+ra
+ra
+ra
+ra
+ra
+pb
+ra
+ra
+ra
+ra
+pb
+ra
+ra
+pb
+ra
+pb
+pb
+ra
+pb
+ra
+pb
+ra
+pb
+ra
+ra
+pb
+pb
+pb
+ra
+pb
+ra
+ra
+ra
+pb
+pb
+ra
+pb
+pb
+ra
+ra
+ra
+pb
+pb
+ra
+pb
+ra
+ra
+ra
+ra
+pb
+pb
+ra
+ra
+pb
+ra
+ra
+ra
+pb
+ra
+ra
+ra
+pb
+pb
+pb
+ra
+pb
+ra
+ra
+pb
+pb
+ra
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+ra
+pb
+pb
+ra
+pb
+pb
+pb
+pb
+ra
+ra
+ra
+pb
+ra
+pb
+pb
+pb
+ra
+ra
+ra
+ra
+ra
+ra
+ra
+pb
+ra
+pb
+pb
+ra
+pb
+pb
+ra
+pb
+ra
+pb
+ra
+pb
+ra
+pb
+ra
+pb
+ra
+pb
+ra
+pb
+pb
+pb
+pb
+ra
+pb
+ra
+ra
+pb
+pb
+ra
+ra
+pb
+pb
+pb
+ra
+pb
+pb
+pb
+ra
+pb
+ra
+pb
+ra
+pb
+ra
+ra
+ra
+pb
+pb
+ra
+pb
+pb
+pb
+pb
+ra
+pb
+pb
+ra
+ra
+ra
+pb
+pb
+ra
+pb
+ra
+pb
+sa
+pa
+rb
+pa
+rrb
+Data: 98, Address: 0xc7be80
+Data: 97, Address: 0xc7bc40
+Data: 99, Address: 0xc7bbe0
+Data: 100, Address: 0xc7b7a0
+PRINTING CHUNK
+Value: 98, Position: 95
+PRINTING CHUNK
+Value: 98, Position: 0
+pushing IN ELSE 96
+pa
+rb
+pa
+rrb
+rb
+rb
+pa
+rrb
+rrb
+rb
+rb
+pa
+rrb
+rrb
+Data: 93, Address: 0xc7b5e0
+Data: 94, Address: 0xc7b680
+Data: 95, Address: 0xc7b960
+Data: 96, Address: 0xc7bae0
+Data: 98, Address: 0xc7be80
+Data: 97, Address: 0xc7bc40
+Data: 99, Address: 0xc7bbe0
+Data: 100, Address: 0xc7b7a0
+PRINTING CHUNK
+Value: 94, Position: 91
+Value: 93, Position: 90
+Value: 90, Position: 89
+PRINTING CHUNK
+Value: 94, Position: 0
+Value: 93, Position: 0
+Value: 90, Position: 0
+pushing IN ELSE 92
+pa
+Data: 92, Address: 0xc7bc80
+Data: 93, Address: 0xc7b5e0
+Data: 94, Address: 0xc7b680
+Data: 95, Address: 0xc7b960
+Data: 96, Address: 0xc7bae0
+Data: 98, Address: 0xc7be80
+Data: 97, Address: 0xc7bc40
+Data: 99, Address: 0xc7bbe0
+Data: 100, Address: 0xc7b7a0
+PRINTING CHUNK
+Value: 93, Position: 90
+Value: 90, Position: 89
+PRINTING CHUNK
+Value: 93, Position: 0
+Value: 90, Position: 0
+pushing IN ELSE 91
+pa
+Data: 91, Address: 0xc7b8a0
+Data: 92, Address: 0xc7bc80
+Data: 93, Address: 0xc7b5e0
+Data: 94, Address: 0xc7b680
+Data: 95, Address: 0xc7b960
+Data: 96, Address: 0xc7bae0
+Data: 98, Address: 0xc7be80
+Data: 97, Address: 0xc7bc40
+Data: 99, Address: 0xc7bbe0
+Data: 100, Address: 0xc7b7a0
+PRINTING CHUNK
+Value: 90, Position: 89
+PRINTING CHUNK
+Value: 90, Position: 0
+pushing IN ELSE 90
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+pa
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+pa
+rrb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+Data: 83, Address: 0xc7b800
+Data: 84, Address: 0xc7bd60
+Data: 85, Address: 0xc7b6a0
+Data: 86, Address: 0xc7bd00
+Data: 87, Address: 0xc7b780
+Data: 88, Address: 0xc7b8e0
+Data: 89, Address: 0xc7c0a0
+Data: 90, Address: 0xc7bf40
+Data: 91, Address: 0xc7b8a0
+Data: 92, Address: 0xc7bc80
+Data: 93, Address: 0xc7b5e0
+Data: 94, Address: 0xc7b680
+Data: 95, Address: 0xc7b960
+Data: 96, Address: 0xc7bae0
+Data: 98, Address: 0xc7be80
+Data: 97, Address: 0xc7bc40
+Data: 99, Address: 0xc7bbe0
+Data: 100, Address: 0xc7b7a0
+PRINTING CHUNK
+Value: 83, Position: 81
+Value: 80, Position: 80
+Value: 87, Position: 79
+Value: 77, Position: 78
+Value: 85, Position: 77
+Value: 89, Position: 76
+PRINTING CHUNK
+Value: 83, Position: 0
+Value: 80, Position: 0
+Value: 87, Position: 0
+Value: 77, Position: 0
+Value: 85, Position: 0
+Value: 89, Position: 0
+pushing IN ELSE 82
+pa
+rb
+pa
+rrb
+rb
+rb
+pa
+rrb
+rrb
+Data: 80, Address: 0xc7b7e0
+Data: 81, Address: 0xc7ba40
+Data: 82, Address: 0xc7bee0
+Data: 83, Address: 0xc7b800
+Data: 84, Address: 0xc7bd60
+Data: 85, Address: 0xc7b6a0
+Data: 86, Address: 0xc7bd00
+Data: 87, Address: 0xc7b780
+Data: 88, Address: 0xc7b8e0
+Data: 89, Address: 0xc7c0a0
+Data: 90, Address: 0xc7bf40
+Data: 91, Address: 0xc7b8a0
+Data: 92, Address: 0xc7bc80
+Data: 93, Address: 0xc7b5e0
+Data: 94, Address: 0xc7b680
+Data: 95, Address: 0xc7b960
+Data: 96, Address: 0xc7bae0
+Data: 98, Address: 0xc7be80
+Data: 97, Address: 0xc7bc40
+Data: 99, Address: 0xc7bbe0
+Data: 100, Address: 0xc7b7a0
+PRINTING CHUNK
+Value: 77, Position: 78
+Value: 85, Position: 77
+Value: 89, Position: 76
+PRINTING CHUNK
+Value: 77, Position: 0
+Value: 85, Position: 0
+Value: 89, Position: 0
+pushing IN ELSE 79
+pa
+Data: 79, Address: 0xc7bb60
+Data: 80, Address: 0xc7b7e0
+Data: 81, Address: 0xc7ba40
+Data: 82, Address: 0xc7bee0
+Data: 83, Address: 0xc7b800
+Data: 84, Address: 0xc7bd60
+Data: 85, Address: 0xc7b6a0
+Data: 86, Address: 0xc7bd00
+Data: 87, Address: 0xc7b780
+Data: 88, Address: 0xc7b8e0
+Data: 89, Address: 0xc7c0a0
+Data: 90, Address: 0xc7bf40
+Data: 91, Address: 0xc7b8a0
+Data: 92, Address: 0xc7bc80
+Data: 93, Address: 0xc7b5e0
+Data: 94, Address: 0xc7b680
+Data: 95, Address: 0xc7b960
+Data: 96, Address: 0xc7bae0
+Data: 98, Address: 0xc7be80
+Data: 97, Address: 0xc7bc40
+Data: 99, Address: 0xc7bbe0
+Data: 100, Address: 0xc7b7a0
+PRINTING CHUNK
+Value: 85, Position: 77
+Value: 89, Position: 76
+PRINTING CHUNK
+Value: 85, Position: 0
+Value: 89, Position: 0
+pushing IN ELSE 78
+pa
+Data: 78, Address: 0xc7b840
+Data: 79, Address: 0xc7bb60
+Data: 80, Address: 0xc7b7e0
+Data: 81, Address: 0xc7ba40
+Data: 82, Address: 0xc7bee0
+Data: 83, Address: 0xc7b800
+Data: 84, Address: 0xc7bd60
+Data: 85, Address: 0xc7b6a0
+Data: 86, Address: 0xc7bd00
+Data: 87, Address: 0xc7b780
+Data: 88, Address: 0xc7b8e0
+Data: 89, Address: 0xc7c0a0
+Data: 90, Address: 0xc7bf40
+Data: 91, Address: 0xc7b8a0
+Data: 92, Address: 0xc7bc80
+Data: 93, Address: 0xc7b5e0
+Data: 94, Address: 0xc7b680
+Data: 95, Address: 0xc7b960
+Data: 96, Address: 0xc7bae0
+Data: 98, Address: 0xc7be80
+Data: 97, Address: 0xc7bc40
+Data: 99, Address: 0xc7bbe0
+Data: 100, Address: 0xc7b7a0
+PRINTING CHUNK
+Value: 89, Position: 76
+PRINTING CHUNK
+Value: 89, Position: 0
+pushing IN ELSE 77
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+pa
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+pa
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+pa
+rrb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+Data: 57, Address: 0xc7b560
+Data: 58, Address: 0xc7be00
+Data: 59, Address: 0xc7b740
+Data: 60, Address: 0xc7b4a0
+Data: 61, Address: 0xc7b700
+Data: 62, Address: 0xc7bdc0
+Data: 63, Address: 0xc7bce0
+Data: 64, Address: 0xc7bb40
+Data: 65, Address: 0xc7bd80
+Data: 66, Address: 0xc7b580
+Data: 67, Address: 0xc7bc60
+Data: 68, Address: 0xc7bc20
+Data: 69, Address: 0xc7ba60
+Data: 70, Address: 0xc7bec0
+Data: 71, Address: 0xc7b6c0
+Data: 72, Address: 0xc7b480
+Data: 73, Address: 0xc7bde0
+Data: 74, Address: 0xc7b920
+Data: 75, Address: 0xc7ba00
+Data: 76, Address: 0xc7ba80
+Data: 77, Address: 0xc7b6e0
+Data: 78, Address: 0xc7b840
+Data: 79, Address: 0xc7bb60
+Data: 80, Address: 0xc7b7e0
+Data: 81, Address: 0xc7ba40
+Data: 82, Address: 0xc7bee0
+Data: 83, Address: 0xc7b800
+Data: 84, Address: 0xc7bd60
+Data: 85, Address: 0xc7b6a0
+Data: 86, Address: 0xc7bd00
+Data: 87, Address: 0xc7b780
+Data: 88, Address: 0xc7b8e0
+Data: 89, Address: 0xc7c0a0
+Data: 90, Address: 0xc7bf40
+Data: 91, Address: 0xc7b8a0
+Data: 92, Address: 0xc7bc80
+Data: 93, Address: 0xc7b5e0
+Data: 94, Address: 0xc7b680
+Data: 95, Address: 0xc7b960
+Data: 96, Address: 0xc7bae0
+Data: 98, Address: 0xc7be80
+Data: 97, Address: 0xc7bc40
+Data: 99, Address: 0xc7bbe0
+Data: 100, Address: 0xc7b7a0
+PRINTING CHUNK
+Value: 71, Position: 55
+Value: 66, Position: 54
+Value: 57, Position: 53
+Value: 60, Position: 52
+Value: 72, Position: 51
+PRINTING CHUNK
+Value: 71, Position: 0
+Value: 66, Position: 0
+Value: 57, Position: 0
+Value: 60, Position: 0
+Value: 72, Position: 0
+pushing IN ELSE 56
+pa
+rb
+rb
+pa
+rrb
+rrb
+Data: 55, Address: 0xc7b980
+Data: 56, Address: 0xc7c040
+Data: 57, Address: 0xc7b560
+Data: 58, Address: 0xc7be00
+Data: 59, Address: 0xc7b740
+Data: 60, Address: 0xc7b4a0
+Data: 61, Address: 0xc7b700
+Data: 62, Address: 0xc7bdc0
+Data: 63, Address: 0xc7bce0
+Data: 64, Address: 0xc7bb40
+Data: 65, Address: 0xc7bd80
+Data: 66, Address: 0xc7b580
+Data: 67, Address: 0xc7bc60
+Data: 68, Address: 0xc7bc20
+Data: 69, Address: 0xc7ba60
+Data: 70, Address: 0xc7bec0
+Data: 71, Address: 0xc7b6c0
+Data: 72, Address: 0xc7b480
+Data: 73, Address: 0xc7bde0
+Data: 74, Address: 0xc7b920
+Data: 75, Address: 0xc7ba00
+Data: 76, Address: 0xc7ba80
+Data: 77, Address: 0xc7b6e0
+Data: 78, Address: 0xc7b840
+Data: 79, Address: 0xc7bb60
+Data: 80, Address: 0xc7b7e0
+Data: 81, Address: 0xc7ba40
+Data: 82, Address: 0xc7bee0
+Data: 83, Address: 0xc7b800
+Data: 84, Address: 0xc7bd60
+Data: 85, Address: 0xc7b6a0
+Data: 86, Address: 0xc7bd00
+Data: 87, Address: 0xc7b780
+Data: 88, Address: 0xc7b8e0
+Data: 89, Address: 0xc7c0a0
+Data: 90, Address: 0xc7bf40
+Data: 91, Address: 0xc7b8a0
+Data: 92, Address: 0xc7bc80
+Data: 93, Address: 0xc7b5e0
+Data: 94, Address: 0xc7b680
+Data: 95, Address: 0xc7b960
+Data: 96, Address: 0xc7bae0
+Data: 98, Address: 0xc7be80
+Data: 97, Address: 0xc7bc40
+Data: 99, Address: 0xc7bbe0
+Data: 100, Address: 0xc7b7a0
+PRINTING CHUNK
+Value: 57, Position: 53
+Value: 60, Position: 52
+Value: 72, Position: 51
+PRINTING CHUNK
+Value: 57, Position: 0
+Value: 60, Position: 0
+Value: 72, Position: 0
+pushing IN ELSE 54
+pa
+rb
+pa
+rrb
+Data: 53, Address: 0xc7b760
+Data: 54, Address: 0xc7bd40
+Data: 55, Address: 0xc7b980
+Data: 56, Address: 0xc7c040
+Data: 57, Address: 0xc7b560
+Data: 58, Address: 0xc7be00
+Data: 59, Address: 0xc7b740
+Data: 60, Address: 0xc7b4a0
+Data: 61, Address: 0xc7b700
+Data: 62, Address: 0xc7bdc0
+Data: 63, Address: 0xc7bce0
+Data: 64, Address: 0xc7bb40
+Data: 65, Address: 0xc7bd80
+Data: 66, Address: 0xc7b580
+Data: 67, Address: 0xc7bc60
+Data: 68, Address: 0xc7bc20
+Data: 69, Address: 0xc7ba60
+Data: 70, Address: 0xc7bec0
+Data: 71, Address: 0xc7b6c0
+Data: 72, Address: 0xc7b480
+Data: 73, Address: 0xc7bde0
+Data: 74, Address: 0xc7b920
+Data: 75, Address: 0xc7ba00
+Data: 76, Address: 0xc7ba80
+Data: 77, Address: 0xc7b6e0
+Data: 78, Address: 0xc7b840
+Data: 79, Address: 0xc7bb60
+Data: 80, Address: 0xc7b7e0
+Data: 81, Address: 0xc7ba40
+Data: 82, Address: 0xc7bee0
+Data: 83, Address: 0xc7b800
+Data: 84, Address: 0xc7bd60
+Data: 85, Address: 0xc7b6a0
+Data: 86, Address: 0xc7bd00
+Data: 87, Address: 0xc7b780
+Data: 88, Address: 0xc7b8e0
+Data: 89, Address: 0xc7c0a0
+Data: 90, Address: 0xc7bf40
+Data: 91, Address: 0xc7b8a0
+Data: 92, Address: 0xc7bc80
+Data: 93, Address: 0xc7b5e0
+Data: 94, Address: 0xc7b680
+Data: 95, Address: 0xc7b960
+Data: 96, Address: 0xc7bae0
+Data: 98, Address: 0xc7be80
+Data: 97, Address: 0xc7bc40
+Data: 99, Address: 0xc7bbe0
+Data: 100, Address: 0xc7b7a0
+PRINTING CHUNK
+Value: 72, Position: 51
+PRINTING CHUNK
+Value: 72, Position: 0
+pushing IN ELSE 52
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+Data: 47, Address: 0xc7bb20
+Data: 48, Address: 0xc7bea0
+Data: 49, Address: 0xc7bf60
+Data: 50, Address: 0xc7bca0
+Data: 51, Address: 0xc7bba0
+Data: 52, Address: 0xc7bb80
+Data: 53, Address: 0xc7b760
+Data: 54, Address: 0xc7bd40
+Data: 55, Address: 0xc7b980
+Data: 56, Address: 0xc7c040
+Data: 57, Address: 0xc7b560
+Data: 58, Address: 0xc7be00
+Data: 59, Address: 0xc7b740
+Data: 60, Address: 0xc7b4a0
+Data: 61, Address: 0xc7b700
+Data: 62, Address: 0xc7bdc0
+Data: 63, Address: 0xc7bce0
+Data: 64, Address: 0xc7bb40
+Data: 65, Address: 0xc7bd80
+Data: 66, Address: 0xc7b580
+Data: 67, Address: 0xc7bc60
+Data: 68, Address: 0xc7bc20
+Data: 69, Address: 0xc7ba60
+Data: 70, Address: 0xc7bec0
+Data: 71, Address: 0xc7b6c0
+Data: 72, Address: 0xc7b480
+Data: 73, Address: 0xc7bde0
+Data: 74, Address: 0xc7b920
+Data: 75, Address: 0xc7ba00
+Data: 76, Address: 0xc7ba80
+Data: 77, Address: 0xc7b6e0
+Data: 78, Address: 0xc7b840
+Data: 79, Address: 0xc7bb60
+Data: 80, Address: 0xc7b7e0
+Data: 81, Address: 0xc7ba40
+Data: 82, Address: 0xc7bee0
+Data: 83, Address: 0xc7b800
+Data: 84, Address: 0xc7bd60
+Data: 85, Address: 0xc7b6a0
+Data: 86, Address: 0xc7bd00
+Data: 87, Address: 0xc7b780
+Data: 88, Address: 0xc7b8e0
+Data: 89, Address: 0xc7c0a0
+Data: 90, Address: 0xc7bf40
+Data: 91, Address: 0xc7b8a0
+Data: 92, Address: 0xc7bc80
+Data: 93, Address: 0xc7b5e0
+Data: 94, Address: 0xc7b680
+Data: 95, Address: 0xc7b960
+Data: 96, Address: 0xc7bae0
+Data: 98, Address: 0xc7be80
+Data: 97, Address: 0xc7bc40
+Data: 99, Address: 0xc7bbe0
+Data: 100, Address: 0xc7b7a0
+PRINTING CHUNK
+Value: 18, Position: 45
+Value: 34, Position: 44
+Value: 31, Position: 43
+Value: 49, Position: 42
+Value: 9, Position: 41
+Value: 23, Position: 40
+Value: 48, Position: 39
+Value: 41, Position: 38
+Value: 26, Position: 37
+Value: 25, Position: 36
+Value: 42, Position: 35
+Value: 3, Position: 34
+Value: 5, Position: 33
+Value: 50, Position: 32
+Value: 12, Position: 31
+Value: 1, Position: 30
+Value: 51, Position: 29
+Value: 47, Position: 28
+Value: 33, Position: 27
+Value: 32, Position: 26
+Value: 10, Position: 25
+Value: 4, Position: 24
+Value: 44, Position: 23
+Value: 39, Position: 22
+Value: 16, Position: 21
+Value: 43, Position: 20
+Value: 28, Position: 19
+Value: 17, Position: 18
+Value: 30, Position: 17
+Value: 13, Position: 16
+Value: 21, Position: 15
+Value: 7, Position: 14
+Value: 19, Position: 13
+Value: 27, Position: 12
+Value: 45, Position: 11
+Value: 8, Position: 10
+Value: 11, Position: 9
+Value: 6, Position: 8
+Value: 38, Position: 7
+Value: 24, Position: 6
+Value: 35, Position: 5
+Value: 37, Position: 4
+Value: 2, Position: 3
+Value: 20, Position: 2
+Value: 36, Position: 1
+Value: 15, Position: 0
+PRINTING CHUNK
+Value: 18, Position: 0
+Value: 34, Position: 0
+Value: 31, Position: 0
+Value: 49, Position: 0
+Value: 9, Position: 0
+Value: 23, Position: 0
+Value: 48, Position: 0
+Value: 41, Position: 0
+Value: 26, Position: 0
+Value: 25, Position: 0
+Value: 42, Position: 0
+Value: 3, Position: 0
+Value: 5, Position: 0
+Value: 50, Position: 0
+Value: 12, Position: 0
+Value: 1, Position: 0
+Value: 51, Position: 0
+Value: 47, Position: 0
+Value: 33, Position: 0
+Value: 32, Position: 0
+Value: 10, Position: 0
+Value: 4, Position: 0
+Value: 44, Position: 0
+Value: 39, Position: 0
+Value: 16, Position: 0
+Value: 43, Position: 0
+Value: 28, Position: 0
+Value: 17, Position: 0
+Value: 30, Position: 0
+Value: 13, Position: 0
+Value: 21, Position: 0
+Value: 7, Position: 0
+Value: 19, Position: 0
+Value: 27, Position: 0
+Value: 45, Position: 0
+Value: 8, Position: 0
+Value: 11, Position: 0
+Value: 6, Position: 0
+Value: 38, Position: 0
+Value: 24, Position: 0
+Value: 35, Position: 0
+Value: 37, Position: 0
+Value: 2, Position: 0
+Value: 20, Position: 0
+Value: 36, Position: 0
+Value: 15, Position: 0
+pushing IN ELSE 46
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+pa
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rrb
+rrb
+rrb
+rrb
+rrb
+pa
+rb
+rb
+rb
+rb
+rrb
+rrb
+pa
+rb
+rrb
+rrb
+rrb
+rrb
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rrb
+rrb
+pa
+rb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rrb
+pa
+Data: 15, Address: 0xc7b440
+Data: 16, Address: 0xc7b9a0
+Data: 17, Address: 0xc7b8c0
+Data: 18, Address: 0xc7bfc0
+Data: 19, Address: 0xc7b720
+Data: 20, Address: 0xc7b4c0
+Data: 21, Address: 0xc7b820
+Data: 22, Address: 0xc7c020
+Data: 23, Address: 0xc7bf00
+Data: 24, Address: 0xc7b540
+Data: 25, Address: 0xc7be20
+Data: 26, Address: 0xc7be40
+Data: 27, Address: 0xc7b660
+Data: 28, Address: 0xc7b900
+Data: 29, Address: 0xc7bfe0
+Data: 30, Address: 0xc7b880
+Data: 31, Address: 0xc7bf80
+Data: 32, Address: 0xc7bac0
+Data: 33, Address: 0xc7bb00
+Data: 34, Address: 0xc7bfa0
+Data: 35, Address: 0xc7b520
+Data: 36, Address: 0xc7b460
+Data: 37, Address: 0xc7b500
+Data: 38, Address: 0xc7b5a0
+Data: 39, Address: 0xc7b9c0
+Data: 40, Address: 0xc7c000
+Data: 41, Address: 0xc7be60
+Data: 42, Address: 0xc7bda0
+Data: 43, Address: 0xc7b940
+Data: 44, Address: 0xc7b9e0
+Data: 45, Address: 0xc7b640
+Data: 46, Address: 0xc7c080
+Data: 47, Address: 0xc7bb20
+Data: 48, Address: 0xc7bea0
+Data: 49, Address: 0xc7bf60
+Data: 50, Address: 0xc7bca0
+Data: 51, Address: 0xc7bba0
+Data: 52, Address: 0xc7bb80
+Data: 53, Address: 0xc7b760
+Data: 54, Address: 0xc7bd40
+Data: 55, Address: 0xc7b980
+Data: 56, Address: 0xc7c040
+Data: 57, Address: 0xc7b560
+Data: 58, Address: 0xc7be00
+Data: 59, Address: 0xc7b740
+Data: 60, Address: 0xc7b4a0
+Data: 61, Address: 0xc7b700
+Data: 62, Address: 0xc7bdc0
+Data: 63, Address: 0xc7bce0
+Data: 64, Address: 0xc7bb40
+Data: 65, Address: 0xc7bd80
+Data: 66, Address: 0xc7b580
+Data: 67, Address: 0xc7bc60
+Data: 68, Address: 0xc7bc20
+Data: 69, Address: 0xc7ba60
+Data: 70, Address: 0xc7bec0
+Data: 71, Address: 0xc7b6c0
+Data: 72, Address: 0xc7b480
+Data: 73, Address: 0xc7bde0
+Data: 74, Address: 0xc7b920
+Data: 75, Address: 0xc7ba00
+Data: 76, Address: 0xc7ba80
+Data: 77, Address: 0xc7b6e0
+Data: 78, Address: 0xc7b840
+Data: 79, Address: 0xc7bb60
+Data: 80, Address: 0xc7b7e0
+Data: 81, Address: 0xc7ba40
+Data: 82, Address: 0xc7bee0
+Data: 83, Address: 0xc7b800
+Data: 84, Address: 0xc7bd60
+Data: 85, Address: 0xc7b6a0
+Data: 86, Address: 0xc7bd00
+Data: 87, Address: 0xc7b780
+Data: 88, Address: 0xc7b8e0
+Data: 89, Address: 0xc7c0a0
+Data: 90, Address: 0xc7bf40
+Data: 91, Address: 0xc7b8a0
+Data: 92, Address: 0xc7bc80
+Data: 93, Address: 0xc7b5e0
+Data: 94, Address: 0xc7b680
+Data: 95, Address: 0xc7b960
+Data: 96, Address: 0xc7bae0
+Data: 98, Address: 0xc7be80
+Data: 97, Address: 0xc7bc40
+Data: 99, Address: 0xc7bbe0
+Data: 100, Address: 0xc7b7a0
+PRINTING CHUNK
+Value: 19, Position: 13
+Value: 27, Position: 12
+Value: 45, Position: 11
+Value: 8, Position: 10
+Value: 11, Position: 9
+Value: 6, Position: 8
+Value: 38, Position: 7
+Value: 24, Position: 6
+Value: 35, Position: 5
+Value: 37, Position: 4
+Value: 2, Position: 3
+Value: 20, Position: 2
+Value: 36, Position: 1
+Value: 15, Position: 0
+PRINTING CHUNK
+Value: 19, Position: 0
+Value: 27, Position: 0
+Value: 45, Position: 0
+Value: 8, Position: 0
+Value: 11, Position: 0
+Value: 6, Position: 0
+Value: 38, Position: 0
+Value: 24, Position: 0
+Value: 35, Position: 0
+Value: 37, Position: 0
+Value: 2, Position: 0
+Value: 20, Position: 0
+Value: 36, Position: 0
+Value: 15, Position: 0
+pushing IN ELSE 14
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+pa
+rb
+rb
+rb
+rb
+rb
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+Data: 10, Address: 0xc7baa0
+Data: 11, Address: 0xc7b600
+Data: 12, Address: 0xc7bc00
+Data: 13, Address: 0xc7b860
+Data: 14, Address: 0xc7c060
+Data: 15, Address: 0xc7b440
+Data: 16, Address: 0xc7b9a0
+Data: 17, Address: 0xc7b8c0
+Data: 18, Address: 0xc7bfc0
+Data: 19, Address: 0xc7b720
+Data: 20, Address: 0xc7b4c0
+Data: 21, Address: 0xc7b820
+Data: 22, Address: 0xc7c020
+Data: 23, Address: 0xc7bf00
+Data: 24, Address: 0xc7b540
+Data: 25, Address: 0xc7be20
+Data: 26, Address: 0xc7be40
+Data: 27, Address: 0xc7b660
+Data: 28, Address: 0xc7b900
+Data: 29, Address: 0xc7bfe0
+Data: 30, Address: 0xc7b880
+Data: 31, Address: 0xc7bf80
+Data: 32, Address: 0xc7bac0
+Data: 33, Address: 0xc7bb00
+Data: 34, Address: 0xc7bfa0
+Data: 35, Address: 0xc7b520
+Data: 36, Address: 0xc7b460
+Data: 37, Address: 0xc7b500
+Data: 38, Address: 0xc7b5a0
+Data: 39, Address: 0xc7b9c0
+Data: 40, Address: 0xc7c000
+Data: 41, Address: 0xc7be60
+Data: 42, Address: 0xc7bda0
+Data: 43, Address: 0xc7b940
+Data: 44, Address: 0xc7b9e0
+Data: 45, Address: 0xc7b640
+Data: 46, Address: 0xc7c080
+Data: 47, Address: 0xc7bb20
+Data: 48, Address: 0xc7bea0
+Data: 49, Address: 0xc7bf60
+Data: 50, Address: 0xc7bca0
+Data: 51, Address: 0xc7bba0
+Data: 52, Address: 0xc7bb80
+Data: 53, Address: 0xc7b760
+Data: 54, Address: 0xc7bd40
+Data: 55, Address: 0xc7b980
+Data: 56, Address: 0xc7c040
+Data: 57, Address: 0xc7b560
+Data: 58, Address: 0xc7be00
+Data: 59, Address: 0xc7b740
+Data: 60, Address: 0xc7b4a0
+Data: 61, Address: 0xc7b700
+Data: 62, Address: 0xc7bdc0
+Data: 63, Address: 0xc7bce0
+Data: 64, Address: 0xc7bb40
+Data: 65, Address: 0xc7bd80
+Data: 66, Address: 0xc7b580
+Data: 67, Address: 0xc7bc60
+Data: 68, Address: 0xc7bc20
+Data: 69, Address: 0xc7ba60
+Data: 70, Address: 0xc7bec0
+Data: 71, Address: 0xc7b6c0
+Data: 72, Address: 0xc7b480
+Data: 73, Address: 0xc7bde0
+Data: 74, Address: 0xc7b920
+Data: 75, Address: 0xc7ba00
+Data: 76, Address: 0xc7ba80
+Data: 77, Address: 0xc7b6e0
+Data: 78, Address: 0xc7b840
+Data: 79, Address: 0xc7bb60
+Data: 80, Address: 0xc7b7e0
+Data: 81, Address: 0xc7ba40
+Data: 82, Address: 0xc7bee0
+Data: 83, Address: 0xc7b800
+Data: 84, Address: 0xc7bd60
+Data: 85, Address: 0xc7b6a0
+Data: 86, Address: 0xc7bd00
+Data: 87, Address: 0xc7b780
+Data: 88, Address: 0xc7b8e0
+Data: 89, Address: 0xc7c0a0
+Data: 90, Address: 0xc7bf40
+Data: 91, Address: 0xc7b8a0
+Data: 92, Address: 0xc7bc80
+Data: 93, Address: 0xc7b5e0
+Data: 94, Address: 0xc7b680
+Data: 95, Address: 0xc7b960
+Data: 96, Address: 0xc7bae0
+Data: 98, Address: 0xc7be80
+Data: 97, Address: 0xc7bc40
+Data: 99, Address: 0xc7bbe0
+Data: 100, Address: 0xc7b7a0
+PRINTING CHUNK
+Value: 6, Position: 8
+Value: 38, Position: 7
+Value: 24, Position: 6
+Value: 35, Position: 5
+Value: 37, Position: 4
+Value: 2, Position: 3
+Value: 20, Position: 2
+Value: 36, Position: 1
+Value: 15, Position: 0
+PRINTING CHUNK
+Value: 6, Position: 0
+Value: 38, Position: 0
+Value: 24, Position: 0
+Value: 35, Position: 0
+Value: 37, Position: 0
+Value: 2, Position: 0
+Value: 20, Position: 0
+Value: 36, Position: 0
+Value: 15, Position: 0
+pushing IN ELSE 9
+pa
+rrb
+rrb
+rrb
+pa
+rb
+rb
+rrb
+rrb
+rrb
+pa
+rb
+rb
+rrb
+rrb
+pa
+rb
+rb
+pa
+rrb
+rrb
+rrb
+pa
+rb
+Data: 4, Address: 0xc7ba20
+Data: 5, Address: 0xc7bcc0
+Data: 6, Address: 0xc7b5c0
+Data: 7, Address: 0xc7b7c0
+Data: 8, Address: 0xc7b620
+Data: 9, Address: 0xc7bf20
+Data: 10, Address: 0xc7baa0
+Data: 11, Address: 0xc7b600
+Data: 12, Address: 0xc7bc00
+Data: 13, Address: 0xc7b860
+Data: 14, Address: 0xc7c060
+Data: 15, Address: 0xc7b440
+Data: 16, Address: 0xc7b9a0
+Data: 17, Address: 0xc7b8c0
+Data: 18, Address: 0xc7bfc0
+Data: 19, Address: 0xc7b720
+Data: 20, Address: 0xc7b4c0
+Data: 21, Address: 0xc7b820
+Data: 22, Address: 0xc7c020
+Data: 23, Address: 0xc7bf00
+Data: 24, Address: 0xc7b540
+Data: 25, Address: 0xc7be20
+Data: 26, Address: 0xc7be40
+Data: 27, Address: 0xc7b660
+Data: 28, Address: 0xc7b900
+Data: 29, Address: 0xc7bfe0
+Data: 30, Address: 0xc7b880
+Data: 31, Address: 0xc7bf80
+Data: 32, Address: 0xc7bac0
+Data: 33, Address: 0xc7bb00
+Data: 34, Address: 0xc7bfa0
+Data: 35, Address: 0xc7b520
+Data: 36, Address: 0xc7b460
+Data: 37, Address: 0xc7b500
+Data: 38, Address: 0xc7b5a0
+Data: 39, Address: 0xc7b9c0
+Data: 40, Address: 0xc7c000
+Data: 41, Address: 0xc7be60
+Data: 42, Address: 0xc7bda0
+Data: 43, Address: 0xc7b940
+Data: 44, Address: 0xc7b9e0
+Data: 45, Address: 0xc7b640
+Data: 46, Address: 0xc7c080
+Data: 47, Address: 0xc7bb20
+Data: 48, Address: 0xc7bea0
+Data: 49, Address: 0xc7bf60
+Data: 50, Address: 0xc7bca0
+Data: 51, Address: 0xc7bba0
+Data: 52, Address: 0xc7bb80
+Data: 53, Address: 0xc7b760
+Data: 54, Address: 0xc7bd40
+Data: 55, Address: 0xc7b980
+Data: 56, Address: 0xc7c040
+Data: 57, Address: 0xc7b560
+Data: 58, Address: 0xc7be00
+Data: 59, Address: 0xc7b740
+Data: 60, Address: 0xc7b4a0
+Data: 61, Address: 0xc7b700
+Data: 62, Address: 0xc7bdc0
+Data: 63, Address: 0xc7bce0
+Data: 64, Address: 0xc7bb40
+Data: 65, Address: 0xc7bd80
+Data: 66, Address: 0xc7b580
+Data: 67, Address: 0xc7bc60
+Data: 68, Address: 0xc7bc20
+Data: 69, Address: 0xc7ba60
+Data: 70, Address: 0xc7bec0
+Data: 71, Address: 0xc7b6c0
+Data: 72, Address: 0xc7b480
+Data: 73, Address: 0xc7bde0
+Data: 74, Address: 0xc7b920
+Data: 75, Address: 0xc7ba00
+Data: 76, Address: 0xc7ba80
+Data: 77, Address: 0xc7b6e0
+Data: 78, Address: 0xc7b840
+Data: 79, Address: 0xc7bb60
+Data: 80, Address: 0xc7b7e0
+Data: 81, Address: 0xc7ba40
+Data: 82, Address: 0xc7bee0
+Data: 83, Address: 0xc7b800
+Data: 84, Address: 0xc7bd60
+Data: 85, Address: 0xc7b6a0
+Data: 86, Address: 0xc7bd00
+Data: 87, Address: 0xc7b780
+Data: 88, Address: 0xc7b8e0
+Data: 89, Address: 0xc7c0a0
+Data: 90, Address: 0xc7bf40
+Data: 91, Address: 0xc7b8a0
+Data: 92, Address: 0xc7bc80
+Data: 93, Address: 0xc7b5e0
+Data: 94, Address: 0xc7b680
+Data: 95, Address: 0xc7b960
+Data: 96, Address: 0xc7bae0
+Data: 98, Address: 0xc7be80
+Data: 97, Address: 0xc7bc40
+Data: 99, Address: 0xc7bbe0
+Data: 100, Address: 0xc7b7a0
+PRINTING CHUNK
+Value: 20, Position: 2
+Value: 36, Position: 1
+Value: 15, Position: 0
+PRINTING CHUNK
+Value: 20, Position: 0
+Value: 36, Position: 0
+Value: 15, Position: 0
+pushing IN ELSE 3
+pa
+rrb
+pa
+Data: 2, Address: 0xc7b4e0
+Data: 3, Address: 0xc7bd20
+Data: 4, Address: 0xc7ba20
+Data: 5, Address: 0xc7bcc0
+Data: 6, Address: 0xc7b5c0
+Data: 7, Address: 0xc7b7c0
+Data: 8, Address: 0xc7b620
+Data: 9, Address: 0xc7bf20
+Data: 10, Address: 0xc7baa0
+Data: 11, Address: 0xc7b600
+Data: 12, Address: 0xc7bc00
+Data: 13, Address: 0xc7b860
+Data: 14, Address: 0xc7c060
+Data: 15, Address: 0xc7b440
+Data: 16, Address: 0xc7b9a0
+Data: 17, Address: 0xc7b8c0
+Data: 18, Address: 0xc7bfc0
+Data: 19, Address: 0xc7b720
+Data: 20, Address: 0xc7b4c0
+Data: 21, Address: 0xc7b820
+Data: 22, Address: 0xc7c020
+Data: 23, Address: 0xc7bf00
+Data: 24, Address: 0xc7b540
+Data: 25, Address: 0xc7be20
+Data: 26, Address: 0xc7be40
+Data: 27, Address: 0xc7b660
+Data: 28, Address: 0xc7b900
+Data: 29, Address: 0xc7bfe0
+Data: 30, Address: 0xc7b880
+Data: 31, Address: 0xc7bf80
+Data: 32, Address: 0xc7bac0
+Data: 33, Address: 0xc7bb00
+Data: 34, Address: 0xc7bfa0
+Data: 35, Address: 0xc7b520
+Data: 36, Address: 0xc7b460
+Data: 37, Address: 0xc7b500
+Data: 38, Address: 0xc7b5a0
+Data: 39, Address: 0xc7b9c0
+Data: 40, Address: 0xc7c000
+Data: 41, Address: 0xc7be60
+Data: 42, Address: 0xc7bda0
+Data: 43, Address: 0xc7b940
+Data: 44, Address: 0xc7b9e0
+Data: 45, Address: 0xc7b640
+Data: 46, Address: 0xc7c080
+Data: 47, Address: 0xc7bb20
+Data: 48, Address: 0xc7bea0
+Data: 49, Address: 0xc7bf60
+Data: 50, Address: 0xc7bca0
+Data: 51, Address: 0xc7bba0
+Data: 52, Address: 0xc7bb80
+Data: 53, Address: 0xc7b760
+Data: 54, Address: 0xc7bd40
+Data: 55, Address: 0xc7b980
+Data: 56, Address: 0xc7c040
+Data: 57, Address: 0xc7b560
+Data: 58, Address: 0xc7be00
+Data: 59, Address: 0xc7b740
+Data: 60, Address: 0xc7b4a0
+Data: 61, Address: 0xc7b700
+Data: 62, Address: 0xc7bdc0
+Data: 63, Address: 0xc7bce0
+Data: 64, Address: 0xc7bb40
+Data: 65, Address: 0xc7bd80
+Data: 66, Address: 0xc7b580
+Data: 67, Address: 0xc7bc60
+Data: 68, Address: 0xc7bc20
+Data: 69, Address: 0xc7ba60
+Data: 70, Address: 0xc7bec0
+Data: 71, Address: 0xc7b6c0
+Data: 72, Address: 0xc7b480
+Data: 73, Address: 0xc7bde0
+Data: 74, Address: 0xc7b920
+Data: 75, Address: 0xc7ba00
+Data: 76, Address: 0xc7ba80
+Data: 77, Address: 0xc7b6e0
+Data: 78, Address: 0xc7b840
+Data: 79, Address: 0xc7bb60
+Data: 80, Address: 0xc7b7e0
+Data: 81, Address: 0xc7ba40
+Data: 82, Address: 0xc7bee0
+Data: 83, Address: 0xc7b800
+Data: 84, Address: 0xc7bd60
+Data: 85, Address: 0xc7b6a0
+Data: 86, Address: 0xc7bd00
+Data: 87, Address: 0xc7b780
+Data: 88, Address: 0xc7b8e0
+Data: 89, Address: 0xc7c0a0
+Data: 90, Address: 0xc7bf40
+Data: 91, Address: 0xc7b8a0
+Data: 92, Address: 0xc7bc80
+Data: 93, Address: 0xc7b5e0
+Data: 94, Address: 0xc7b680
+Data: 95, Address: 0xc7b960
+Data: 96, Address: 0xc7bae0
+Data: 98, Address: 0xc7be80
+Data: 97, Address: 0xc7bc40
+Data: 99, Address: 0xc7bbe0
+Data: 100, Address: 0xc7b7a0
+PRINTING CHUNK
+Value: 15, Position: 0
+PRINTING CHUNK
+Value: 15, Position: 0
+pushing IN ELSE 1
+pa

@@ -55,3 +55,59 @@ After the push(&top, data) operation:
 top -> Node4(data) -> Node3 -> Node2 -> Node1
 
 In this diagram, Node4 is the new node created by the push operation. As you can see, Node4 is now at the top of the stack, and it points to what was previously the top of the stack (Node3).
+\
+
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct {
+    int value;
+    int position;
+} Element;
+
+typedef struct {
+    Element *arr;
+    int size;
+} ClusterArray;
+
+int main(int argc, char *argv[]) {
+    int numbers1[] = {5, 3, 8, 1};
+    int numbers2[] = {7, 2, 9, 4};
+    int clusterSize = 2;
+
+    ClusterArray clusterArray[clusterSize];
+
+    // Initialize the first array
+    clusterArray[0].size = sizeof(numbers1) / sizeof(numbers1[0]);
+    clusterArray[0].arr = (Element *)malloc(clusterArray[0].size * sizeof(Element));
+    for (int i = 0; i < clusterArray[0].size; i++) {
+        clusterArray[0].arr[i].position = i;
+        clusterArray[0].arr[i].value = numbers1[i];
+    }
+
+    // Initialize the second array
+    clusterArray[1].size = sizeof(numbers2) / sizeof(numbers2[0]);
+    clusterArray[1].arr = (Element *)malloc(clusterArray[1].size * sizeof(Element));
+    for (int i = 0; i < clusterArray[1].size; i++) {
+        clusterArray[1].arr[i].position = i;
+        clusterArray[1].arr[i].value = numbers2[i];
+    }
+
+    // Accessing elements
+    printf("Cluster 1, Element 3: Value = %d, Position = %d\n", clusterArray[0].arr[3].value, clusterArray[0].arr[3].position);
+    printf("Cluster 2, Element 2: Value = %d, Position = %d\n", clusterArray[1].arr[2].value, clusterArray[1].arr[2].position);
+
+    // Free allocated memory
+    for (int i = 0; i < clusterSize; i++) {
+        free(clusterArray[i].arr);
+    }
+
+    return 0;
+}
+
+//doesnt work with these, first 3 are jumbled
+36 38 15 34 92 74 33 53 67 94 37 56 35 96 24 22 79 55 75 62 1 95 43 66 6 68 61 83 12 9 2 76 25 60 88 18 64 82 78 39 72 14 8 70 13 84 91 40 42 100 46 3 87 26 99 97 28 85 19 11 65 73 10 93 98 30 47 69 5 21 27 20 41 51 86 7 4 49 80 58 59 50 31 81 52 45 57 17 32 23 29 54 77 90 44 71 63 89 16 48 
