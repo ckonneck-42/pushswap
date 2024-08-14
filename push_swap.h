@@ -6,7 +6,7 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 11:44:08 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/12 13:52:33 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/14 11:27:47 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,9 +50,10 @@ void reverserotatebchunk(Chunk **listb);
 void rotatebchunk(Chunk **listb);
 
 void midpointsort(Node *tops[],Chunk *chunks[],Chunk *chonks[], int i);
-void threepointalgo(Node *tops[],Chunk *chunks[],Chunk *chonks[], int i);
-void appendchunk(Chunk **headRef, int value, int position);
-int sorthalf(Node *tops[],Chunk *chunks[], int i);
+void threepointalgo(Node *tops[]);
+void appendchunk(Chunk **headRef, int value);
+void actuallyappendchunk(Chunk **headRef, int value);
+int sorthalf(Node *tops[],Chunk *chunks[], Chunk *chonks[], int i);
 // void midpointrecursion(Node *tops[], Element arr[], int argc, int i);
 void sendit (Node **lista, Node **listb);
 // void stalinsort(Node **lista, Node **listb, Element arr[], int argc);

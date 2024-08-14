@@ -6,7 +6,7 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 11:42:32 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/13 10:53:08 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/14 07:59:54 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -1393,3 +1393,857 @@ void midpointsort(Node *tops[],Chunk *chunks[],Chunk *chonks[], int i)
 			// printList(tops[0]);
 }
 
+//vvv fucked the chunks
+
+void midpointsort(Node *tops[],Chunk *chunks[],Chunk *chonks[], int i)
+{
+	// int k = 0;
+	// int o = 0;
+	Chunk *listbcopy1[1] = {NULL};
+	Chunk *listbcopy2[1] = {NULL};
+	while(i > 0) //while 
+	{
+		if (tops[1] == NULL)// i guess this works if i increment chunks too far
+			{
+					break ;
+			}				// nowdo the midpoint of chunks 
+							//and start sorting them over the 3 highest at a time
+		// ft_printf("i is %d\n", i);
+		
+		// int middle = find_medianchunk(chunks[i]);
+		// ft_printf("middle is %d\n", middle);
+		while(tops[1])//while
+		{
+			
+			listbcopy1[0] = copyNodeToChunk(tops[1]);
+			listbcopy2[0] = copyNodeToChunk(tops[1]);
+			
+			// ft_printf("listbcopy1\n");
+			// printchunk(listbcopy1[0]);
+			// ft_printf("listbcopy2\n");
+			// printchunk(listbcopy2[0]);
+			chonks[i] = copy_listchunk(chunks[i]);//need 2 more copies because i fuck them
+			
+			Chunk *head = listbcopy1[0];
+			Chunk *headchonk = listbcopy2[0];
+			int tempdata;
+			tempdata = head->value;
+			int highest = find_highest_integer(listbcopy1[0]);
+			// ft_printf("middle: %d\n", middle);
+			ft_printf("i: %d\n", i);
+			// ft_printf("tempdata: %d\n", tempdata);
+			if(tops[1])
+			{	
+				ft_printf("listb:\n");
+				printList(tops[1]);
+				ft_printf("lista:\n");
+				printList(tops[0]);
+				ft_printf("listbcopy1\n");
+				printchunk(listbcopy1[0]);
+				ft_printf("listbcopy2\n");
+				printchunk(listbcopy2[0]);
+				ft_printf("chunks:\n");
+				printchunk(chunks[i]);
+				ft_printf("chonks:\n");
+				printchunk(chonks[i]);
+				int rc = 0;
+				int rrc = 0;
+				highest = find_highest_integer(listbcopy1[0]);
+				tempdata = head->value;
+				while(tempdata != highest)
+				{
+					rotatebchunk(&listbcopy1[0]);
+					rc++;
+					tempdata = listbcopy1[0]->value;
+					// ft_printf("highest: %d\n", highest);
+					// ft_printf("tempdata: %d\n", tempdata);
+					// ft_printf("rc in rotatebchunk: %d\n", rc);
+				}
+				
+				tempdata = headchonk->value;
+				while(tempdata != highest)
+				{//copy the list from chunnks to chonks then do one rotate op with
+				//chonks and one with chunks
+					reverserotatebchunk(&listbcopy2[0]);
+					rrc++;
+					tempdata = listbcopy2[0]->value;
+					// ft_printf("highest: %d\n", highest);
+					// ft_printf("tempdata: %d\n", tempdata);
+					// ft_printf("rrc in reverserotatebchunk: %d\n", rrc);
+				}
+				// ft_printf("rc : %d\n", rc);
+				// ft_printf("rrc : %d\n", rrc);
+				int temprrc = rrc;
+				int temprc = rc;
+				if(rc != 0 || rrc != 0)
+				{
+					// ft_printf("ENTERED");
+					// ft_printf("rc in 1: %d\n", rc);
+					// ft_printf("rrc in 1: %d\n", rrc);
+					if(rc >= rrc)
+					{
+						// ft_printf("rc in rotatebchunk: %d\n", rc);
+						// ft_printf("ENTERED2");
+						// ft_printf("rc in 2: %d\n", rc);
+						// ft_printf("rrc in 2: %d\n", rrc);
+						while(rrc != 0)
+						{
+							// ft_printf("ENTERED3");
+							reverserotateb(&tops[1]);
+							//FIND THE HIGHEST VALUE IN CHUNK AND FREE
+							// THAT ONE INSTEAD OF THE HEAD YOU DUMB FUCK
+							rrc--;
+						}
+						// ft_printf("pushing in rc > %d\n", tops[1]->data);
+						pushtoa(&tops[1], &tops[0]);
+						// if(isSorted(tops[0]) == 1)
+						// 	threepointalgo(tops, chunks,chonks, i);
+					// ft_printf("freeing rc > chunks: %d\n", chunks[i]->value);
+					// freechunk(&chunks[i]);
+					// ft_printf("freeing rc > chonks: %d\n", chonks[i]->value);
+					// freechunk(&chonks[i]);
+					ft_printf("freeing rc > listbcopy1: %d\n", listbcopy1[0]->value);
+					freechunk(&listbcopy1[0]);
+					ft_printf("freeing rc > listbcopy2: %d\n", listbcopy2[0]->value);
+					freechunk(&listbcopy2[0]);
+						while(temprrc -1 != 0)
+						{
+							rotateb(&tops[1]);
+							rotatebchunk(&listbcopy2[0]);///////////
+							temprrc--;
+						}
+					}
+					else if(rc <= rrc)
+					{
+						while(rc != 0)
+						{
+							
+							rotateb(&tops[1]);
+							rc--;
+						}
+						// ft_printf("pushing in rc < %d\n", tops[1]->data);
+						pushtoa(&tops[1], &tops[0]); //good
+						// if(isSorted(tops[0]) == 1)
+						// 	threepointalgo(tops, chunks,chonks, i);//shit be fuczzled yo
+					// ft_printf("freeing rc < chunks: %d\n", chunks[i]->value);
+					// freechunk(&chunks[i]);
+					// ft_printf("freeing rc < chonks: %d\n", chonks[i]->value);
+					// freechunk(&chonks[i]);
+					ft_printf("freeing rc < listbcopy1: %d\n", listbcopy1[0]->value);
+					freechunk(&listbcopy1[0]);
+					ft_printf("freeing rc < listbcopy2: %d\n", listbcopy2[0]->value);
+						while(temprc != 0)
+						{
+							reverserotateb(&tops[1]);
+							reverserotatebchunk(&listbcopy1[0]);
+							temprc--;
+						}
+					}
+					
+				}
+				else
+				{
+					// printList(tops[0]);
+					// printchunk(chunks[i]);
+					// printchunk(chonks[i]);
+					ft_printf("pushing IN ELSE %d\n", tops[1]->data);
+					pushtoa(&tops[1], &tops[0]);
+					// if(isSorted(tops[0]) == 1)
+					// 		threepointalgo(tops, chunks,chonks, i);
+					// ft_printf("freeing IN ELSE chunks: %d\n", chunks[i]->value);
+					// freechunk(&chunks[i]);
+					// ft_printf("freeing IN ELSE chonks: %d\n", chonks[i]->value);
+					// freechunk(&chonks[i]);
+					ft_printf("freeing IN ELSE listbcopy1: %d\n", listbcopy1[0]->value);
+					freechunk(&listbcopy1[0]);
+					ft_printf("freeing IN ELSE listbcopy2: %d\n", listbcopy2[0]->value);
+					freechunk(&listbcopy2[0]);
+				}
+				
+				// else
+				// {
+				// 	tempdata = tops[1]->data;
+				// // ft_printf("I AM IN RRC1\n");
+				// // ft_printf("highest: %d\n", highest);
+				// // ft_printf("tempdata: %d\n", tempdata);
+				// // ft_printf("rrc: %d\n", rrc);
+				// // ft_printf("rc: %d\n", rc);
+				// 	while(tempdata != highest)
+				// 	{
+				// 		// ft_printf("I AM IN RRC2\n");
+				// 		reverserotateb(&tops[1]);
+				// 		tempdata = tops[1]->data;
+				// 	}
+				// }
+				// tempdata = tops[1]->data;
+
+					// ft_printf("PUSHING");
+				
+
+				
+				//and insert recursion, simple as that
+				// ft_printf("list b \n");
+				// printList(listb);
+				// head = chunks[i];
+				// tempdata = head->value;
+			}
+			// Node *listb = tops[1];
+			// ft_printf("Bchunk: %d\n", Bchunk->value);
+			// ft_printf("listB; %d\n", tops[1][0]);
+			// ft_printf("lista:\n");
+			// printList(tops[0]);
+
+			
+				ft_printf("listb:\n");
+				printList(tops[1]);
+				ft_printf("lista:\n");
+				printList(tops[0]);
+				ft_printf("listbcopy1\n");
+				printchunk(listbcopy1[0]);
+				ft_printf("listbcopy2\n");
+				printchunk(listbcopy2[0]);
+				ft_printf("chunks:\n");
+				printchunk(chunks[i]);
+				ft_printf("chonks:\n");
+				printchunk(chonks[i]);
+			 // when pushing is done, free
+			// ft_printf("Bchunk: %d\n", chunks[i]->value);
+
+		 //in here needs to push from b to a, and also delete from the chunk each time an 
+		 //element is pushed
+		 // i am getting the median consistently with a copy of the chunks
+		 // in find_medianchunk
+		 //now i should be able to compare, push and delete chunks 
+		 	
+		}
+		// if(hasHigherThanMiddle(chunks[i], middle) == 0)//  && data is in top3
+		// {
+		// 	middle = find_medianchunk(chunks[i]);
+		// }
+		// if(chunks[i] == NULL)
+		// {
+		// 	ft_printf("huston, we are decrementing\n");
+		// 	i--;
+		// }
+	}
+			// ft_printf("listb:\n");
+			// printList(tops[1]);
+			// ft_printf("lista:\n");
+			// printList(tops[0]);
+}
+
+
+//vvvvvv made this work properly with another check if its sorted or not
+
+void midpointsort(Node *tops[],Chunk *chunks[],Chunk *chonks[], int i)
+{
+	// comparelisttops(&tops[0], &tops[1]);
+	//put function here to compare tops0 and tops1 and if tops1>tops0 then do pa and sa
+	// int k = 0;
+	// int o = 0;
+
+	Chunk *listbcopy1[1] = {NULL};
+	Chunk *listbcopy2[1] = {NULL};
+	while(i > 0) //while 
+	{
+			
+		
+		if (tops[1] == NULL)// i guess this works if i increment chunks too far
+			{
+					break ;
+			}				// nowdo the midpoint of chunks 
+							//and start sorting them over the 3 highest at a time
+		// ft_printf("i is %d\n", i);
+		
+		// int middle = find_medianchunk(chunks[i]);
+		// ft_printf("middle is %d\n", middle);
+		while(tops[1])//while
+		{
+			if(isSorted(tops[0]) == 0)
+			threepointalgo(tops);
+			
+			listbcopy1[0] = copyNodeToChunk(tops[1]);
+			listbcopy2[0] = copyNodeToChunk(tops[1]);
+			
+			// ft_printf("listbcopy1\n");
+			// printchunk(listbcopy1[0]);
+			// ft_printf("listbcopy2\n");
+			// printchunk(listbcopy2[0]);
+			chonks[i] = copy_listchunk(chunks[i]);//need 2 more copies because i fuck them
+			
+			Chunk *head = listbcopy1[0];
+			Chunk *headchonk = listbcopy2[0];
+			int tempdata;
+			tempdata = head->value;
+			int highest = find_highest_integer(listbcopy1[0]);
+			// ft_printf("middle: %d\n", middle);
+			// ft_printf("i: %d\n", i);
+			// ft_printf("tempdata: %d\n", tempdata);
+			if(tops[1])
+			{	
+				// ft_printf("listb:\n");
+				// printList(tops[1]);
+				// ft_printf("lista:\n");
+				// printList(tops[0]);
+				// ft_printf("listbcopy1\n");
+				// printchunk(listbcopy1[0]);
+				// ft_printf("listbcopy2\n");
+				// printchunk(listbcopy2[0]);
+				// ft_printf("chunks:\n");
+				// printchunk(chunks[i]);
+				// ft_printf("chonks:\n");
+				// printchunk(chonks[i]);
+				int rc = 0;
+				int rrc = 0;
+				highest = find_highest_integer(listbcopy1[0]);
+				tempdata = head->value;
+				while(tempdata != highest)
+				{
+					rotatebchunk(&listbcopy1[0]);
+					rc++;
+					tempdata = listbcopy1[0]->value;
+					// ft_printf("highest: %d\n", highest);
+					// ft_printf("tempdata: %d\n", tempdata);
+					// ft_printf("rc in rotatebchunk: %d\n", rc);
+				}
+				
+				tempdata = headchonk->value;
+				while(tempdata != highest)
+				{//copy the list from chunnks to chonks then do one rotate op with
+				//chonks and one with chunks
+					reverserotatebchunk(&listbcopy2[0]);
+					rrc++;
+					tempdata = listbcopy2[0]->value;
+					// ft_printf("highest: %d\n", highest);
+					// ft_printf("tempdata: %d\n", tempdata);
+					// ft_printf("rrc in reverserotatebchunk: %d\n", rrc);
+				}
+				// ft_printf("rc : %d\n", rc);
+				// ft_printf("rrc : %d\n", rrc);
+				int temprrc = rrc;
+				int temprc = rc;
+				if(rc != 0 || rrc != 0)
+				{
+					// ft_printf("ENTERED");
+					// ft_printf("rc in 1: %d\n", rc);
+					// ft_printf("rrc in 1: %d\n", rrc);
+					if(rc >= rrc)
+					{
+						// ft_printf("rc in rotatebchunk: %d\n", rc);
+						// ft_printf("ENTERED2");
+						// ft_printf("rc in 2: %d\n", rc);
+						// ft_printf("rrc in 2: %d\n", rrc);
+						while(rrc != 0)
+						{
+							// ft_printf("ENTERED3");
+							reverserotateb(&tops[1]);
+							//FIND THE HIGHEST VALUE IN CHUNK AND FREE
+							// THAT ONE INSTEAD OF THE HEAD YOU DUMB FUCK
+							rrc--;
+						}
+						// ft_printf("pushing in rc > %d\n", tops[1]->data);
+						pushtoa(&tops[1], &tops[0]);
+						// if(isSorted(tops[0]) == 1)
+						// 	threepointalgo(tops, chunks,chonks, i);
+					// ft_printf("freeing rc > chunks: %d\n", chunks[i]->value);
+					// freechunk(&chunks[i]);
+					// ft_printf("freeing rc > chonks: %d\n", chonks[i]->value);
+					// freechunk(&chonks[i]);
+					ft_printf("freeing rc > listbcopy1: %d\n", listbcopy1[0]->value);
+					freechunk(&listbcopy1[0]);
+					ft_printf("freeing rc > listbcopy2: %d\n", listbcopy2[0]->value);
+					freechunk(&listbcopy2[0]);
+						while(temprrc -1 != 0)
+						{
+							rotateb(&tops[1]);
+							rotatebchunk(&listbcopy2[0]);///////////
+							temprrc--;
+						}
+					}
+					else if(rc <= rrc)
+					{
+						while(rc != 0)
+						{
+							
+							rotateb(&tops[1]);
+							rc--;
+						}
+						// ft_printf("pushing in rc < %d\n", tops[1]->data);
+						pushtoa(&tops[1], &tops[0]); //good
+						// if(isSorted(tops[0]) == 1)
+						// 	threepointalgo(tops, chunks,chonks, i);//shit be fuczzled yo
+					// ft_printf("freeing rc < chunks: %d\n", chunks[i]->value);
+					// freechunk(&chunks[i]);
+					// ft_printf("freeing rc < chonks: %d\n", chonks[i]->value);
+					// freechunk(&chonks[i]);
+					ft_printf("freeing rc < listbcopy1: %d\n", listbcopy1[0]->value);
+					freechunk(&listbcopy1[0]);
+					ft_printf("freeing rc < listbcopy2: %d\n", listbcopy2[0]->value);
+						while(temprc != 0)
+						{
+							reverserotateb(&tops[1]);
+							reverserotatebchunk(&listbcopy1[0]);
+							temprc--;
+						}
+					}
+					
+				}
+				else
+				{
+					// printList(tops[0]);
+					// printchunk(chunks[i]);
+					// printchunk(chonks[i]);
+					ft_printf("pushing IN ELSE %d\n", tops[1]->data);
+					pushtoa(&tops[1], &tops[0]);
+					// if(isSorted(tops[0]) == 1)
+					// 		threepointalgo(tops, chunks,chonks, i);
+					// ft_printf("freeing IN ELSE chunks: %d\n", chunks[i]->value);
+					// freechunk(&chunks[i]);
+					// ft_printf("freeing IN ELSE chonks: %d\n", chonks[i]->value);
+					// freechunk(&chonks[i]);
+					ft_printf("freeing IN ELSE listbcopy1: %d\n", listbcopy1[0]->value);
+					freechunk(&listbcopy1[0]);
+					ft_printf("freeing IN ELSE listbcopy2: %d\n", listbcopy2[0]->value);
+					freechunk(&listbcopy2[0]);
+				}
+				
+				// else
+				// {
+				// 	tempdata = tops[1]->data;
+				// // ft_printf("I AM IN RRC1\n");
+				// // ft_printf("highest: %d\n", highest);
+				// // ft_printf("tempdata: %d\n", tempdata);
+				// // ft_printf("rrc: %d\n", rrc);
+				// // ft_printf("rc: %d\n", rc);
+				// 	while(tempdata != highest)
+				// 	{
+				// 		// ft_printf("I AM IN RRC2\n");
+				// 		reverserotateb(&tops[1]);
+				// 		tempdata = tops[1]->data;
+				// 	}
+				// }
+				// tempdata = tops[1]->data;
+
+					// ft_printf("PUSHING");
+				
+
+				
+				//and insert recursion, simple as that
+				// ft_printf("list b \n");
+				// printList(listb);
+				// head = chunks[i];
+				// tempdata = head->value;
+			}
+			// Node *listb = tops[1];
+			// ft_printf("Bchunk: %d\n", Bchunk->value);
+			// ft_printf("listB; %d\n", tops[1][0]);
+			// ft_printf("lista:\n");
+			// printList(tops[0]);
+
+			
+				// ft_printf("listb:\n");
+				// printList(tops[1]);
+				// ft_printf("lista:\n");
+				// printList(tops[0]);
+				// ft_printf("listbcopy1\n");
+				// printchunk(listbcopy1[0]);
+				// ft_printf("listbcopy2\n");
+				// printchunk(listbcopy2[0]);
+				// ft_printf("chunks:\n");
+				// printchunk(chunks[i]);
+				// ft_printf("chonks:\n");
+				// printchunk(chonks[i]);
+			 // when pushing is done, free
+			// ft_printf("Bchunk: %d\n", chunks[i]->value);
+
+		 //in here needs to push from b to a, and also delete from the chunk each time an 
+		 //element is pushed
+		 // i am getting the median consistently with a copy of the chunks
+		 // in find_medianchunk
+		 //now i should be able to compare, push and delete chunks 
+		 	
+		}
+		// if(hasHigherThanMiddle(chunks[i], middle) == 0)//  && data is in top3
+		// {
+		// 	middle = find_medianchunk(chunks[i]);
+		// }
+		// if(chunks[i] == NULL)
+		// {
+		// 	ft_printf("huston, we are decrementing\n");
+		// 	i--;
+		// }
+	}
+			// ft_printf("listb:\n");
+			// printList(tops[1]);
+			// ft_printf("lista:\n");
+			// printList(tops[0]);
+}
+
+
+
+////the following 3 functions are all working, i'm about to rip it's heart out and go play ping pong
+////with it, so i'm gonna save it right now in case it breaks
+
+int sorthalf(Node *tops[],Chunk *chunks[], int i)
+{
+	
+	int middle;
+	middle = find_median(tops[0]);
+	int n = countnodes(tops[0]);
+	
+	while(tops[0])
+	{
+		n = countnodes(tops[0]);
+		if(hasLowerThanMiddle(tops[0], middle) == 0)
+		{
+			i++;
+			middle = find_median(tops[0]);
+		}
+		Node *head = tops[0];
+		int tempdata;
+		tempdata = head->data;
+		int flag = costcalc(tops, middle);
+		if(flag == 2)
+		{
+			pushtob(&tops[0], &tops[1]);
+			appendchunk(&chunks[i], tempdata);
+
+			head = tops[0];
+			tempdata = head->data;
+		}
+		else if(flag == 1)//copy list and do calc in fc
+		{
+			
+			rotatea(&tops[0]);
+			head = tops[0];
+			tempdata = head->data;
+		}
+		else if(flag == 0)//copy list and do calc in fc
+		{
+			reverserotatea(&tops[0]);//if i swap these i segfault, check why i guess 
+			head = tops[0];
+			tempdata = head->data;
+		}
+		
+		if (n <= 3)
+			return (i);
+	}
+	return (i);
+}
+
+void threepointalgo(Node *tops[])
+{
+	
+	Node *head = tops[0];
+	int first;
+	int second;
+	int third;
+	first = head->data;
+	second = head->next->data;
+	
+	if (countnodes(tops[0]) != 2)
+	{
+		third = head->next->next->data;
+		
+		// ft_printf("list a before\n");
+		// printList(tops[0]);
+		if (first > second && second > third)
+		{
+			// ft_printf("con1");
+			pushtob(&tops[0], &tops[1]);
+			swapa(&tops[0]);
+			rotatea(&tops[0]);
+			rotatea(&tops[0]);
+			pushtoa(&tops[0], &tops[0]);
+			reverserotatea(&tops[0]);
+			reverserotatea(&tops[0]);
+		}
+		else if (first > second && second < third && first < third)
+		{
+			// ft_printf("con2");
+			swapa(&tops[0]);
+		}
+			
+		else if (first < second && second > third && first > third)
+		{
+			// ft_printf("con3");
+			pushtob(&tops[0], &tops[1]);
+			swapa(&tops[0]);
+			rotatea(&tops[0]);
+			pushtoa(&tops[0], &tops[0]);
+			reverserotatea(&tops[0]);
+		}
+		else if (first > second && second < third && first > third)
+		{
+			// ft_printf("con4");
+			pushtob(&tops[0], &tops[1]);
+			rotatea(&tops[0]);
+			rotatea(&tops[0]);
+			pushtoa(&tops[1], &tops[0]);
+			reverserotatea(&tops[0]);
+			reverserotatea(&tops[0]);
+		}
+		else if (first < second && second > third && first < third)
+		{
+			// ft_printf("con5");
+			pushtob(&tops[0], &tops[1]);
+			swapa(&tops[0]);
+			pushtoa(&tops[1], &tops[0]);
+		}
+	}
+	else if (first > second)
+		swapa(&tops[0]);
+	
+	
+	// ft_printf("list a after\n");
+	// printList(tops[0]);
+	
+	// ft_printf("list b \n");
+	// printList(listb);
+
+}
+
+void midpointsort(Node *tops[],Chunk *chunks[],Chunk *chonks[], int i)
+{
+	// comparelisttops(&tops[0], &tops[1]);
+	//put function here to compare tops0 and tops1 and if tops1>tops0 then do pa and sa
+	// int k = 0;
+	// int o = 0;
+
+	Chunk *listbcopy1[1] = {NULL};
+	Chunk *listbcopy2[1] = {NULL};
+	while(i > 0) //while 
+	{
+			
+		
+		if (tops[1] == NULL)// i guess this works if i increment chunks too far
+			{
+					break ;
+			}				// nowdo the midpoint of chunks 
+							//and start sorting them over the 3 highest at a time
+		// ft_printf("i is %d\n", i);
+		
+		// int middle = find_medianchunk(chunks[i]);
+		// ft_printf("middle is %d\n", middle);
+		while(tops[1])//while
+		{
+			if(isSorted(tops[0]) == 0)
+			threepointalgo(tops);
+			
+			listbcopy1[0] = copyNodeToChunk(tops[1]);
+			listbcopy2[0] = copyNodeToChunk(tops[1]);
+			
+			// ft_printf("listbcopy1\n");
+			// printchunk(listbcopy1[0]);
+			// ft_printf("listbcopy2\n");
+			// printchunk(listbcopy2[0]);
+			chonks[i] = copy_listchunk(chunks[i]);//need 2 more copies because i fuck them
+			
+			Chunk *head = listbcopy1[0];
+			Chunk *headchonk = listbcopy2[0];
+			int tempdata;
+			tempdata = head->value;
+			int highest = find_highest_integer(listbcopy1[0]);
+			// ft_printf("middle: %d\n", middle);
+			// ft_printf("i: %d\n", i);
+			// ft_printf("tempdata: %d\n", tempdata);
+			if(tops[1])
+			{	
+				// ft_printf("listb:\n");
+				// printList(tops[1]);
+				// ft_printf("lista:\n");
+				// printList(tops[0]);
+				// ft_printf("listbcopy1\n");
+				// printchunk(listbcopy1[0]);
+				// ft_printf("listbcopy2\n");
+				// printchunk(listbcopy2[0]);
+				// ft_printf("chunks:\n");
+				// printchunk(chunks[i]);
+				// ft_printf("chonks:\n");
+				// printchunk(chonks[i]);
+				int rc = 0;
+				int rrc = 0;
+				highest = find_highest_integer(listbcopy1[0]);
+				tempdata = head->value;
+				while(tempdata != highest)
+				{
+					rotatebchunk(&listbcopy1[0]);
+					rc++;
+					tempdata = listbcopy1[0]->value;
+					// ft_printf("highest: %d\n", highest);
+					// ft_printf("tempdata: %d\n", tempdata);
+					// ft_printf("rc in rotatebchunk: %d\n", rc);
+				}
+				
+				tempdata = headchonk->value;
+				while(tempdata != highest)
+				{//copy the list from chunnks to chonks then do one rotate op with
+				//chonks and one with chunks
+					reverserotatebchunk(&listbcopy2[0]);
+					rrc++;
+					tempdata = listbcopy2[0]->value;
+					// ft_printf("highest: %d\n", highest);
+					// ft_printf("tempdata: %d\n", tempdata);
+					// ft_printf("rrc in reverserotatebchunk: %d\n", rrc);
+				}
+				// ft_printf("rc : %d\n", rc);
+				// ft_printf("rrc : %d\n", rrc);
+				int temprrc = rrc;
+				int temprc = rc;
+				if(rc != 0 || rrc != 0)
+				{
+					// ft_printf("ENTERED");
+					// ft_printf("rc in 1: %d\n", rc);
+					// ft_printf("rrc in 1: %d\n", rrc);
+					if(rc >= rrc)
+					{
+						// ft_printf("rc in rotatebchunk: %d\n", rc);
+						// ft_printf("ENTERED2");
+						// ft_printf("rc in 2: %d\n", rc);
+						// ft_printf("rrc in 2: %d\n", rrc);
+						while(rrc != 0)
+						{
+							// ft_printf("ENTERED3");
+							reverserotateb(&tops[1]);
+							//FIND THE HIGHEST VALUE IN CHUNK AND FREE
+							// THAT ONE INSTEAD OF THE HEAD YOU DUMB FUCK
+							rrc--;
+						}
+						// ft_printf("pushing in rc > %d\n", tops[1]->data);
+						pushtoa(&tops[1], &tops[0]);
+						// if(isSorted(tops[0]) == 1)
+						// 	threepointalgo(tops, chunks,chonks, i);
+					// ft_printf("freeing rc > chunks: %d\n", chunks[i]->value);
+					// freechunk(&chunks[i]);
+					// ft_printf("freeing rc > chonks: %d\n", chonks[i]->value);
+					// freechunk(&chonks[i]);
+					// ft_printf("freeing rc > listbcopy1: %d\n", listbcopy1[0]->value);
+					freechunk(&listbcopy1[0]);
+					// ft_printf("freeing rc > listbcopy2: %d\n", listbcopy2[0]->value);
+					freechunk(&listbcopy2[0]);
+						while(temprrc -1 != 0)
+						{
+							rotateb(&tops[1]);
+							rotatebchunk(&listbcopy2[0]);///////////
+							temprrc--;
+						}
+					}
+					else if(rc <= rrc)
+					{
+						while(rc != 0)
+						{
+							
+							rotateb(&tops[1]);
+							rc--;
+						}
+						// ft_printf("pushing in rc < %d\n", tops[1]->data);
+						pushtoa(&tops[1], &tops[0]); //good
+						// if(isSorted(tops[0]) == 1)
+						// 	threepointalgo(tops, chunks,chonks, i);//shit be fuczzled yo
+					// ft_printf("freeing rc < chunks: %d\n", chunks[i]->value);
+					// freechunk(&chunks[i]);
+					// ft_printf("freeing rc < chonks: %d\n", chonks[i]->value);
+					// freechunk(&chonks[i]);
+					// ft_printf("freeing rc < listbcopy1: %d\n", listbcopy1[0]->value);
+					freechunk(&listbcopy1[0]);
+					// ft_printf("freeing rc < listbcopy2: %d\n", listbcopy2[0]->value);
+						while(temprc != 0)
+						{
+							reverserotateb(&tops[1]);
+							reverserotatebchunk(&listbcopy1[0]);
+							temprc--;
+						}
+					}
+					
+				}
+				else
+				{
+					// printList(tops[0]);
+					// printchunk(chunks[i]);
+					// printchunk(chonks[i]);
+					// ft_printf("pushing IN ELSE %d\n", tops[1]->data);
+					pushtoa(&tops[1], &tops[0]);
+					// if(isSorted(tops[0]) == 1)
+					// 		threepointalgo(tops, chunks,chonks, i);
+					// ft_printf("freeing IN ELSE chunks: %d\n", chunks[i]->value);
+					// freechunk(&chunks[i]);
+					// ft_printf("freeing IN ELSE chonks: %d\n", chonks[i]->value);
+					// freechunk(&chonks[i]);
+					// ft_printf("freeing IN ELSE listbcopy1: %d\n", listbcopy1[0]->value);
+					freechunk(&listbcopy1[0]);
+					// ft_printf("freeing IN ELSE listbcopy2: %d\n", listbcopy2[0]->value);
+					freechunk(&listbcopy2[0]);
+				}
+				
+				// else
+				// {
+				// 	tempdata = tops[1]->data;
+				// // ft_printf("I AM IN RRC1\n");
+				// // ft_printf("highest: %d\n", highest);
+				// // ft_printf("tempdata: %d\n", tempdata);
+				// // ft_printf("rrc: %d\n", rrc);
+				// // ft_printf("rc: %d\n", rc);
+				// 	while(tempdata != highest)
+				// 	{
+				// 		// ft_printf("I AM IN RRC2\n");
+				// 		reverserotateb(&tops[1]);
+				// 		tempdata = tops[1]->data;
+				// 	}
+				// }
+				// tempdata = tops[1]->data;
+
+					// ft_printf("PUSHING");
+				
+
+				
+				//and insert recursion, simple as that
+				// ft_printf("list b \n");
+				// printList(listb);
+				// head = chunks[i];
+				// tempdata = head->value;
+			}
+			// Node *listb = tops[1];
+			// ft_printf("Bchunk: %d\n", Bchunk->value);
+			// ft_printf("listB; %d\n", tops[1][0]);
+			// ft_printf("lista:\n");
+			// printList(tops[0]);
+
+			
+				// ft_printf("listb:\n");
+				// printList(tops[1]);
+				// ft_printf("lista:\n");
+				// printList(tops[0]);
+				// ft_printf("listbcopy1\n");
+				// printchunk(listbcopy1[0]);
+				// ft_printf("listbcopy2\n");
+				// printchunk(listbcopy2[0]);
+				// ft_printf("chunks:\n");
+				// printchunk(chunks[i]);
+				// ft_printf("chonks:\n");
+				// printchunk(chonks[i]);
+			 // when pushing is done, free
+			// ft_printf("Bchunk: %d\n", chunks[i]->value);
+
+		 //in here needs to push from b to a, and also delete from the chunk each time an 
+		 //element is pushed
+		 // i am getting the median consistently with a copy of the chunks
+		 // in find_medianchunk
+		 //now i should be able to compare, push and delete chunks 
+		 	
+		}
+		// if(hasHigherThanMiddle(chunks[i], middle) == 0)//  && data is in top3
+		// {
+		// 	middle = find_medianchunk(chunks[i]);
+		// }
+		// if(chunks[i] == NULL)
+		// {
+		// 	ft_printf("huston, we are decrementing\n");
+		// 	i--;
+		// }
+	}
+			// ft_printf("listb:\n");
+			// printList(tops[1]);
+			// ft_printf("lista:\n");
+			// printList(tops[0]);
+}
+///// end of ping pong with heart

@@ -6,7 +6,7 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 12:14:24 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/13 11:32:03 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/14 11:28:20 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void append(Node **headRef, int data) {
     last->next = new1Node;
 }
 
-Chunk* newNodechunk(int value, int position)
+Chunk* newNodechunk(int value)
 {
     Chunk* chunkster = (Chunk*) malloc(sizeof(Chunk));
     if(chunkster == NULL) {
@@ -53,14 +53,33 @@ Chunk* newNodechunk(int value, int position)
         exit(0);
     }
     chunkster->value = value;
-    chunkster->position = position;
     chunkster->next = NULL;
     return chunkster;
 }
 
-void appendchunk(Chunk **headRef, int value, int position) {
+void actuallyappendchunk(Chunk **headRef, int value) {
     // 1. Allocate new node
-    Chunk *new1Node = newNodechunk(value, position);
+    Chunk* new1Node = newNodechunk(value);
+
+    // 4. If the Linked List is empty, then make the new node as head
+    if (*headRef == NULL) {
+        *headRef = new1Node;
+        return;
+    }
+
+    // 5. Else traverse till the last node
+    Chunk* last = *headRef;
+    while (last->next != NULL) {
+        last = last->next;
+    }
+
+    // 6. Change the next of last node
+    last->next = new1Node;
+}
+
+void appendchunk(Chunk **headRef, int value) {
+    // 1. Allocate new node
+    Chunk *new1Node = newNodechunk(value);
 
     // 4. If the Linked List is empty, then make the new node as head
     if (*headRef == NULL) {
@@ -311,6 +330,8 @@ int	ft_isnumeric(char *str)
 
 void printchunk(Chunk* head) {
     ft_printf("PRINTING CHUNK\n");
+    if (!head)
+        return;
     Chunk* current = head;
     while (current != NULL) {
         ft_printf("Value: %d, Position: %d\n", current->value, current->position);
@@ -339,7 +360,7 @@ int main(int argc, char *argv[]) {
         int arg = ft_atoi(argv[i]);
        append(&tops[0], arg);
     }
-
+//  still need split for one "1 5 2 5 1" string
         for (i = 1; i < argc; i++) {
         if(ft_isnumeric(argv[i]) != 1)
         {
@@ -355,7 +376,10 @@ int main(int argc, char *argv[]) {
     
     // Assuming the array is already sorted and filled with values
     for (int i = 0; i < argc-1; i++) {
-        appendchunk(&chunks[0], numbers[i], i);
+        appendchunk(&chunks[0], numbers[i]);
+    }
+    for (int i = 0; i < argc-1; i++) {
+        actuallyappendchunk(&chonks[0], numbers[i]);
     }
     // printchunk(chunks[0]);
     
@@ -389,7 +413,7 @@ int main(int argc, char *argv[]) {
     // ft_printf("list b before\n");
     // printList(tops[1]);
     // pushtob(&tops[0], &tops[1]);
-    i = sorthalf(tops, chunks, 1);
+    i = sorthalf(tops, chunks,chonks, 1);
     // ft_printf("printing chunk0\n");
     //  printchunk(chunks[0]);
     //  ft_printf("printing chunk1\n");
@@ -410,7 +434,8 @@ int main(int argc, char *argv[]) {
     //    printchunk(chunks[8]);
     //              ft_printf("printing chunk9\n");
     //    printchunk(chunks[9]);
-        threepointalgo(tops, chunks,chonks, i);
+        threepointalgo(tops);
+        midpointsort(tops, chunks, chonks,i);
     // midpointsort(tops, chunks,chonks, i);
     // midpointrecursion(&tops[0], &tops[1], arr, argc);
     // stalinsort(&tops[0], &tops[1], arr, argc);
