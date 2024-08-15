@@ -6,7 +6,7 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 12:14:24 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/15 11:17:18 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/15 18:13:33 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -360,6 +360,7 @@ int main(int argc, char *argv[]) {
         int arg = ft_atoi(argv[i]);
        append(&tops[0], arg);
     }
+    
 //  still need split for one "1 5 2 5 1" string
         for (i = 1; i < argc; i++) {
         if(ft_isnumeric(argv[i]) != 1)
@@ -370,28 +371,30 @@ int main(int argc, char *argv[]) {
         numbers[i - 1] = ft_atoi(argv[i]);
     }
     
-    
+
     bubblesort(numbers, argc -1);
  
     
     // Assuming the array is already sorted and filled with values
     for (int i = 0; i < argc-1; i++) {
-        appendchunk(&chunks[0], numbers[i]);
-    }
-    for (int i = 0; i < argc-1; i++) {
         actuallyappendchunk(&chonks[0], numbers[i]);
     }
-
+    // int gets saved, that then gets passed into the other functions ft_backgroundoperation();
     i = sorthalf(tops, chunks,chonks, 1);
         // threepointalgo(tops);
-        midpointsort(tops, i);
-    ft_printf("finished midpointsort \n");
+        midpointsort(tops);
+    // ft_printf("finished midpointsort \n");
     // printList(tops[0]);
     // ft_printf("list b \n");
     // printList(tops[1]);
     threepointalgo(tops);
-    ft_printf("finished threerpointalgo \n");
+    // ft_printf("finished threerpointalgo \n");
     // printList(tops[0]);
+    // if(isSorted(tops[0])== 1)
+    //     ft_printf("lista is sorted\n");
+    // else if(isSorted(tops[0])== 2 || isSorted(tops[0])== 0)
+    //     ft_printf("failure\n");
+    
     free(tops[0]);//need another function to free everything and their mum
     free(tops[1]);
     return(0);

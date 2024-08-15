@@ -6,7 +6,7 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 11:42:32 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/15 15:33:53 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/15 18:02:25 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -375,7 +375,7 @@ void sortintochunks(Chunk *chunks[], Chunk *chonks[], int i)
 	int count = 0;
 	Chunk* current = chonks[0];
 	Chunk* last = NULL;
-    while (current != NULL && count < 70)
+    while (current != NULL && count < 75)
 	{
         Chunk* new_node = copy_current_chunk(current);
         if (chunks[i] == NULL) 
@@ -572,35 +572,39 @@ int pushtoaandchunk(Node *tops[], Chunk *listbcopy1[], Chunk *listbcopy2[])
             return(0);
 }
 
-void midpointsort(Node *tops[], int i)
+void operationrc(Node *tops[], int rc, int rrc)
+{
+    if (rc != 0 || rrc != 0)
+            {
+                while (rc != 0 && rrc != 0)
+                    if (rc > rrc) 
+                    {
+                        reverserotateb(&tops[1]);
+                        rrc--;
+                    } 
+                    else 
+                    {
+                        rotateb(&tops[1]);
+                        rc--;
+                    }
+            }
+            else
+                pushtoa(&tops[1], &tops[0]);
+}
+
+void midpointsort(Node *tops[])
 {
 	Chunk *listbcopy1[1] = {NULL};
 	Chunk *listbcopy2[1] = {NULL};
-	while(i > 0)
-	{		
 
-		if (tops[1] == NULL)
-			break ;
 		while(tops[1])
 		{
-            // ft_printf("lista\n");
-            // printList(tops[0]);
-
 			if(isSorted(tops[0]) == 0)
 				threepointalgo(tops);
 			listbcopy1[0] = copyNodeToChunk(tops[1]);//theres something to think about here,
 			listbcopy2[0] = copyNodeToChunk(tops[1]);//since i am copzing again every iteration
-            
-            // ft_printf("lista\n");//i might be wasting moves here.
-            // printList(tops[0]);// why even restore the list if i end up copying again anyways
-            // ft_printf("listb\n");//i might be wasting moves here.
-            // printList(tops[1]);
-        	// ft_printf("listbcopy1\n");
-			// printchunk(listbcopy1[0]);
-			// ft_printf("listbcopy2\n");
-			// printchunk(listbcopy2[0]);
+
 			Chunk *head = listbcopy1[0];
-			Chunk *headchonk = listbcopy2[0];
 			int tempdata;
 			int highest;
 			int rc = 0;
@@ -614,37 +618,15 @@ void midpointsort(Node *tops[], int i)
 				tempdata = listbcopy1[0]->value;
 			}
 
-			tempdata = headchonk->value;
+			tempdata = head->value;
 			while(tempdata != highest)
 			{
 				reverserotatebchunk(&listbcopy2[0]);
 				rrc++;
 				tempdata = listbcopy2[0]->value;
 			}
-			// int temprrc = rrc;
-			// int temprc = rc;
-			if(rc != 0 || rrc != 0)
-			{
-				if(rc > rrc)
-				{
-					while(rrc != 0 && rrc < rc)
-					{
-						reverserotateb(&tops[1]);
-						rrc--;
-					}
-				}
-				else if(rc <= rrc)
-				{
-					while(rc != 0 && rrc >= rc)
-					{
-						rotateb(&tops[1]);
-						rc--;
-					}
-				}
-			}
-            else
-                pushtoa(&tops[1], &tops[0]);
+            operationrc(tops, rc, rrc);
 		}
-	}
+	
 }
 

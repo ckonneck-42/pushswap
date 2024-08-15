@@ -6,7 +6,7 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 11:44:08 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/14 17:09:45 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/15 17:57:18 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,21 +49,16 @@ void reverserotateb(Node** listb);
 void reverserotatebchunk(Chunk **listb);
 void rotatebchunk(Chunk **listb);
 
-void midpointsort(Node *tops[], int i);
+void midpointsort(Node *tops[]);
 void threepointalgo(Node *tops[]);
 void appendchunk(Chunk **headRef, int value);
 void actuallyappendchunk(Chunk **headRef, int value);
 int sorthalf(Node *tops[],Chunk *chunks[], Chunk *chonks[], int i);
-// void midpointrecursion(Node *tops[], Element arr[], int argc, int i);
-void sendit (Node **lista, Node **listb);
-// void stalinsort(Node **lista, Node **listb, Element arr[], int argc);
-void halfit (Node **lista, Node **listb, int argc);
-void firstsort (Node **lista, Node **listb, int median, int argc);
 int	 countnodes(Node *head);
 void bubblesort(int arr[], int n);
 void printList(Node *node);
 int  isSorted(Node *head);
 int  comparesums(Node *head);
-void algorithm (Node **lista, Node **listb, int median, int argc);
+
 
 #endif
