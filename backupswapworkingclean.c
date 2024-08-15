@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap_utils1.c                                 :+:      :+:    :+:   */
+/*   backupswapworkingclean.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 11:42:32 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/15 15:33:53 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/14 17:58:57 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -375,7 +375,7 @@ void sortintochunks(Chunk *chunks[], Chunk *chonks[], int i)
 	int count = 0;
 	Chunk* current = chonks[0];
 	Chunk* last = NULL;
-    while (current != NULL && count < 70)
+    while (current != NULL && count < 48)
 	{
         Chunk* new_node = copy_current_chunk(current);
         if (chunks[i] == NULL) 
@@ -433,7 +433,6 @@ int sorthalf(Node *tops[],Chunk *chunks[], Chunk *chonks[], int i)
 		int flag = costcalc(tops, middle);
 		if(flag == 2)
 		{
-			
 			freethespecificdata(chunks, i, tops);
 			pushtob(&tops[0], &tops[1]);
 		}
@@ -498,110 +497,24 @@ void threepointalgo(Node *tops[])
 		swapa(&tops[0]);
 }
 
-int nextinlinechonk(Chunk *listbcopy2[])
-{
-		Chunk *headchonk = listbcopy2[0];
-		int tempdata;
-        int highest;
-        
-		tempdata = headchonk->value;
-        highest = find_highest_integer(listbcopy2[0]);
-        // ft_printf("highest is in chonk %d, temp is %d\n", highest,tempdata);
-        // ft_printf("listbcopy1\n");
-        //                 printchunk(listbcopy2[0]);
-        if(tempdata == highest)
-            return(1);
-        else
-            return(0);
-}
-
-int nextinlinechunk(Chunk *listbcopy1[])
-{
-        Chunk *head = listbcopy1[0];
-		int tempdata;
-        int highest;
-		tempdata = head->value;
-        highest = find_highest_integer(listbcopy1[0]);
-        // ft_printf("highest is in chunk %d, temp is %d\n", highest,tempdata);
-        // ft_printf("listbcopy1\n");
-        //                 printchunk(listbcopy1[0]);
-
-        if(tempdata == highest)
-            return(1);
-        else 
-            return(0);
-}
-
-int pushtoaandchonk(Node *tops[], Chunk *listbcopy1[], Chunk *listbcopy2[])
-{
-    if (nextinlinechonk(&listbcopy2[0]) == 1)// 1 for yes
-        {
-            // ft_printf("listb in pushandchonk\n");//i might be wasting moves here.
-            //             printList(tops[1]);
-            //             // ft_printf("listbcopy1\n");
-            //             // printchunk(listbcopy1[0]);
-            //             ft_printf("listbcopy2\n");
-            //             printchunk(listbcopy2[0]);
-            // ft_printf("LOOK AT ME I'M PUSHING %d\n",tops[1]->data);
-            pushtoa(&tops[1], &tops[0]);
-            freechunk(&listbcopy1[0]);
-            freechunk(&listbcopy2[0]);
-            return(1);
-        }
-        else
-            return(0);
-}
-
-int pushtoaandchunk(Node *tops[], Chunk *listbcopy1[], Chunk *listbcopy2[])
-{
-    if (nextinlinechunk(&listbcopy1[0]) == 1)// 1 for yes//IT DO BE IN HERE
-        {
-            // ft_printf("listb in pushandchunk\n");//i might be wasting moves here.
-            //             printList(tops[1]);
-            //             // ft_printf("listbcopy1\n");
-            //             // printchunk(listbcopy1[0]);
-            //             ft_printf("listbcopy2\n");
-            //             printchunk(listbcopy2[0]);
-            // ft_printf("LOOK AT ME I'M PUSHING %d\n",tops[1]->data);
-            pushtoa(&tops[1], &tops[0]);
-            freechunk(&listbcopy1[0]);
-            freechunk(&listbcopy2[0]);
-            return(1);
-        }
-        else
-            return(0);
-}
-
 void midpointsort(Node *tops[], int i)
 {
 	Chunk *listbcopy1[1] = {NULL};
 	Chunk *listbcopy2[1] = {NULL};
 	while(i > 0)
-	{		
-
+	{
 		if (tops[1] == NULL)
 			break ;
 		while(tops[1])
 		{
-            // ft_printf("lista\n");
-            // printList(tops[0]);
-
 			if(isSorted(tops[0]) == 0)
 				threepointalgo(tops);
-			listbcopy1[0] = copyNodeToChunk(tops[1]);//theres something to think about here,
-			listbcopy2[0] = copyNodeToChunk(tops[1]);//since i am copzing again every iteration
-            
-            // ft_printf("lista\n");//i might be wasting moves here.
-            // printList(tops[0]);// why even restore the list if i end up copying again anyways
-            // ft_printf("listb\n");//i might be wasting moves here.
-            // printList(tops[1]);
-        	// ft_printf("listbcopy1\n");
-			// printchunk(listbcopy1[0]);
-			// ft_printf("listbcopy2\n");
-			// printchunk(listbcopy2[0]);
+			listbcopy1[0] = copyNodeToChunk(tops[1]);
+			listbcopy2[0] = copyNodeToChunk(tops[1]);
 			Chunk *head = listbcopy1[0];
 			Chunk *headchonk = listbcopy2[0];
 			int tempdata;
+			tempdata = head->value;
 			int highest;
 			int rc = 0;
 			int rrc = 0;
@@ -621,30 +534,53 @@ void midpointsort(Node *tops[], int i)
 				rrc++;
 				tempdata = listbcopy2[0]->value;
 			}
-			// int temprrc = rrc;
-			// int temprc = rc;
+			int temprrc = rrc;
+			int temprc = rc;
 			if(rc != 0 || rrc != 0)
 			{
-				if(rc > rrc)
+				if(rc >= rrc)
 				{
-					while(rrc != 0 && rrc < rc)
+					while(rrc != 0)
 					{
 						reverserotateb(&tops[1]);
 						rrc--;
 					}
+					pushtoa(&tops[1], &tops[0]);
+					freechunk(&listbcopy1[0]);
+					freechunk(&listbcopy2[0]);
+					while(temprrc -1 != 0)
+					{
+						rotateb(&tops[1]);
+						rotatebchunk(&listbcopy2[0]);
+						temprrc--;
+					}
 				}
 				else if(rc <= rrc)
 				{
-					while(rc != 0 && rrc >= rc)
+					while(rc != 0)
 					{
 						rotateb(&tops[1]);
 						rc--;
 					}
+					pushtoa(&tops[1], &tops[0]);
+					freechunk(&listbcopy1[0]);
+					while(temprc != 0)
+					{
+						reverserotateb(&tops[1]);
+						reverserotatebchunk(&listbcopy1[0]);
+						temprc--;
+					}
 				}
 			}
-            else
-                pushtoa(&tops[1], &tops[0]);
+			else
+			{
+				pushtoa(&tops[1], &tops[0]);
+				freechunk(&listbcopy1[0]);
+				freechunk(&listbcopy2[0]);
+			}
 		}
 	}
 }
 
+
+70 11 424 439 198 208 263 155 347 449 75 349 435 117 345 461 493 300 368 153 404 357 110 45 228 60 319 452 466 395 22 408 20 249 12 420 289 250 232 253 44 320 417 405 122 423 91 43 103 475 356 426 422 482 418 454 80 162 148 391 136 7 199 307 130 5 448 95 434 21 222 353 281 36 219 133 288 268 131 383 1 481 365 72 387 266 121 440 235 406 384 65 313 326 236 40 37 15 373 58 183 499 254 393 49 303 113 295 87 467 13 433 114 126 18 135 230 137 398 213 410 115 487 19 120 119 53 261 269 209 480 272 376 394 160 47 284 123 381 184 2 237 297 16 244 177 378 277 134 273 25 50 206 377 399 166 215 428 246 71 124 127 229 66 445 388 29 344 218 101 389 390 328 56 194 150 176 35 340 196 34 386 161 187 419 138 78 252 33 181 24 471 455 402 470 143 308 227 333 86 111 437 62 285 100 446 330 462 38 427 431 52 444 379 164 311 476 234 83 192 203 221 323 322 287 89 450 412 242 460 116 397 447 193 429 260 256 382 82 139 158 77 306 28 415 142 204 170 403 477 98 214 6 304 233 149 380 264 9 257 324 79 238 315 241 496 362 302 76 240 367 26 73 335 112 293 212 106 490 359 96 69 348 495 97 167 485 81 364 413 146 159 337 432 93 500 438 99 375 491 332 421 88 358 299 401 346 267 334 30 67 151 331 473 10 174 372 291 3 251 231 90 271 61 179 274 239 396 484 57 292 68 74 318 262 414 157 182 385 294 492 225 197 31 464 309 325 17 494 14 224 85 191 279 217 132 453 39 338 351 84 109 220 210 59 298 457 163 370 366 409 472 336 188 327 205 55 280 102 202 154 94 342 259 290 488 400 442 305 223 169 459 283 129 145 105 156 144 108 125 282 54 201 104 430 329 63 478 92 147 498 27 312 443 248 474 211 128 360 140 374 189 46 479 207 363 258 354 314 48 465 270 168 186 310 4 216 350 296 497 41 316 141 226 425 468 486 371 469 463 436 317 361 341 411 190 275 489 51 23 107 441 355 458 173 451 255 175 301 171 321 180 200 416 42 392 286 247 276 64 185 243 278 165 369 483 152 339 118 178 407 245 265 32 172 8 456 195 343 352 70 11 424 439 198 208 263 155 347 449 75 349 435 117 345 461 493 300 368 153 404 357 110 45 228 60 319 452 466 395 22 408 20 249 12 420 289 250 232 253 44 320 417 405 122 423 91 43 103 475 356 426 422 482 418 454 80 162 148 391 136 7 199 307 130 5 448 95 434 21 222 353 281 36 219 133 288 268 131 383 1 481 365 72 387 266 121 440 235 406 384 65 313 326 236 40 37 15 373 58 183 499 254 393 49 303 113 295 87 467 13 433 114 126 18 135 230 137 398 213 410 115 487 19 120 119 53 261 269 209 480 272 376 394 160 47 284 123 381 184 2 237 297 16 244 177 378 277 134 273 25 50 206 377 399 166 215 428 246 71 124 127 229 66 445 388 29 344 218 101 389 390 328 56 194 150 176 35 340 196 34 386 161 187 419 138 78 252 33 181 24 471 455 402 470 143 308 227 333 86 111 437 62 285 100 446 330 462 38 427 431 52 444 379 164 311 476 234 83 192 203 221 323 322 287 89 450 412 242 460 116 397 447 193 429 260 256 382 82 139 158 77 306 28 415 142 204 170 403 477 98 214 6 304 233 149 380 264 9 257 324 79 238 315 241 496 362 302 76 240 367 26 73 335 112 293 212 106 490 359 96 69 348 495 97 167 485 81 364 413 146 159 337 432 93 500 438 99 375 491 332 421 88 358 299 401 346 267 334 30 67 151 331 473 10 174 372 291 3 251 231 90 271 61 179 274 239 396 484 57 292 68 74 318 262 414 157 182 385 294 492 225 197 31 464 309 325 17 494 14 224 85 191 279 217 132 453 39 338 351 84 109 220 210 59 298 457 163 370 366 409 472 336 188 327 205 55 280 102 202 154 94 342 259 290 488 400 442 305 223 169 459 283 129 145 105 156 144 108 125 282 54 201 104 430 329 63 478 92 147 498 27 312 443 248 474 211 128 360 140 374 189 46 479 207 363 258 354 314 48 465 270 168 186 310 4 216 350 296 497 41 316 141 226 425 468 486 371 469 463 436 317 361 341 411 190 275 489 51 23 107 441 355 458 173 451 255 175 301 171 321 180 200 416 42 392 286 247 276 64 185 243 278 165 369 483 152 339 118 178 407 245 265 32 172 8 456 195 343 352 70 11 424 439 198 208 263 155 347 449 75 349 435 117 345 461 493 300 368 153 404 357 110 45 228 60 319 452 466 395 22 408 20 249 12 420 289 250 232 253 44 320 417 405 122 423 91 43 103 475 356 426 422 482 418 454 80 162 148 391 136 7 199 307 130 5 448 95 434 21 222 353 281 36 219 133 288 268 131 383 1 481 365 72 387 266 121 440 235 406 384 65 313 326 236 40 37 15 373 58 183 499 254 393 49 303 113 295 87 467 13 433 114 126 18 135 230 137 398 213 410 115 487 19 120 119 53 261 269 209 480 272 376 394 160 47 284 123 381 184 2 237 297 16 244 177 378 277 134 273 25 50 206 377 399 166 215 428 246 71 124 127 229 66 445 388 29 344 218 101 389 390 328 56 194 150 176 35 340 196 34 386 161 187 419 138 78 252 33 181 24 471 455 402 470 143 308 227 333 86 111 437 62 285 100 446 330 462 38 427 431 52 444 379 164 311 476 234 83 192 203 221 323 322 287 89 450 412 242 460 116 397 447 193 429 260 256 382 82 139 158 77 306 28 415 142 204 170 403 477 98 214 6 304 233 149 380 264 9 257 324 79 238 315 241 496 362 302 76 240 367 26 73 335 112 293 212 106 490 359 96 69 348 495 97 167 485 81 364 413 146 159 337 432 93 500 438 99 375 491 332 421 88 358 299 401 346 267 334 30 67 151 331 473 10 174 372 291 3 251 231 90 271 61 179 274 239 396 484 57 292 68 74 318 262 414 157 182 385 294 492 225 197 31 464 309 325 17 494 14 224 85 191 279 217 132 453 39 338 351 84 109 220 210 59 298 457 163 370 366 409 472 336 188 327 205 55 280 102 202 154 94 342 259 290 488 400 442 305 223 169 459 283 129 145 105 156 144 108 125 282 54 201 104 430 329 63 478 92 147 498 27 312 443 248 474 211 128 360 140 374 189 46 479 207 363 258 354 314 48 465 270 168 186 310 4 216 350 296 497 41 316 141 226 425 468 486 371 469 463 436 317 361 341 411 190 275 489 51 23 107 441 355 458 173 451 255 175 301 171 321 180 200 416 42 392 286 247 276 64 185 243 278 165 369 483 152 339 118 178 407 245 265 32 172 8 456 195 343 352 

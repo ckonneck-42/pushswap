@@ -6,7 +6,7 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 12:14:24 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/14 11:28:20 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/15 11:17:18 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -381,70 +381,18 @@ int main(int argc, char *argv[]) {
     for (int i = 0; i < argc-1; i++) {
         actuallyappendchunk(&chonks[0], numbers[i]);
     }
-    // printchunk(chunks[0]);
-    
-    // int median = numbers[(argc-1) / 2];
-    // int smallest = numbers[0];
-    // int biggest = numbers[argc -2];
-    // ft_printf("smallest = %d\n", smallest);
-    // ft_printf("median = %d\n", median);
-    // ft_printf("biggest = %d\n", biggest);
-    // ft_printf("list a before op \n");
-    // printList(tops[0]);
-    // Print the stack
-    //  halfit(&tops[0], &tops[1], argc);
-    // sendit(&tops[0], &tops[1]);
-    // Chunk *myarr = (Chunk *)malloc(argc * sizeof(Chunk));
-    // if (!myarr)
-    //     return 1;
-    // myarr[0].size = argc - 1;
-    // myarr[0].arr = (Element *)malloc(myarr[0].size * sizeof(Element));
-    // if (!myarr[0].arr) {
-    //     free(myarr);
-    //     return 1;
-    // }
-    // for (int i = 0; i < argc - 1; i++) {
-    //     myarr[0].arr[i] = arr[i];
-    // }
 
-
-    //        ft_printf("list a before \n");
-    // printList(tops[0]);
-    // ft_printf("list b before\n");
-    // printList(tops[1]);
-    // pushtob(&tops[0], &tops[1]);
     i = sorthalf(tops, chunks,chonks, 1);
-    // ft_printf("printing chunk0\n");
-    //  printchunk(chunks[0]);
-    //  ft_printf("printing chunk1\n");
-    //   printchunk(chunks[1]);
-    //   ft_printf("printing chunk2\n");
-    //    printchunk(chunks[2]);
-    //  ft_printf("printing chunk3\n");
-    //    printchunk(chunks[3]);
-    //      ft_printf("printing chunk4\n");
-    //    printchunk(chunks[4]);
-    //         ft_printf("printing chunk5\n");
-    //    printchunk(chunks[5]);
-    //         ft_printf("printing chunk6\n");
-    //    printchunk(chunks[6]);
-    //         ft_printf("printing chunk7\n");
-    //    printchunk(chunks[7]);
-    //       ft_printf("printing chunk8\n");
-    //    printchunk(chunks[8]);
-    //              ft_printf("printing chunk9\n");
-    //    printchunk(chunks[9]);
-        threepointalgo(tops);
-        midpointsort(tops, chunks, chonks,i);
-    // midpointsort(tops, chunks,chonks, i);
-    // midpointrecursion(&tops[0], &tops[1], arr, argc);
-    // stalinsort(&tops[0], &tops[1], arr, argc);
-    // algorithm(&tops[0], &tops[1], arr, argc);
-    // ft_printf("list a \n");
+        // threepointalgo(tops);
+        midpointsort(tops, i);
+    ft_printf("finished midpointsort \n");
     // printList(tops[0]);
     // ft_printf("list b \n");
     // printList(tops[1]);
-    free(tops[0]);
+    threepointalgo(tops);
+    ft_printf("finished threerpointalgo \n");
+    // printList(tops[0]);
+    free(tops[0]);//need another function to free everything and their mum
     free(tops[1]);
     return(0);
 }

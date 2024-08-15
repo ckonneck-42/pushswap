@@ -6,7 +6,7 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 11:42:32 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/14 07:59:54 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/15 15:24:42 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -2247,3 +2247,142 @@ void midpointsort(Node *tops[],Chunk *chunks[],Chunk *chonks[], int i)
 			// printList(tops[0]);
 }
 ///// end of ping pong with heart
+
+
+
+
+// safety save vvvvv
+
+
+void midpointsort(Node *tops[], int i)
+{
+	Chunk *listbcopy1[1] = {NULL};
+	Chunk *listbcopy2[1] = {NULL};
+	while(i > 0)
+	{		
+
+		if (tops[1] == NULL)
+			break ;
+		while(tops[1])
+		{
+            // ft_printf("lista\n");
+            // printList(tops[0]);
+
+			if(isSorted(tops[0]) == 0)
+				threepointalgo(tops);
+			listbcopy1[0] = copyNodeToChunk(tops[1]);//theres something to think about here,
+			listbcopy2[0] = copyNodeToChunk(tops[1]);//since i am copzing again every iteration
+            
+            // ft_printf("lista\n");//i might be wasting moves here.
+            // printList(tops[0]);// why even restore the list if i end up copying again anyways
+            // ft_printf("listb\n");//i might be wasting moves here.
+            // printList(tops[1]);
+        	// ft_printf("listbcopy1\n");
+			// printchunk(listbcopy1[0]);
+			// ft_printf("listbcopy2\n");
+			// printchunk(listbcopy2[0]);
+			Chunk *head = listbcopy1[0];
+			Chunk *headchonk = listbcopy2[0];
+			int tempdata;
+			int highest;
+			int rc = 0;
+			int rrc = 0;
+			highest = find_highest_integer(listbcopy1[0]);
+			tempdata = head->value;
+			while(tempdata != highest)
+			{
+				rotatebchunk(&listbcopy1[0]);
+				rc++;
+				tempdata = listbcopy1[0]->value;
+			}
+
+			tempdata = headchonk->value;
+			while(tempdata != highest)
+			{
+				reverserotatebchunk(&listbcopy2[0]);
+				rrc++;
+				tempdata = listbcopy2[0]->value;
+			}
+			int temprrc = rrc;
+			int temprc = rc;
+            // ft_printf("rc: %d, rrc: %d\n", rc, rrc);
+			if(rc != 0 || rrc != 0)
+			{
+				if(rc > rrc)
+				{
+					while(rrc != 0 && rrc < rc)
+					{
+						reverserotateb(&tops[1]);
+						rrc--;
+					}
+					while(temprrc -1 != 0)
+					{
+                        // ft_printf("i came from line 658");
+                        // if (pushtoaandchonk(tops, listbcopy1, listbcopy2) == 1)// 1 for yes
+                        // {
+                        //     ft_printf("chonking finished2\n");
+                        //     // break;
+                        // }
+                        rotatebchunk(&listbcopy1[0]);
+						temprrc--;
+                        // ft_printf("found two\n");
+					}
+				}
+				else if(rc <= rrc)
+				{
+					// ft_printf("rc = %d, rrc = %d\n", rc, rrc);
+					while(rc != 0 && rrc >= rc)
+					{
+                        // if (nextinlinechunk(&listbcopy1[0]) == 1)// 1 for yes
+                        // {
+                        //     pushtoa(&tops[1], &tops[0]);
+                        //     break;
+                        // }
+						rotateb(&tops[1]);
+                        //one here
+						rc--;
+						// ft_printf("rc is: %d, rrc is %d\n", rc, rrc);
+					}
+                    // ft_printf("i came from line 683\n");
+					// if(pushtoaandchunk(tops, listbcopy1, listbcopy2) == 1)
+
+                    // {
+                    //     ft_printf("chonking finished3\n");
+                    //     // ft_printf("lista\n");//i might be wasting moves here.
+                    //     // printList(tops[0]);// why even restore the list if i end up copying again anyways
+                    //     // ft_printf("listb\n");//i might be wasting moves here.
+                    //     // printList(tops[1]);
+                    //     // ft_printf("listbcopy1\n");
+                    //     // printchunk(listbcopy1[0]);
+                    //     // ft_printf("listbcopy2\n");
+                    //     // printchunk(listbcopy2[0]);
+                    //     // break;
+                    // }
+                    
+					while(temprc -1 != 0)
+					{   
+                        // ft_printf("i came from line 699\n");
+                        // if (pushtoaandchunk(tops, listbcopy1, listbcopy2) == 1)// 1 for yes
+                        // {
+                        //     ft_printf("chonking finished4\n");
+                        //     // break;
+                        // }
+                        reverserotatebchunk(&listbcopy2[0]);
+                        
+						temprc--;
+                        // ft_printf("found four\n");
+					}
+				}
+			}
+			else
+			{
+                pushtoaandchonk(tops, listbcopy1, listbcopy2);
+                // ft_printf("chonking finished5\n");
+			}
+		}
+	}
+}
+
+
+
+//// safety safe done ^^^ 
