@@ -6,24 +6,25 @@
 #    By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/24 12:55:57 by ckonneck          #+#    #+#              #
-#    Updated: 2024/08/21 14:30:11 by ckonneck         ###   ########.fr        #
+#    Updated: 2024/08/23 15:25:46 by ckonneck         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = push_swap
-CC = cc
-CFLAGS = -g -Wall -Wextra -Werror -I$(LIBFT_DIR)
-LIBFT_DIR = ./libft
-LIBS = -L$(LIBFT_DIR) -lft
 
 # Source files for pipex
 PUSHSWAP_SRCS = push_swap.c push_swap_utils1.c push_swap_utils2.c \
-				push_swap_utils3.c push_swap_utils4.c push_swap_utilsbgop.c \
+				push_swap_utils3.c push_swap_utils4.c push_swap_bgutils1.c \
 				push_swap_bubble.c push_swap_free1.c push_swap_free2.c \
 				push_swap_op1.c push_swap_op2.c push_swap_op3.c \
-				push_swap_opbg1.c push_swap_opbg2.c
+				push_swap_opbg1.c push_swap_opbg2.c push_swap_utils5.c \
+				push_swap_bgutils2.c push_swap_bgutils3.c \
+				push_swap_utils6.c push_swap_bgutils4.c push_swap_utils7.c
 PUSHSWAP_OBJS = $(PUSHSWAP_SRCS:.c=.o)
-
+CC = cc
+LIBFT_DIR = ./libft
+LIBS = -L$(LIBFT_DIR) -lft
+CFLAGS = -Wall -Wextra -Werror -I$(LIBFT_DIR)
+NAME = push_swap
 # 'all' target
 all: $(NAME)
 
@@ -33,10 +34,6 @@ $(NAME): libft $(PUSHSWAP_OBJS)
 # Compile libft
 libft:
 	$(MAKE) -C $(LIBFT_DIR)
-
-# Pattern rule for object files
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
 
 # 'clean' rule
 clean:

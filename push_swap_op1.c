@@ -6,72 +6,73 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 14:16:05 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/21 14:18:01 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/22 17:38:08 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-
-void swapb(Node** list)
+void	swapb(t_Node **list)
 {
-    if (*list != NULL && (*list)->next != NULL)
-    {
-        Node* first = *list;
-        Node* second = first->next;
+	t_Node	*first;
+	t_Node	*second;
 
-        first->next = second->next;
-        second->next = first;
-        *list = second;
-
-        ft_printf("sb\n");
-    }
-    else
-        ft_printf("not enough values to swap in list B\n");
+	if (*list != NULL && (*list)->next != NULL)
+	{
+		first = *list;
+		second = first->next;
+		first->next = second->next;
+		second->next = first;
+		*list = second;
+		ft_printf("sb\n");
+	}
+	else
+		ft_printf("not enough values to swap in list B\n");
 }
 
-void swapa(Node **list)
+void	swapa(t_Node **list)
 {
-    if (*list != NULL && (*list)->next != NULL)
-    {
-        Node* first = *list;
-        Node* second = first->next;
+	t_Node	*first;
+	t_Node	*second;
 
-        first->next = second->next;
-        second->next = first;
-        *list = second;
-
-        ft_printf("sa\n");
-    }
-    else
-        ft_printf("not enough values to swap in list A\n");
+	if (*list != NULL && (*list)->next != NULL)
+	{
+		first = *list;
+		second = first->next;
+		first->next = second->next;
+		second->next = first;
+		*list = second;
+		ft_printf("sa\n");
+	}
+	else
+		ft_printf("not enough values to swap in list A\n");
 }
 
-void ss(Node **lista, Node **listb)
+void	ss(t_Node **lista, t_Node **listb)
 {
-    if ((*lista != NULL && (*lista)->next != NULL) &&
-    (*listb != NULL && (*listb)->next != NULL) )
-    {
-        swapa(lista);
-        swapb(listb);
-        ft_printf("(ss)");
-    }
-    else    
-        ft_printf("not enough values to swap in list A or B\n");
+	if ((*lista != NULL && (*lista)->next != NULL) && (*listb != NULL
+			&& (*listb)->next != NULL))
+	{
+		swapa(lista);
+		swapb(listb);
+		ft_printf("(ss)");
+	}
+	else
+		ft_printf("not enough values to swap in list A or B\n");
 }
 
-void pushtob(Node **sourceRef, Node **destRef) {
-    // Get the first node from the source list
-    Node *newtopofb = *sourceRef;
-    if (newtopofb != NULL) {
-        // Move the source pointer to the next node
-        *sourceRef = newtopofb->next;
+void	pushtob(t_Node **sourceRef, t_Node **destRef)
+{
+	t_Node	*newtopofb;
 
-        // Push the node onto the destination list
-        newtopofb->next = *destRef;
-        *destRef = newtopofb;
-        ft_printf("pb\n");
-    }
-    else
-        ft_printf("list B is empty\n");
+	newtopofb = *sourceRef;
+	if (newtopofb != NULL)
+	{
+		*sourceRef = newtopofb->next;
+		newtopofb->next = *destRef;
+		*destRef = newtopofb;
+		ft_printf("pb\n");
+	}
+	else
+		ft_printf("list B is empty\n");
 }

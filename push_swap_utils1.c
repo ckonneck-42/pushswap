@@ -6,69 +6,58 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 11:42:32 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/21 14:22:54 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/23 08:00:46 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int costcalc(Node *tops[], int middle)
-{	
-	Chunk *listbcopy3[1] = {NULL};
-	Chunk *listbcopy4[1] = {NULL};
-	
-	listbcopy3[0] = copyNodeToChunk(tops[0]);
-	listbcopy4[0] = copyNodeToChunk(tops[0]);
-	Node *head = tops[0];
-	int tempdata;
-	int rrc = 0;
-	int rc = 0;
-	
-	
-	tempdata = head->data;
-	if (tempdata <= middle)
-	{
-		free_listchunk(listbcopy3[0]);
-		free_listchunk(listbcopy4[0]);
-		return(2);
-	}
-		
-	while (tempdata > middle)
-	{
-		reverserotatebchunk(&listbcopy3[0]);
-		rrc++;
-		tempdata = listbcopy3[0]->value;
-	}
-	tempdata = head->data;
-	while (tempdata > middle)
-	{
-		rotatebchunk(&listbcopy4[0]);
-		rc++;
-		tempdata = listbcopy4[0]->value;
-	}
-	free_listchunk(listbcopy3[0]);
-	free_listchunk(listbcopy4[0]);
+int	costcalc(t_Node *tops[], int middle)
+{
+	t_Ccop	op;
+	int		rrc;
+	int		rc;
+	int		result;
+
+	op = (t_Ccop){NULL, 0, NULL, NULL};
+	op.listbcopy3 = copyt_nodetochunk(tops[0]);
+	op.listbcopy4 = copyt_nodetochunk(tops[0]);
+	op.head = tops[0];
+	op.middle = middle;
+	rrc = 0;
+	rc = 0;
+	result = costcalcopbg(&op, &rc, &rrc);
+	if (result == 2)
+		return (2);
+	free_listchunk(op.listbcopy3);
+	free_listchunk(op.listbcopy4);
 	if (rc <= rrc)
 		return (1);
 	else
 		return (0);
 }
 
-
-void sortintochunks(Chunk *chunks[], Chunk *chonks[], int i, int magicnumber)
+void	sortintochunks(t_Chunk *chunks[], t_Chunk *chonks[], int i,
+		int magicnumber)
 {
-	int count = 0;
-	Chunk* current = chonks[0];
-	Chunk* last = NULL;
+	int		count;
+	t_Chunk	*current;
+	t_Chunk	*last;
+	t_Chunk	*new_t_node;
+	t_Chunk	*temp;
+
+	count = 0;
+	current = chonks[0];
+	last = NULL;
 	while (current != NULL && count < magicnumber)
 	{
-		Chunk* new_node = copy_current_chunk(current);
-		if (chunks[i] == NULL) 
-			chunks[i] = new_node;
+		new_t_node = copy_current_chunk(current);
+		if (chunks[i] == NULL)
+			chunks[i] = new_t_node;
 		else
-			last->next = new_node;
-		last = new_node;
-		Chunk* temp = chonks[0];
+			last->next = new_t_node;
+		last = new_t_node;
+		temp = chonks[0];
 		chonks[0] = chonks[0]->next;
 		free(temp);
 		current = chonks[0];
@@ -76,123 +65,82 @@ void sortintochunks(Chunk *chunks[], Chunk *chonks[], int i, int magicnumber)
 	}
 }
 
-int sorthalf(Node *tops[],Chunk *chunks[], Chunk *chonks[], int magicnumber)
+int	sorthalf(t_Node *tops[], t_Chunk *chunks[], t_Chunk *chonks[],
+		int magicnumber)
 {
-	int i = 1;
+	int	i;
+	int	middle;
+	int	flag;
+
+	i = 1;
 	sortintochunks(chunks, chonks, i, magicnumber);
-	int middle;
 	middle = find_medianchunk(chunks[i]);
-	while(tops[0])
+	while (tops[0])
 	{
-		if(!chunks[i])
-		{
-			i++;
-			sortintochunks(chunks, chonks, i, magicnumber);
-		}
+		i = minifunc(chunks, chonks, magicnumber, i);
 		middle = find_medianchunk(chunks[i]);
-		int flag = costcalc(tops, middle);
-		if(flag == 2)
+		flag = costcalc(tops, middle);
+		if (flag == 2)
 		{
 			freethespecificdata(chunks, i, tops);
 			pushtob(&tops[0], &tops[1]);
 		}
-		else if(flag == 1)
+		else if (flag == 1)
 			rotatea(&tops[0]);
-		else if(flag == 0)
+		else if (flag == 0)
 			reverserotatea(&tops[0]);
 	}
 	return (i);
 }
 
-void threepointalgo(Node *tops[])
+void	threepointalgo(t_Node *tops[])
 {
-	Node *head = tops[0];
-	int first;
-	int second;
-	int third;
+	t_Node	*head;
+	int		first;
+	int		second;
+	int		third;
+
+	head = tops[0];
 	first = head->data;
 	second = head->next->data;
-	if (countnodes(tops[0]) != 2)
+	if (countt_nodes(tops[0]) != 2)
 	{
 		third = head->next->next->data;
 		if (first > second && second > third)
-		{
-			pushtob(&tops[0], &tops[1]);
-			swapa(&tops[0]);
-			rotatea(&tops[0]);
-			rotatea(&tops[0]);
-			pushtoa(&tops[0], &tops[0]);
-			reverserotatea(&tops[0]);
-			reverserotatea(&tops[0]);
-		}
+			op3p1(tops);
 		else if (first > second && second < third && first < third)
 			swapa(&tops[0]);
 		else if (first < second && second > third && first > third)
-		{
-			pushtob(&tops[0], &tops[1]);
-			swapa(&tops[0]);
-			rotatea(&tops[0]);
-			pushtoa(&tops[0], &tops[0]);
-			reverserotatea(&tops[0]);
-		}
+			op3p2(tops);
 		else if (first > second && second < third && first > third)
-		{
-			pushtob(&tops[0], &tops[1]);
-			rotatea(&tops[0]);
-			rotatea(&tops[0]);
-			pushtoa(&tops[1], &tops[0]);
-			reverserotatea(&tops[0]);
-			reverserotatea(&tops[0]);
-		}
+			op3p3(tops);
 		else if (first < second && second > third && first < third)
-		{
-			pushtob(&tops[0], &tops[1]);
-			swapa(&tops[0]);
-			pushtoa(&tops[1], &tops[0]);
-		}
+			op3p4(tops);
 	}
 	else if (first > second)
 		swapa(&tops[0]);
 }
 
-
-
-void midpointsort(Node *tops[])
+void	midpointsort(t_Node *tops[])
 {
-	Chunk *listbcopy1[1] = {NULL};
-	Chunk *listbcopy2[1] = {NULL};
+	t_Chunk	*listbcopy1[1];
+	t_Chunk	*listbcopy2[1];
+	int		rc;
+	int		rrc;
 
-	int tempdata;
-	int highest;
-	int rc;
-	int rrc;
-	while(tops[1])
+	listbcopy1[0] = NULL;
+	listbcopy1[0] = NULL;
+	while (tops[1])
 	{
 		rc = 0;
 		rrc = 0;
-		if(issorted(tops[0]) == 0)
+		if (issorted(tops[0]) == 0)
 			threepointalgo(tops);
-		listbcopy1[0] = copyNodeToChunk(tops[1]);
-		listbcopy2[0] = copyNodeToChunk(tops[1]);
-		highest = find_highest_integer(listbcopy1[0]);
-		Chunk *head = listbcopy1[0];
-		tempdata = head->value;
-		while(tempdata != highest)
-		{
-			rotatebchunk(&listbcopy1[0]);
-			rc++;
-			tempdata = listbcopy1[0]->value;
-		}
-		tempdata = head->value;
-		while(tempdata != highest)
-		{
-			reverserotatebchunk(&listbcopy2[0]);
-			rrc++;
-		tempdata = listbcopy2[0]->value;
-		}
+		listbcopy1[0] = copyt_nodetochunk(tops[1]);
+		listbcopy2[0] = copyt_nodetochunk(tops[1]);
+		midpointopbg(listbcopy1, listbcopy2, &rc, &rrc);
 		operationrc(tops, rc, rrc);
 		free_listchunk(listbcopy1[0]);
 		free_listchunk(listbcopy2[0]);
 	}
 }
-

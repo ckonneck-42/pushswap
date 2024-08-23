@@ -6,97 +6,106 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 14:18:25 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/21 14:18:37 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/22 17:39:14 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void pushtoa(Node **sourceRef, Node **destRef) {
-    // Get the first node from the source list
-    Node* newtopofa = *sourceRef;
-    if (newtopofa != NULL) {
-        // Move the source pointer to the next node
-        *sourceRef = newtopofa->next;
+void	pushtoa(t_Node **sourceRef, t_Node **destRef)
+{
+	t_Node	*newtopofa;
 
-        // Push the node onto the destination list
-        newtopofa->next = *destRef;
-        *destRef = newtopofa;
-        ft_printf("pa\n");
-    }
-    else
-        ft_printf("list A is empty\n");
+	newtopofa = *sourceRef;
+	if (newtopofa != NULL)
+	{
+		*sourceRef = newtopofa->next;
+		newtopofa->next = *destRef;
+		*destRef = newtopofa;
+		ft_printf("pa\n");
+	}
+	else
+		ft_printf("list A is empty\n");
 }
 
-void rotatea(Node** lista)
+void	rotatea(t_Node **lista)
 {
-    Node* newbottom = *lista;
-    Node* second = newbottom->next;
-   
-    if(newbottom != NULL)
-    {
-        *lista = second;
-        newbottom->next = NULL;
-        Node* last = *lista;
-        while(last->next != NULL)
-            last = last->next;
-        last->next = newbottom;
-        ft_printf("ra\n");
-    }
-    else
-        ft_printf("list A empty\n");
+	t_Node	*newbottom;
+	t_Node	*second;
+	t_Node	*last;
+
+	newbottom = *lista;
+	second = newbottom->next;
+	if (newbottom != NULL)
+	{
+		*lista = second;
+		newbottom->next = NULL;
+		last = *lista;
+		while (last->next != NULL)
+			last = last->next;
+		last->next = newbottom;
+		ft_printf("ra\n");
+	}
+	else
+		ft_printf("list A empty\n");
 }
 
-void rotateb(Node** listb)
+void	rotateb(t_Node **listb)
 {
-    Node* newbottom = *listb;
-    Node* second = newbottom->next;
-   
-    if(newbottom != NULL)
-    {
-        *listb = second;
-        newbottom->next = NULL;
-        Node* last = *listb;
-        while(last->next != NULL)
-            last = last->next;
-        last->next = newbottom;
-        ft_printf("rb\n");
-    }
-    else
-        ft_printf("list B empty\n");
+	t_Node	*newbottom;
+	t_Node	*second;
+	t_Node	*last;
+
+	newbottom = *listb;
+	second = newbottom->next;
+	if (newbottom != NULL)
+	{
+		*listb = second;
+		newbottom->next = NULL;
+		last = *listb;
+		while (last->next != NULL)
+			last = last->next;
+		last->next = newbottom;
+		ft_printf("rb\n");
+	}
+	else
+		ft_printf("list B empty\n");
 }
 
-void rotatebchunk(Chunk **listb)
+void	rotatebchunk(t_Chunk **listb)
 {
-    Chunk *newbottom = *listb;
-    Chunk *second = newbottom->next;
-   
-    if(newbottom != NULL)
-    {
-        *listb = second;
-        newbottom->next = NULL;
-        Chunk *last = *listb;
-        while(last->next != NULL)
-            last = last->next;
-        last->next = newbottom;
-        // ft_printf("rb\n");
-    }
-    else
-        ft_printf("list B empty\n");
+	t_Chunk	*newbottom;
+	t_Chunk	*second;
+	t_Chunk	*last;
+
+	newbottom = *listb;
+	second = newbottom->next;
+	if (newbottom != NULL)
+	{
+		*listb = second;
+		newbottom->next = NULL;
+		last = *listb;
+		while (last->next != NULL)
+			last = last->next;
+		last->next = newbottom;
+	}
+	else
+		ft_printf("list B empty\n");
 }
 
-void reverserotatebchunk(Chunk **listb)
+void	reverserotatebchunk(t_Chunk **listb)
 {
-    Chunk *newtop = *listb;
-    if(*listb != NULL || (*listb)->next != NULL)
-    {
-        while(newtop->next->next != NULL)
-            newtop = newtop->next;
-        newtop->next->next = *listb;
-        *listb = newtop->next;
-        newtop->next = NULL;
-        // ft_printf("rrb ");
-    }
-    else
-        ft_printf("list B empty\n");
+	t_Chunk	*newtop;
+
+	newtop = *listb;
+	if (*listb != NULL || (*listb)->next != NULL)
+	{
+		while (newtop->next->next != NULL)
+			newtop = newtop->next;
+		newtop->next->next = *listb;
+		*listb = newtop->next;
+		newtop->next = NULL;
+	}
+	else
+		ft_printf("list B empty\n");
 }

@@ -6,32 +6,35 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 14:11:15 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/21 14:25:26 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/22 17:36:15 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void freechunk(Chunk **head)
+void	freechunk(t_Chunk **head)
 {
+	t_Chunk	*temp;
+
 	if (*head == NULL)
-		return;
-	Chunk *temp = *head;
+		return ;
+	temp = *head;
 	*head = (*head)->next;
 	free(temp);
 }
 
-void freethespecificdata(Chunk *chunks[], int i, Node *tops[])
+void	freethespecificdata(t_Chunk *chunks[], int i, t_Node *tops[])
 {
-	Chunk *headchunk = chunks[i];
-	Chunk *prevchunk = NULL;
+	t_Chunk	*headchunk;
+	t_Chunk	*prevchunk;
 
+	headchunk = chunks[i];
+	prevchunk = NULL;
 	while (headchunk != NULL && headchunk->value != tops[0]->data)
 	{
 		prevchunk = headchunk;
 		headchunk = headchunk->next;
 	}
-
 	if (headchunk != NULL && headchunk->value == tops[0]->data)
 	{
 		if (prevchunk == NULL)
@@ -44,17 +47,18 @@ void freethespecificdata(Chunk *chunks[], int i, Node *tops[])
 	}
 }
 
-void freethespecificdatabg(Chunk *chunksbg[], int i, Node *topsbg[])
+void	freethespecificdatabg(t_Chunk *chunksbg[], int i, t_Node *topsbg[])
 {
-	Chunk *headchunk = chunksbg[i];
-	Chunk *prevchunk = NULL;
+	t_Chunk	*headchunk;
+	t_Chunk	*prevchunk;
 
+	headchunk = chunksbg[i];
+	prevchunk = NULL;
 	while (headchunk != NULL && headchunk->value != topsbg[0]->data)
 	{
 		prevchunk = headchunk;
 		headchunk = headchunk->next;
 	}
-
 	if (headchunk != NULL && headchunk->value == topsbg[0]->data)
 	{
 		if (prevchunk == NULL)

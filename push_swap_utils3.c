@@ -6,81 +6,87 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 14:21:28 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/21 14:34:44 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/23 08:49:58 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-Chunk* create_nodechunk(int value) {
-	Chunk* new_node = (Chunk*)malloc(sizeof(Chunk));
-	if (new_node == NULL)
-		return NULL;
-	new_node->value = value;
-	new_node->next = NULL;
-	return new_node;
+t_Chunk	*create_t_nodechunk(int value)
+{
+	t_Chunk	*new_t_node;
+
+	new_t_node = (t_Chunk *)malloc(sizeof(t_Chunk));
+	if (new_t_node == NULL)
+		return (NULL);
+	new_t_node->value = value;
+	new_t_node->next = NULL;
+	return (new_t_node);
 }
 
-Node* copy_list(Node* head) {
-	if (head == NULL) return NULL;
+t_Node	*copy_list(t_Node *head)
+{
+	t_Node	*new_head;
+	t_Node	*current;
+	t_Node	*original;
 
-	Node* new_head = create_node(head->data);
-	Node* current = new_head;
-	Node* original = head->next;
-
-	while (original != NULL) {
-		current->next = create_node(original->data);
-		current = current->next;
-		original = original->next;
-	}
-	return new_head;
-}
-
-Chunk* copy_listchunk(Chunk* head) {
-	if (head == NULL) return NULL;
-
-	Chunk* new_head = create_nodechunk(head->value);
-	Chunk* current = new_head;
-	Chunk* original = head->next;
-
-	while (original != NULL) {
-		current->next = create_nodechunk(original->value);
-		current = current->next;
-		original = original->next;
-	}
-	return new_head;
-}
-
-Chunk* copy_current_chunk(Chunk* node) {
-	if (node == NULL) return NULL;
-
-	Chunk* new_node = create_nodechunk(node->value);
-	return new_node;
-}
-
-Chunk* copyNodeToChunk(Node* head) {
 	if (head == NULL)
-		return NULL;
+		return (NULL);
+	new_head = create_t_node(head->data);
+	current = new_head;
+	original = head->next;
+	while (original != NULL)
+	{
+		current->next = create_t_node(original->data);
+		current = current->next;
+		original = original->next;
+	}
+	return (new_head);
+}
 
-	Chunk* chunkHead = create_nodechunk(head->data);
-	if (chunkHead == NULL)
-        return NULL;
-	Chunk* chunkCurrent = chunkHead;
-	Node* nodeCurrent = head->next;
+t_Chunk	*copy_listchunk(t_Chunk *head)
+{
+	t_Chunk	*new_head;
+	t_Chunk	*current;
+	t_Chunk	*original;
 
-	    while (nodeCurrent != NULL) {
-        Chunk* newChunk = create_nodechunk(nodeCurrent->data);
-        if (newChunk == NULL) {
-            while (chunkHead != NULL) {
-                Chunk* temp = chunkHead;
-                chunkHead = chunkHead->next;
-                free(temp);
-            }
-            return NULL;
-        }
-        chunkCurrent->next = newChunk;
-        chunkCurrent = newChunk;
-        nodeCurrent = nodeCurrent->next;
-    }
-	return (chunkHead);
+	if (head == NULL)
+		return (NULL);
+	new_head = create_t_nodechunk(head->value);
+	current = new_head;
+	original = head->next;
+	while (original != NULL)
+	{
+		current->next = create_t_nodechunk(original->value);
+		current = current->next;
+		original = original->next;
+	}
+	return (new_head);
+}
+
+t_Chunk	*copy_current_chunk(t_Chunk *t_node)
+{
+	t_Chunk	*new_t_node;
+
+	if (t_node == NULL)
+		return (NULL);
+	new_t_node = create_t_nodechunk(t_node->value);
+	return (new_t_node);
+}
+
+t_Chunk	*copyt_nodetochunk(t_Node *head)
+{
+	t_Chunk	*chunkhead;
+	t_Chunk	*chunkcurrent;
+	t_Node	*t_nodecurrent;
+
+	if (head == NULL)
+		return (NULL);
+	chunkhead = create_t_nodechunk(head->data);
+	if (chunkhead == NULL)
+		return (NULL);
+	chunkcurrent = chunkhead;
+	t_nodecurrent = head->next;
+	process_nodes(t_nodecurrent, chunkcurrent);
+	return (chunkhead);
 }
