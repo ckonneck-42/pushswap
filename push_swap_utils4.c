@@ -6,7 +6,7 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 14:22:13 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/23 07:59:47 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/26 15:23:26 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,11 +93,6 @@ int	*appendnumbers(int argc, char **argv, t_Node *tops[], t_Node *topsbg[])
 	i = 1;
 	while (i < argc)
 	{
-		if (ft_isnumeric(argv[i]) != 1)
-		{
-			ft_printf("can't parse non numeric data");
-			exit(-1);
-		}
 		arg = ft_atoi(argv[i]);
 		numbers[i - 1] = ft_atoi(argv[i]);
 		append(&tops[0], arg);

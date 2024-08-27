@@ -6,7 +6,7 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 12:14:24 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/23 16:14:23 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/26 16:38:22 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,31 +39,37 @@ void	printchunk(t_Chunk *head)
 	}
 }
 
-void print_argv(int argc, char *argv[])
+void	print_argv(int argc, char *argv[])
 {
-    for (int i = 0; i < argc +1; i++)
-    {
-        ft_printf("argv[%d]: %s\n", i, argv[i]);
-    }
+	int	i;
+
+	i = 0;
+	while (i < argc + 1)
+	{
+		ft_printf("argv[%d]: %s\n", i, argv[i]);
+		i++;
+	}
 }
 
-size_t count_words(const char *s, char c)
+size_t	count_words(const char *s, char c)
 {
-    size_t counter = 0;
-    size_t i = 0;
+	size_t	counter;
+	size_t	i;
 
-    while (s[i])
-    {
-        if (s[i] != c)
-        {
-            counter++;
-            while (s[i] && s[i] != c)
-                i++;
-        }
-        else if (s[i] == c)
-            i++;
-    }
-    return (counter);
+	counter = 0;
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] != c)
+		{
+			counter++;
+			while (s[i] && s[i] != c)
+				i++;
+		}
+		else if (s[i] == c)
+			i++;
+	}
+	return (counter);
 }
 
 int	main(int argc, char *argv[])
@@ -72,51 +78,29 @@ int	main(int argc, char *argv[])
 	t_Chunk			*chunks[100];
 	t_Chunk			*chonks[100];
 	t_Datastruct	sdata;
-	int old_argc = argc;
-	
+	int				old_argc;
+
+	old_argc = argc;
+	magicnumber = 1;
+	if (is_empty_or_spaces(argv[1]) == 1)
+		exit(0);
 	if (argc == 2)
 		argv = stringhandling(&argc, argv);
-	
+	errorhandling(argv, old_argc);
 	sdata = (t_Datastruct){{NULL}, {NULL}, {NULL}, {NULL}, NULL};
 	sdata.numbers = appendnumbers(argc, argv, sdata.tops, sdata.topsbg);
-	if (issorted(sdata.tops[0]) == 1)
-	{
-		free_listt_node(sdata.tops[0]);
-		free_listt_node(sdata.topsbg[0]);
-		free(sdata.numbers);
-		if (old_argc == 2)
-		{
-			magicnumber = 1;
-			while(argv[magicnumber])
-			{
-				free(argv[magicnumber]);
-				magicnumber++;
-			}
-		free(argv);
-		}
-		exit(0);
-	}
-		
-	if (argc == 4)
-		argc3op(&sdata, old_argc, argv);
-	initchunks(chunks, chonks);
-	bubblesortarr(sdata.numbers, argc - 1);
-	appendchunks(chonks, sdata.chonksbg, sdata.numbers, argc);
+	listsorted(&sdata, old_argc, argv, magicnumber);
+	if (argc >= 3 && argc <= 6)
+		twotofiveargs(&sdata, argc, old_argc, argv);
+	initsortapp(&sdata, chunks, chonks, argc);
 	magicnumber = backgroundoperations(&sdata, argc, argv);
-	sorthalf(sdata.tops, chunks, chonks, magicnumber);
-	midpointsort(sdata.tops);
-	threepointalgo(sdata.tops);
-	free_all2(chunks, sdata.tops, chonks);
-	free(sdata.numbers);
-	if (old_argc == 2)
-	{
-		magicnumber = 1;
-	while(argv[magicnumber])
-	{
-		free(argv[magicnumber]);
-		magicnumber++;
-	}
-	free(argv);
-	}
-	
+	sortmidfree(&sdata, chunks, chonks, magicnumber);
+	argvfree(argv, magicnumber, old_argc);
 }
+
+//freeing chunks, chonks, 
+//		chunksbg chonksbg,
+//		tops, topsbg,
+//		numbers,
+//free_all(sdata.chunksbg, sdata.topsbg, sdata.chonksbg);
+//magicnumber = 50;

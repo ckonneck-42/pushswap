@@ -6,7 +6,7 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 14:11:15 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/22 17:36:15 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/26 08:55:54 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,19 @@ void	freethespecificdatabg(t_Chunk *chunksbg[], int i, t_Node *topsbg[])
 			prevchunk->next = headchunk->next;
 			free(headchunk);
 		}
+	}
+}
+
+void	argvfree(char **argv, int magicnumber, int old_argc)
+{
+	if (old_argc == 2)
+	{
+		magicnumber = 1;
+		while (argv[magicnumber])
+		{
+			free(argv[magicnumber]);
+			magicnumber++;
+		}
+		free(argv);
 	}
 }

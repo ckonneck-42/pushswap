@@ -143,4 +143,5 @@ void	midpointsort(t_Node *tops[])
 		free_listchunk(listbcopy1[0]);
 		free_listchunk(listbcopy2[0]);
 	}
+	threepointalgo(tops);
 }

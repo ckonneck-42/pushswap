@@ -6,7 +6,7 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 14:10:15 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/23 10:55:47 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/26 16:34:16 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	free_all(t_Chunk *chunksbg[], t_Node *topsbg[], t_Chunk *chonksbg[])
 {
 	int	i;
 
-	i = 1;
+	i = 0;
 	free_listt_node(topsbg[1]);
 	free_listt_node(topsbg[0]);
 	while (i < 500)
@@ -51,7 +51,8 @@ void	free_all(t_Chunk *chunksbg[], t_Node *topsbg[], t_Chunk *chonksbg[])
 	}
 }
 
-void	free_all2(t_Chunk *chunks[], t_Node *tops[], t_Chunk *chonks[])
+void	free_all2(t_Chunk *chunks[], t_Node *tops[], t_Chunk *chonks[],
+		int *numbers)
 {
 	int	i;
 
@@ -68,6 +69,7 @@ void	free_all2(t_Chunk *chunks[], t_Node *tops[], t_Chunk *chonks[])
 			free_listchunk(chonks[i]);
 		i++;
 	}
+	free(numbers);
 }
 
 void	free_allbg(t_Chunk *chunksbg[], t_Node *topsbg[], t_Chunk *chonksbg[],

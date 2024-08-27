@@ -6,7 +6,7 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 15:59:23 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/23 16:01:51 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/26 15:39:53 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,26 +78,29 @@ void	argc3(t_Node *tops[])
 
 void	argc3op(t_Datastruct *sdata, int old_argc, char **argv)
 {
-	argc3(sdata->tops);
+	int	i;
+
+	if (old_argc > 3)
+		argc3(sdata->tops);
 	free(sdata->numbers);
 	free_listt_node(sdata->tops[0]);
 	free_listt_node(sdata->topsbg[0]);
 	if (old_argc == 2)
 	{
-		int i = 1;
-	while(argv[i]){
-		free(argv[i]);
-		i++;
+		i = 1;
+		while (argv[i])
+		{
+			free(argv[i]);
+			i++;
+		}
+		free(argv);
 	}
-	free(argv);
-	}
-	
 	exit(0);
 }
 
 void	initchunks(t_Chunk *chunks[], t_Chunk *chonks[])
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < 100)

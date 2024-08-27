@@ -6,7 +6,7 @@
 /*   By: ckonneck <ckonneck@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 11:44:08 by ckonneck          #+#    #+#             */
-/*   Updated: 2024/08/23 16:02:16 by ckonneck         ###   ########.fr       */
+/*   Updated: 2024/08/26 15:13:46 by ckonneck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,34 @@ typedef struct t_Ccop
 	t_Chunk			*listbcopy4;
 }					t_Ccop;
 
+void				errorhandling(char **argv, int old_argc);
+int					arg_is_number(char *av);
+int					nb_is_zero(char *av);
+long long			pushft_atoi(const char *str);
+int					ft_compare(const char *s1, const char *s2);
+int					has_doubles(char **av);
+int					is_empty_or_spaces(const char *argv);
+int					good_input(char **av);
+int					is_sign(char c);
+int					is_digit(char c);
+int					issortedtwo(t_Node *head);
+int					is_empty_or_spaces(const char *argv);
+
+void				five_arg_sort(t_Node **tops);
+void				four_arg_sort(t_Node **tops);
+void				twotofiveargs(t_Datastruct *sdata, int argc, int old_argc,
+						char **argv);
+
+void				sortmidfree(t_Datastruct *sdata, t_Chunk **chunks,
+						t_Chunk **chonks, int magicnumber);
+void				initsortapp(t_Datastruct *sdata, t_Chunk *chunks[],
+						t_Chunk *chonks[], int argc);
+int					countwords(char **argv, int *argc, int total_words);
+char				**actualsplit(char **argv, int *new_index, int *argc,
+						char **new_argv);
+char				**argvalloc(char **new_argv, int total_words);
+void				listsorted(t_Datastruct *sdata, int old_argc, char **argv,
+						int magicnumber);
 void				print_argv(int argc, char *argv[]);
 size_t				count_words(const char *s, char c);
 char				**stringhandling(int *argc, char **argv);
@@ -135,9 +163,10 @@ void				free_listt_node(t_Node *head);
 void				free_all(t_Chunk *chunksbg[], t_Node *topsbg[],
 						t_Chunk *chonksbg[]);
 void				free_all2(t_Chunk *chunks[], t_Node *tops[],
-						t_Chunk *chonks[]);
+						t_Chunk *chonks[], int *numbers);
 void				free_allbg(t_Chunk *chunksbg[], t_Node *topsbg[],
 						t_Chunk *chonksbg[], t_Chunk *calcs[]);
+void				argvfree(char **argv, int magicnumber, int old_argc);
 
 void				midpointsort(t_Node *tops[]);
 void				threepointalgo(t_Node *tops[]);
